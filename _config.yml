@@ -10,7 +10,7 @@ description: 꿈 많은 개발자가 되자!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 #avatar: https://raw.githubusercontent.com/taehwandev/taehwandev.github.io/master/images/logo.png
-avator: ![Logo](/image/logo.png)
+avator: ![logo]({{ site.baseurl }}/images/logo.png)
 
 #
 # Flags below are optional
