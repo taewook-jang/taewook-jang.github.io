@@ -1,4 +1,7 @@
-### Android M Preivew
+---
+layout: post
+title: Android M Preivew
+---
 
  안드로이드 M Preview 버전이 공개되었습니다. 과거와 다르게 엄청 빠르게 공개되었습니다.
 
@@ -7,12 +10,12 @@
  마지막 한번은 I/O때 발표가되겠지만 그때 쯤이면 안정적인 M 버전을 만나볼 수 있으리라고 생각됩니다.
 
  안드로이드 M을 올리는 방법도 전보다 간단해 졌습니다. 오늘은 Android M Preview 설치 방법과 Android M에서 달라지는 부분을 미리 살펴보겠습니다.
- 
- ![Screenshot 2016-03-27 16.54.47.png](images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 16.54.47.png)
+
+ ![Screenshot 2016-03-27 16.54.47.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 16.54.47.png)
 <br />
 **Android Preview 일정**
 Android Preview 일정은 다음과 같습니다.
-![Screenshot 2016-03-27 16.58.45.png](images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 16.58.45.png)
+![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 16.58.45.png)
  3월에 첫 Preivew 이면서 Alpha 버전이 공개되었습니다. 설정이 가장 많이 변했고, 멀티윈도우를 지원합니다. 아직 안정적이지는 않고, API도 완성적이지 않은 정말 Alpha 같은 Preview 버전입니다.
  3월 : Alpha Preview
  4월 : beta
@@ -44,7 +47,7 @@ Android Preview 일정은 다음과 같습니다.
 
 페이지에 접속하면 아래와 같은 단말기를 확인할 수 있습니다. 위에서 적었던 내용의 단말기에서만 OTA를 지원합니다.
 
-![Screenshot 2016-03-27 17.07.41.png](images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 17.07.41.png)
+![Screenshot 2016-03-27 17.07.41.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 17.07.41.png)
 
 저는 총 4개의 제품이 Android M Preview를 테스트할 수 있습니다. 3월에 나온 버전의 경우에는 절대 일반 사용폰에는 올리지 않으시길 바랍니다.(이미 올리신 분도 있지만...)
 
@@ -55,7 +58,7 @@ Alpha 버전이기에 올리지 않으시는걸 추천드립니다. 4월에 나�
  UNENROLL DEVICE를 눌러서 언제든지 복구가 가능하다고 합니다.
 
  도착한 OTA는 아래와 같습니다.
- ![2016-03-10 08.43.46.png](images/2016-03-27-Android-M-Preview/2016-03-10 08.43.46.png)
+ ![2016-03-10 08.43.46.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/2016-03-10 08.43.46.png)
 
  넥서스 6에서의 용량은 850MB 이고 다른 단말기는 1GB가 조금 넘었습니다.
  설치후에 기존 데이터가 초기화되지는 않고 그대로 이어가게 됩니다. 문제는 앱이 죽는것이죠. 동작하지 않는 앱이 많습니다.
@@ -75,7 +78,7 @@ Android M의 주요 변경사항은 아래와 같습니다.
 
  M부터는 2단계 Doze 모드를 사용하게 됩니다.
 1단계에서는 네트워크 Job Scheduler, Sync 중지 및 연기ㅚ며 2단계 Doze 모드 진입시에는 Wakelock, Alarm, GPS/WiFi 스캔 중지 및 연기가 추가되었습니다. Mashmallow에서 강조하였던 Doze 모드 접근 방법을 잘 지키면 된다고 합니다.
-![Screenshot 2016-03-27 17.17.04.png](images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 17.17.04.png)
+![Screenshot 2016-03-27 17.17.04.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 17.17.04.png)
 
 * Permissions Changes
   GET_ACCOUNTS가 제거됩니다. 사용자 정보를 불러오던 GET_ACCOUNTS를 더이상 사용할 수 없게되었습니다.
