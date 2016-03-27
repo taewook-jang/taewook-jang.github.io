@@ -31,8 +31,8 @@ Android Preview 일정은 다음과 같습니다.
 
  **Android Preivew 지원 단말기**
  Android Preview 지원단말기는 아래와 같습니다.
- **Phone** : Nexus 6, Nexus 5x, Nexus 6p
- **Tablet** : Nexus 9, Pixel C
+ **Phone** : Nexus 6, Nexus 5x, Nexus 6p, Android One
+ **Tablet** : Nexus 9, Nexus 9(4G), Pixel C
  **TV** : Nexus Player
 
  위의 단말기에서 Android Preview를 살펴볼 수 있습니다.
@@ -80,7 +80,7 @@ Android M의 주요 변경사항은 아래와 같습니다.
   6(Mashmallow)에서는 Doze에 빠져도 CPU/Network를 최소한으로 사용할 수 있게 하였습니다.
 
  M부터는 2단계 Doze 모드를 사용하게 됩니다.
-1단계에서는 네트워크 Job Scheduler, Sync 중지 및 연기ㅚ며 2단계 Doze 모드 진입시에는 Wakelock, Alarm, GPS/Wi-Fi 스캔 중지 및 연기가 추가되었습니다. Mashmallow에서 강조하였던 Doze 모드 접근 방법을 잘 지키면 된다고 합니다.
+1단계에서는 네트워크 Job Scheduler, Sync 중지 및 연기되며 2단계 Doze 모드 진입시에는 Wakelock, Alarm, GPS/Wi-Fi 스캔 중지 및 연기가 추가되었습니다. Mashmallow에서 강조하였던 Doze 모드 접근 방법을 잘 지키면 된다고 합니다.
 ![Screenshot 2016-03-27 17.17.04.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 17.17.04.png)
 
 * Permissions Changes
