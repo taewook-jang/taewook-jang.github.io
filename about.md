@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Github Blog에서는 개발과 관련된 내용을 담습니다.
+기존 블로그에 작성하였던 개반관련 내용을 분리하여 다루려고 합니다.
 
-### More Information
+### 기존 블로그 링크
 
-A place to include any other types of information that you'd like to include about yourself.
+[꿈 많은 개발자가 되자! Tae-hwan](http://thdev.net)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[taehwan@thdev.net](mailto:taehwan@thdev.net)
