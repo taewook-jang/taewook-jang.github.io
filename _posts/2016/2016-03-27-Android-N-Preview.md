@@ -11,11 +11,11 @@ title: Android N Preview
 
  안드로이드 M을 올리는 방법도 전보다 간단해졌습니다. 오늘은 Android N Preview 설치 방법과 달라지는 부분을 미리 살펴보겠습니다.
 
- ![Screenshot 2016-03-27 16.54.47.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.54.47.png)
+ ![Screenshot 2016-03-27 16.54.47.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.54.47.png)
 <br />
 **Android Preview 일정**
 Android Preview 일정은 다음과 같습니다.
-![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.58.45.png)
+![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.58.45.png)
  3월에 첫 Preivew이면서 Alpha 버전이 공개되었습니다. 설정이 가장 많이 변했고, 멀티윈도를 지원합니다. 아직 안정적이지는 않고, API도 완성적이지 않은 정말 Alpha 같은 Preview 버전입니다.
  3월 : Alpha Preview
  4월 : beta
@@ -48,7 +48,7 @@ Android Preview 일정은 다음과 같습니다.
 
 페이지에 접속하면 아래와 같은 단말기를 확인할 수 있습니다. 위에서 적었던 내용의 단말기에서만 OTA를 지원합니다.
 
-![Screenshot 2016-03-27 17.07.41.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 17.07.41.png)
+![Screenshot 2016-03-27 17.07.41.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 17.07.41.png)
 
 저는 총 4개의 제품이 Android N Preview를 테스트할 수 있습니다.
 3월에 나온 버전은 일반 폰에서는 올리지 말기를 권장합니다.
@@ -61,7 +61,7 @@ OTA 방법은 ENROLL DEVICE 버튼을 눌러서 동의만 하면 간단합니다
 UNENROLL DEVICE를 눌러서 언제든지 복구가 가능하다고 합니다. 역시 OTA 정도의 기간이 걸릴 수 있습니다.
 
 도착한 OTA는 아래와 같습니다.
- ![2016-03-10 08.43.46.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/2016-03-10 08.43.46.png)
+ ![2016-03-10 08.43.46.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/2016-03-10 08.43.46.png)
 
  넥서스 6에서의 용량은 850MB이고 다른 단말기는 1GB가 조금 넘었습니다.
 설치 후 기존 데이터가 초기화되지는 않습니다. 언제나 그랬든 동작하지 않는 앱이 있습니다.
@@ -81,7 +81,7 @@ Android M의 주요 변경사항은 아래와 같습니다.
 
  M부터는 2단계 Doze 모드를 사용하게 됩니다.
 1단계에서는 네트워크 Job Scheduler, Sync 중지 및 연기되며 2단계 Doze 모드 진입시에는 Wakelock, Alarm, GPS/Wi-Fi 스캔 중지 및 연기가 추가되었습니다. Mashmallow에서 강조하였던 Doze 모드 접근 방법을 잘 지키면 된다고 합니다.
-![Screenshot 2016-03-27 17.17.04.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 17.17.04.png)
+![Screenshot 2016-03-27 17.17.04.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 17.17.04.png)
 
 * Permissions Changes
   GET_ACCOUNTS가 제거됩니다. 사용자 정보를 불러오던 GET_ACCOUNTS를 더 이상 사용할 수 없게 되었습니다.
