@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Android M Preivew
+title: Android N Preview
 ---
 
- Google I/O가 시작되기 전에 안드로이드 M Preview 버전이 공개되었습니다.
+ Google I/O가 시작되기 전에 안드로이드 N Preview 버전이 공개되었습니다.
 
  선공개로 인해 개발 대응도 빨라지고, I/O 전에 새로운 기능을 모두 만져볼 수 있는 기회도 생겼습니다. 올해는 I/O가 있기 전에 총 2회에 걸친 Preview가 계획되어 있습니다.
 
- 마지막 한 번은 I/O 때 발표가 되겠지만 그때쯤이면 안정적인 M 버전을 만나볼 수 있으리라고 생각됩니다.
+ 마지막 한 번은 I/O 때 발표가 되겠지만 그때쯤이면 안정적인 N 버전을 만나볼 수 있으리라고 생각됩니다.
 
- 안드로이드 M을 올리는 방법도 전보다 간단해졌습니다. 오늘은 Android M Preview 설치 방법과 Android M에서 달라지는 부분을 미리 살펴보겠습니다.
+ 안드로이드 M을 올리는 방법도 전보다 간단해졌습니다. 오늘은 Android N Preview 설치 방법과 달라지는 부분을 미리 살펴보겠습니다.
 
- ![Screenshot 2016-03-27 16.54.47.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 16.54.47.png)
+ ![Screenshot 2016-03-27 16.54.47.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.54.47.png)
 <br />
 **Android Preview 일정**
 Android Preview 일정은 다음과 같습니다.
-![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 16.58.45.png)
+![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.58.45.png)
  3월에 첫 Preivew이면서 Alpha 버전이 공개되었습니다. 설정이 가장 많이 변했고, 멀티윈도를 지원합니다. 아직 안정적이지는 않고, API도 완성적이지 않은 정말 Alpha 같은 Preview 버전입니다.
  3월 : Alpha Preview
  4월 : beta
@@ -43,25 +43,25 @@ Android Preview 일정은 다음과 같습니다.
 이번 버전은 OTA도 지원합니다. Updates over-the-air(OTA)를 지원하다 보니 기존 데이터를 날리지 않고도 올렸다가 내릴 수 있습니다.(rollback도 지원하고 있습니다.) 사용하는데 문제가 많다고 생각되면 언제든 rollback을 통해 기존 버전으로 돌릴 수 있습니다.
 </p>
 **OTA 방법**
-[Android M Preivew OTA](https://www.google.com/android/beta)
+[Android N Preivew OTA](https://www.google.com/android/beta)
 위의 링크를 통해 OTA를 신청할 수 있습니다. 로그인을 하여야 넘어갈 수 있습니다.
 
 페이지에 접속하면 아래와 같은 단말기를 확인할 수 있습니다. 위에서 적었던 내용의 단말기에서만 OTA를 지원합니다.
 
-![Screenshot 2016-03-27 17.07.41.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 17.07.41.png)
+![Screenshot 2016-03-27 17.07.41.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 17.07.41.png)
 
-저는 총 4개의 제품이 Android M Preview를 테스트할 수 있습니다.
+저는 총 4개의 제품이 Android N Preview를 테스트할 수 있습니다.
 3월에 나온 버전은 일반 폰에서는 올리지 말기를 권장합니다.
 제가 올렸을 때 동작하지 않는 앱이 더 많았습니다.
 
 Alpha 버전이기에 올리지 않으시는 걸 추천드립니다. 4월에 나오는 beta 버전부터 안정성이 높아지리라고 생각됩니다.
 
-OTA 방법은 ENROLL DEVICE 버튼을 눌러서 동의만 하면 간단합니다. 짧게는 수분 길게는 1일 이상이 소요되었습니다. Nexus 9 dms 1일 이상의 시간이 들어 OTA가 도착하더군요.
+OTA 방법은 ENROLL DEVICE 버튼을 눌러서 동의만 하면 간단합니다. 짧게는 수분 길게는 1일 이상이 소요되었습니다. Nexus 9 에서 등록하였는데 1일 이상이 걸려 OTA가 도착하였습니다.
 
 UNENROLL DEVICE를 눌러서 언제든지 복구가 가능하다고 합니다. 역시 OTA 정도의 기간이 걸릴 수 있습니다.
 
 도착한 OTA는 아래와 같습니다.
- ![2016-03-10 08.43.46.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/2016-03-10 08.43.46.png)
+ ![2016-03-10 08.43.46.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/2016-03-10 08.43.46.png)
 
  넥서스 6에서의 용량은 850MB이고 다른 단말기는 1GB가 조금 넘었습니다.
 설치 후 기존 데이터가 초기화되지는 않습니다. 언제나 그랬든 동작하지 않는 앱이 있습니다.
@@ -74,14 +74,14 @@ OTA로 하지 않으실 분은 위의 링크를 가서 zip을 다운로드하신
  이 방법에 대해서 자세한 설명은 Nexus Factory Image 올리는 방법을 참고하셔서 진행하시면 됩니다.
  [안드로이드 Factory Image를 통한 초기화](http://thdev.net/631)
 </p>
-**Android M 주요 변경사항**
+**Android N 주요 변경사항**
 Android M의 주요 변경사항은 아래와 같습니다.
 * 업그레이드 된 Doze 모드
   6(Mashmallow)에서는 Doze에 빠져도 CPU/Network를 최소한으로 사용할 수 있게 하였습니다.
 
  M부터는 2단계 Doze 모드를 사용하게 됩니다.
 1단계에서는 네트워크 Job Scheduler, Sync 중지 및 연기되며 2단계 Doze 모드 진입시에는 Wakelock, Alarm, GPS/Wi-Fi 스캔 중지 및 연기가 추가되었습니다. Mashmallow에서 강조하였던 Doze 모드 접근 방법을 잘 지키면 된다고 합니다.
-![Screenshot 2016-03-27 17.17.04.png]({{ site.baseurl }}/images/2016-03-27-Android-M-Preview/Screenshot 2016-03-27 17.17.04.png)
+![Screenshot 2016-03-27 17.17.04.png]({{ site.baseurl }}/images/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 17.17.04.png)
 
 * Permissions Changes
   GET_ACCOUNTS가 제거됩니다. 사용자 정보를 불러오던 GET_ACCOUNTS를 더 이상 사용할 수 없게 되었습니다.
@@ -92,4 +92,4 @@ Android M의 주요 변경사항은 아래와 같습니다.
    NDK에서 non-Public API 사용이 금지됩니다.
 
 그 외 내용은 개발 블로그를 참고해주세요.
-[Android M behavior-changes](http://developer.android.com/preview/behavior-changes.html)
+[Android N behavior-changes](http://developer.android.com/preview/behavior-changes.html)
