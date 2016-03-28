@@ -41,7 +41,8 @@ Android Preview 일정은 다음과 같습니다.
  <br />
 **OTA를 통한 업데이트**
 이번 버전은 OTA도 지원합니다. Updates over-the-air(OTA)를 지원하다 보니 기존 데이터를 날리지 않고도 올렸다가 내릴 수 있습니다.(rollback도 지원하고 있습니다.) 사용하는데 문제가 많다고 생각되면 언제든 rollback을 통해 기존 버전으로 돌릴 수 있습니다.
-</p>
+
+<br />
 **OTA 방법**
 [Android N Preivew OTA](https://www.google.com/android/beta)
 위의 링크를 통해 OTA를 신청할 수 있습니다. 로그인을 하여야 넘어갈 수 있습니다.
@@ -65,7 +66,8 @@ UNENROLL DEVICE를 눌러서 언제든지 복구가 가능하다고 합니다. �
 
  넥서스 6에서의 용량은 850MB이고 다른 단말기는 1GB가 조금 넘었습니다.
 설치 후 기존 데이터가 초기화되지는 않습니다. 언제나 그랬든 동작하지 않는 앱이 있습니다.
- </p>
+
+ <br />
  **Devices image를 통한 업데이트**
  OTA로 안될 경우에는 Devices image를 통해서 직접 올릴 수 있습니다.
  [Android m device image](http://developer.android.com/preview/download.html)
@@ -73,7 +75,8 @@ OTA로 하지 않으실 분은 위의 링크를 가서 zip을 다운로드하신
 
  이 방법에 대해서 자세한 설명은 Nexus Factory Image 올리는 방법을 참고하셔서 진행하시면 됩니다.
  [안드로이드 Factory Image를 통한 초기화](http://thdev.net/631)
-</p>
+
+<br />
 **Android N 주요 변경사항**
 Android M의 주요 변경사항은 아래와 같습니다.
 * 업그레이드 된 Doze 모드
