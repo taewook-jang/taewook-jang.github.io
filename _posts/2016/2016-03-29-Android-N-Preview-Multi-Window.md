@@ -68,7 +68,7 @@ Multi-Window 모드는 개발자가 직접 컨트롤 할 수 있습니다. 멀�
 
 AndroidManifest.xml에서 다음을 정의하면 Multi-Window를 지원/해제 할 수 있습니다.
 
-```
+```java
 android:resizeableActivity=["true" | "false"]
 ```
 이 코드를 &lt;actiity&gt; 또는 &lt;application&gt;에 각각 넣을 수 있습니다.
@@ -84,7 +84,7 @@ activity 기반으로도 각각 페이지별 true/false를 적용하게 되면 �
 저런 식의 화면 구성을 하고 싶어 하시는 분이 있을 것 같습니다. 특정 화면은 집중을 요해서 전체 화면으로 구성을 하고 싶은 경우입니다. 그런데 이 경우는 별로 추천하지는 않을 것 같지만.. 현재 &lt;activity&gt;에 true/false를 지원하는 것을 보아 가능할 것 같습니다.
 
 Picture-in-picture 역시 아래와 같습니다.
-```
+```java
 android:supportsPictureInPicture=["true" | "false"]
 ```
 
