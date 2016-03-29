@@ -70,6 +70,7 @@ AndroidManifest.xml에서 다음을 정의하면 Multi-Window를 지원/해제 �
 
 ```java
 android:resizeableActivity=["true" | "false"]
+android:supportsPictureInPicture=["true" | "false"]
 ```
 
 Picture-in-picture 역시 아래와 같습니다.
