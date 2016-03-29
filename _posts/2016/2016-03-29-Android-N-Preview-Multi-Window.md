@@ -102,14 +102,14 @@ android:minimalSize
 ```
 
 AndroidManifest.xml에 다음과 같이 정의합니다.
-```html
+
 <activity android:name=".MyActivity">
    <layout android:defaultHeight="500dp"
          android:defaultWidth="600dp"
          android:gravity="top|end"
          android:minimalSize="450dp" />
 </activity>
-```
+
 
 freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니다. 사실 이 옵션(freeform mode)은 OFF되어 있습니다. xml 정의는 제공하고 있는 것 같습니다. 이 모드는 아래에서 설명을 하겠습니다.
 
@@ -168,13 +168,13 @@ However, if you’re using your Application context for anything UI related, you
 Multi-window의 지원으로 주의해야 할 부분이 context 사용 방법입니다. UI를 다룰 경우에는 Application context가 아닌 Activity의 context를 사용하라고 합니다. Application context를 사용하였을 경우 Activity 기반의 theme가 아니라 원하지 않는 theme가 나올 수 있으니 Application context가 아니라 Activity context을 사용하라고 합니다.
 
 onResume()에서 너무 많은 처리를 하지 말 것을 강조합니다. 화면의 이동 간 onResume() onPause()는 매번 호출되게 됩니다. 멀티윈도우 사이즈가 변경되었을 때도 onResume()이 호출될 수 있으니 아래의 코드를 사용하여 데이터 처리를 하도록 하는 게 좋다고 합니다.
-```java
+
 <activity
  android:name=".MyActivity"
  android:configChanges="screenSize|smallestScreenSize
      |screenLayout|orientation"
 />
-```
+
 
 <br />
 <br />
