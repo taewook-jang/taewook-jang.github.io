@@ -102,7 +102,7 @@ android:minimalSize
 ```
 
 AndroidManifest.xml에 다음과 같이 정의합니다.
-```java
+```xml
 <activity android:name=".MyActivity">
    <layout android:defaultHeight="500dp"
          android:defaultWidth="600dp"
