@@ -103,12 +103,12 @@ android:minimalSize
 
 AndroidManifest.xml에 다음과 같이 정의합니다.
 ```xml
-`<activity android:name=".MyActivity"`>
-   `<layout android:defaultHeight="500dp"
+&lt;activity android:name=".MyActivity"&gt;
+   &lt;layout android:defaultHeight="500dp"
          android:defaultWidth="600dp"
          android:gravity="top|end"
-         android:minimalSize="450dp" /`>
-`</activity`>
+         android:minimalSize="450dp" /&gt;
+&lt;/activity&gt;
 ```
 
 freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니다. 사실 이 옵션(freeform mode)은 OFF되어 있습니다. xml 정의는 제공하고 있는 것 같습니다. 이 모드는 아래에서 설명을 하겠습니다.
