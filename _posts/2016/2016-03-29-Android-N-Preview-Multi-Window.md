@@ -127,13 +127,16 @@ freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니
  Multi-window 모드 API가 있습니다. 저도 아직 자세하게 알아보지는 않았는데 API 문서 링크는 아래와 같습니다.
  [Android N Preview API](http://developer.android.com/preview/setup-sdk.html#docs-dl)
 
+
  ```java
  Activity.inMultiWindow()
  ```
+
  
  현재 모드가 멀티 윈도우인지 확인할 수 있습니다.
  
  <br />
+
  
  ```java
  Activity.inPictureInPicture()
@@ -144,10 +147,13 @@ freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니
 
 <br />
 
+
  ```java
  Activity.onMultiWindowChanged()
  ```
+
  true 일 경우 현재 MultiWindow 모드가 활성화된 경우이고 false라면 MultiWindow에서 일반 모드로 변경된 경우입니다.
+<br />
 
  ```java
  Activity.onPictureInPictureChanged()
