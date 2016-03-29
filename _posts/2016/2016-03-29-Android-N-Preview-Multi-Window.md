@@ -98,7 +98,7 @@ android:supportsPictureInPicture=["true" | "false"]
 화면 사이즈 구성이 가능합니다. 아래와 같은 설정이 가능합니다.
 Google 문서상 freeform mode라는 이름으로 다음을 정의하고 있습니다.
 
-```java
+```xml
 android:defaultWidth
 android:defaultHeight
 android:gravity
