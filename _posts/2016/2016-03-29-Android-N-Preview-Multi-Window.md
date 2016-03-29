@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Android N Preview 멀티 윈도우 살펴보기
+---
 
 안드로이드 N에서 정식으로 Multi Window를 제공합니다. N에 숨겨진 멀티 윈도 기능도 있는데 그 기능을 사용하는 방법도 함께 적어보겠습니다.
 
@@ -67,7 +70,8 @@ Multi-window mode를 지원한다고 해서 별도로 달라지는 Lifecycle은 
 Multi-Window 모드는 개발자가 직접 컨트롤 할 수 있습니다. 멀티윈도우를 지원하지 않을 수도 있고(현재 Preview에서는 모두 다 지원하도록 되어 있어서 정식 버전에 어떻게 적용될지 아직은 모르겠습니다.) 지원하면서 최소 사이즈를 지정할 수 있습니다.
 
 AndroidManifest.xml에서 다음을 정의하면 Multi-Window를 지원/해제 할 수 있습니다.
-```java
+
+```
 android:resizeableActivity=["true" | "false"]
 ```
 이 코드를 &lt;actiity&gt; 또는 &lt;application&gt;에 각각 넣을 수 있습니다.
@@ -83,7 +87,7 @@ activity 기반으로도 각각 페이지별 true/false를 적용하게 되면 �
 저런 식의 화면 구성을 하고 싶어 하시는 분이 있을 것 같습니다. 특정 화면은 집중을 요해서 전체 화면으로 구성을 하고 싶은 경우입니다. 그런데 이 경우는 별로 추천하지는 않을 것 같지만.. 현재 &lt;activity&gt;에 true/false를 지원하는 것을 보아 가능할 것 같습니다.
 
 Picture-in-picture 역시 아래와 같습니다.
-```java
+```
 android:supportsPictureInPicture=["true" | "false"]
 ```
 
@@ -91,7 +95,7 @@ android:supportsPictureInPicture=["true" | "false"]
 **화면 사이즈 정의**
 화면 사이즈 구성이 가능합니다. 아래와 같은 설정이 가능합니다.
 Google 문서상 freeform mode라는 이름으로 다음을 정의하고 있습니다.
-```java
+```
 android:defaultWidth
 android:defaultHeight
 android:gravity
@@ -121,22 +125,22 @@ freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니
  Multi-window 모드 API가 있습니다. 저도 아직 자세하게 알아보지는 않았는데 API 문서 링크는 아래와 같습니다.
  [Android N Preview API](http://developer.android.com/preview/setup-sdk.html#docs-dl)
 
- ```java
+ ```
  Activity.inMultiWindow()
  ```
  현재 모드가 멀티 윈도우인지 확인할 수 있습니다.
- ```java
+ ```
  Activity.inPictureInPicture()
  ```
  PictureInPicutre 모드인지 확인합니다.
  **Note**: inPicutreInPicture() 모드가 true라면 inMultiWindow() 역시 true가 return 된다고 합니다.
 
- ```java
+ ```
  Activity.onMultiWindowChanged()
  ```
  true 일 경우 현재 MultiWindow 모드가 활성화된 경우이고 false라면 MultiWindow에서 일반 모드로 변경된 경우입니다.
 
- ```java
+ ```
  Activity.onPictureInPictureChanged()
  ```
  onMultiWindowChanged와 기본 동작은 동일합니다.
