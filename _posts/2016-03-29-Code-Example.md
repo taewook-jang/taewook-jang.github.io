@@ -71,3 +71,20 @@ AndroidManifest.xml에서 다음을 정의하면 Multi-Window를 지원/해제 �
 ```xml
 android:resizeableActivity=["true" | "false"]
 ```
+
+이 코드를 &lt;actiity&gt; 또는 &lt;application&gt;에 각각 넣을 수 있습니다.
+application이 false 이면 해당 앱은 false가 기본으로 처리되어 멀티 윈도우가 동작하지 않습니다.
+activity 기반으로도 각각 페이지별 true/false를 적용하게 되면 동작이 다르게 되는 것이죠.
+
+그래서 저는 이런 방법을 시도해보았습니다.
+- A Activity에서는 true
+- B Activity에서는 false
+
+아직 Preview라서 그런지 첫 번째 Activity에 맞게 B Activity가 동작을 하였습니다. 다시 말하면 B는 true/false이 든 상관없이 동작하였습니다.
+
+저런 식의 화면 구성을 하고 싶어 하시는 분이 있을 것 같습니다. 특정 화면은 집중을 요해서 전체 화면으로 구성을 하고 싶은 경우입니다. 그런데 이 경우는 별로 추천하지는 않을 것 같지만.. 현재 &lt;activity&gt;에 true/false를 지원하는 것을 보아 가능할 것 같습니다.
+
+Picture-in-picture 역시 아래와 같습니다.
+```xml
+android:supportsPictureInPicture=["true" | "false"]
+```
