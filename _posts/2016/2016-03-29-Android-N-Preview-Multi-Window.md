@@ -44,7 +44,7 @@ TV Device에서 사용할 수 있는 Picture-in-picture(PIP)는 영상을 시청
 <br />
 **Activity Lifecycle**
 
-Multi-window mode를 지원한다고 해서 별도로 달라지는 Lifecycle은 없다고 합니다. 기본 (Android Activity의 Lifecycle)[http://developer.android.com/training/basics/activity-lifecycle/index.html]을 따른다고 합니다.
+Multi-window mode를 지원한다고 해서 별도로 달라지는 Lifecycle은 없다고 합니다. 기본 [Android Activity의 Lifecycle](http://developer.android.com/training/basics/activity-lifecycle/index.html)을 따른다고 합니다.
 
 그래서 현재 동영상을 시청하는데 있어서 멀티윈도우가 정상 동작하지 않습니다. 멀티윈도우 상태에서 동영상을 시청하려고 틀어놓고 다른 행동을 하려고 시도하였는데 이렇게 동작하였습니다.(문서상 내용도 비슷합니다.)
 
@@ -82,7 +82,7 @@ AndroidManifest.xml에서 다음을 정의하면 Multi-Window를 지원/해제 �
 android:resizeableActivity=["true" | "false"]
 ```
 
-이 코드를 &lt;actiity&gt; 또는 &lt;application&gt;에 각각 넣을 수 있습니다.
+이 코드를 `<actiity>` 또는 `<application>`에 각각 넣을 수 있습니다.
 application이 false 이면 해당 앱은 false가 기본으로 처리되어 멀티 윈도우가 동작하지 않습니다.
 activity 기반으로도 각각 페이지별 true/false를 적용하게 되면 동작이 다르게 되는 것이죠.
 
@@ -92,7 +92,7 @@ activity 기반으로도 각각 페이지별 true/false를 적용하게 되면 �
 
 아직 Preview라서 그런지 첫 번째 Activity에 맞게 B Activity가 동작을 하였습니다. 다시 말하면 B는 true/false이 든 상관없이 동작하였습니다.
 
-저런 식의 화면 구성을 하고 싶어 하시는 분이 있을 것 같습니다. 특정 화면은 집중을 요해서 전체 화면으로 구성을 하고 싶은 경우입니다. 그런데 이 경우는 별로 추천하지는 않을 것 같지만.. 현재 &lt;activity&gt;에 true/false를 지원하는 것을 보아 가능할 것 같습니다.
+저런 식의 화면 구성을 하고 싶어 하시는 분이 있을 것 같습니다. 특정 화면은 집중을 요해서 전체 화면으로 구성을 하고 싶은 경우입니다. 그런데 이 경우는 별로 추천하지는 않을 것 같지만.. 현재 `<activity>`에 true/false를 지원하는 것을 보아 가능할 것 같습니다.
 
 Picture-in-picture 역시 아래와 같습니다.
 
