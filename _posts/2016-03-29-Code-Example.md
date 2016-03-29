@@ -77,3 +77,18 @@ Picture-in-picture 역시 아래와 같습니다.
 ```java
 android:supportsPictureInPicture=["true" | "false"]
 ```
+
+
+```
+if (isAwesome){
+  return true
+}
+```
+
+And if you'd like to use syntax highlighting, include the language:
+
+```javascript
+if (isAwesome){
+  return true
+}
+```
