@@ -74,6 +74,7 @@ android:supportsPictureInPicture=["true" | "false"]
 ```
 
 Picture-in-picture 역시 아래와 같습니다.
+
 ```java
 android:supportsPictureInPicture=["true" | "false"]
 ```
