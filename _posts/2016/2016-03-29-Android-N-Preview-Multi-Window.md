@@ -71,7 +71,7 @@ Multi-Window 모드는 개발자가 직접 컨트롤 할 수 있습니다. 멀�
 
 AndroidManifest.xml에서 다음을 정의하면 Multi-Window를 지원/해제 할 수 있습니다.
 
-```xml
+```java
 android:resizeableActivity=["true" | "false"]
 ```
 
@@ -89,7 +89,7 @@ activity 기반으로도 각각 페이지별 true/false를 적용하게 되면 �
 
 Picture-in-picture 역시 아래와 같습니다.
 
-```xml
+```java
 android:supportsPictureInPicture=["true" | "false"]
 ```
 
@@ -98,7 +98,7 @@ android:supportsPictureInPicture=["true" | "false"]
 화면 사이즈 구성이 가능합니다. 아래와 같은 설정이 가능합니다.
 Google 문서상 freeform mode라는 이름으로 다음을 정의하고 있습니다.
 
-```xml
+```java
 android:defaultWidth
 android:defaultHeight
 android:gravity
