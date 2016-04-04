@@ -1,7 +1,7 @@
----
-layout: post
-title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
----
+#---
+#layout: post
+#title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
+#---
 
 안드로이드 N에서는 Multi window를 지원하게 됩니다.
 이번 글에서는 멀티 윈도우의 적용 방법은 어떻게 될지 살펴보겠습니다.
