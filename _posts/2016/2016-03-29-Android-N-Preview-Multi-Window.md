@@ -145,11 +145,11 @@ Activity.inMultiWindow()
 
 현재 모드가 멀티 윈도우인지 확인할 수 있습니다.
 <br />
- 
+
 ```java
 Activity.inPictureInPicture()
 ```
- 
+
 PictureInPicutre 모드인지 확인합니다.
 **Note**: inPicutreInPicture() 모드가 true라면 inMultiWindow() 역시 true가 return 된다고 합니다.
 
@@ -165,7 +165,7 @@ true 일 경우 현재 MultiWindow 모드가 활성화된 경우이고 false라�
 ```java
 Activity.onPictureInPictureChanged()
 ```
- 
+
 onMultiWindowChanged와 기본 동작은 동일합니다.
 
 추가로 Fragment에서도 동일하며 Fragment.inMultiWindow()입니다.
@@ -174,7 +174,7 @@ onMultiWindowChanged와 기본 동작은 동일합니다.
 <br />
 **Etc**
 
-앱을 실행과 동시에 Multi-Window 모드를 사용할 수 있습니다. Intent.FLAG_ACTIVITY_LAUNCH_TO_ADJACENT 을 통해서 Multi-window를 실행할 수 있습니다. 자세한 내용은 API를 참고해주세요.
+앱을 실행과 동시에 Multi-Window 모드를 사용할 수 있습니다. Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT 을 통해서 Multi-window를 실행할 수 있습니다. [자세한 내용은 API를 참고해주세요.](http://developer.android.com/preview/features/multi-window.html)
 
 **drag and drop 모드 지원**
 
