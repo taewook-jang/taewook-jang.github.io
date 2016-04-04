@@ -13,7 +13,9 @@ title: Android N Preview
 
  ![Screenshot 2016-03-27 16.54.47.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.54.47.png)
 <br />
-**Android Preview 일정**
+
+##Android Preview 일정
+
 Android Preview 일정은 다음과 같습니다.
 ![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.58.45.png)
  3월에 첫 Preivew이면서 Alpha 버전이 공개되었습니다. 설정이 가장 많이 변했고, 멀티윈도를 지원합니다. 아직 안정적이지는 않고, API도 완성적이지 않은 정말 Alpha 같은 Preview 버전입니다.
@@ -29,7 +31,8 @@ Android Preview 일정은 다음과 같습니다.
   생각보다 빠른 배포로 인해 제조사 역시 빠른 대응이 가능할 것이라고 생각됩니다. 최종 배포까지 오래 걸리지 않을 것 같지만 Mashmallow 버전이 업데이트 되는 속도를 보면 최소 6개월까지 걸릴 것이라고 생각됩니다.(초기 모델 제외)
   <br />
 
- **Android Preivew 지원 단말기**
+##Android Preivew 지원 단말기
+
  Android Preview 지원단말기는 아래와 같습니다.
  **Phone** : Nexus 6, Nexus 5x, Nexus 6p, Android One
  **Tablet** : Nexus 9, Nexus 9(4G), Pixel C
@@ -39,11 +42,15 @@ Android Preview 일정은 다음과 같습니다.
 정식 버전이 업데이트 될 때쯤에도 위의 단말기들만 M이 지원될 것으로 보입니다. Nexus 5, Nexus 7(2013)이 포함될 수도 있겠지만...
 
  <br />
-**OTA를 통한 업데이트**
+
+##OTA를 통한 업데이트
+
 이번 버전은 OTA도 지원합니다. Updates over-the-air(OTA)를 지원하다 보니 기존 데이터를 날리지 않고도 올렸다가 내릴 수 있습니다.(rollback도 지원하고 있습니다.) 사용하는데 문제가 많다고 생각되면 언제든 rollback을 통해 기존 버전으로 돌릴 수 있습니다.
 
 <br />
-**OTA 방법**
+
+##OTA 방법
+
 [Android N Preivew OTA](https://www.google.com/android/beta)
 위의 링크를 통해 OTA를 신청할 수 있습니다. 로그인을 하여야 넘어갈 수 있습니다.
 
@@ -68,7 +75,9 @@ UNENROLL DEVICE를 눌러서 언제든지 복구가 가능하다고 합니다. �
 설치 후 기존 데이터가 초기화되지는 않습니다. 언제나 그랬든 동작하지 않는 앱이 있습니다.
 
  <br />
- **Devices image를 통한 업데이트**
+
+##Devices image를 통한 업데이트
+
  OTA로 안될 경우에는 Devices image를 통해서 직접 올릴 수 있습니다.
  [Android m device image](http://developer.android.com/preview/download.html)
 OTA로 하지 않으실 분은 위의 링크를 가서 zip을 다운로드하신 다음 업데이트 진행하시면 됩니다. 완전 초기화가 진행될 수 있습니다.
@@ -77,7 +86,9 @@ OTA로 하지 않으실 분은 위의 링크를 가서 zip을 다운로드하신
  [안드로이드 Factory Image를 통한 초기화](http://thdev.net/631)
 
 <br />
-**Android N 주요 변경사항**
+
+##Android N 주요 변경사항
+
 Android M의 주요 변경사항은 아래와 같습니다.
 * 업그레이드 된 Doze 모드
   6(Mashmallow)에서는 Doze에 빠져도 CPU/Network를 최소한으로 사용할 수 있게 하였습니다.

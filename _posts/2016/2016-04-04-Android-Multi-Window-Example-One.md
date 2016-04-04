@@ -14,7 +14,7 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 
 <br />
 
-##안드로이드 멀티 윈도우##
+##안드로이드 멀티 윈도우
 
  안드로이드 N 멀티 윈도우에 관련된 API는 다음 링크를 확인해주세요.
 [Android N Multi Window API](http://developer.android.com/preview/features/multi-window.html)
@@ -104,16 +104,19 @@ Configuration.SCREENLAYOUT_SIZE_SMALL
 
 ##java 코드 확인 방법
 Activity 기반에서 다음의 코드를 추가하여 현재 상태를 확인할 수 있습니다.
+
 ```java
 inMultiWindow()
 ```
 
 제가 테스트한 코드는 다음과 같습니다.
+
 ```java
 multiWindowAdapter.addItem("onResume() inMultiWindow " + inMultiWindow(), true);
 ```
 
  API 문서상으로는 다음의 API도 있는데 저는 따로 테스트해보지 않았습니다.
+
 ```java
 onMultiWindowChanged()
 ```
