@@ -33,6 +33,7 @@ Tablet은 별도의 설명이 없습니다. 기본 기능은 모두 스마트폰
 SDK를 통해 멀티윈도우를 제어할 수 있습니다. 창의 최소 사이즈를 정할 수 있고, 멀티 윈도우를 사용하지 않도록 지정할 수 있습니다.
 
 <br />
+
 **TV Device** : Picture-in-picture(PIP) 모드를 지원합니다.
 
 TV Device에서 사용할 수 있는 Picture-in-picture(PIP)는 영상을 시청 중에 다른 행동을 할 수 있습니다. 영상을 틀어놓고 사진을 볼 수 있는데 일반적인 TV/모니터의 PIP 기능이라고 볼 수 있겠습니다.(팝업 플레이어? 정도라고 생각할 수도 있겠네요)
@@ -145,6 +146,7 @@ Activity.inMultiWindow()
 ```
 
 <br />
+
 PictureInPicutre 모드인지 확인합니다.
 **Note**: inPicutreInPicture() 모드가 true라면 inMultiWindow() 역시 true가 return 된다고 합니다.
 
@@ -153,6 +155,7 @@ Activity.inPictureInPicture()
 ```
 
 <br />
+
 true 일 경우 현재 MultiWindow 모드가 활성화된 경우이고 false라면 MultiWindow에서 일반 모드로 변경된 경우입니다.
 
 ```java
@@ -160,6 +163,7 @@ Activity.onMultiWindowChanged()
 ```
 
 <br />
+
 onMultiWindowChanged와 기본 동작은 동일합니다.
 
 ```java
@@ -173,6 +177,8 @@ Activity.onPictureInPictureChanged()
 ## Etc
 
 앱을 실행과 동시에 Multi-Window 모드를 사용할 수 있습니다. Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT 을 통해서 Multi-window를 실행할 수 있습니다. [자세한 내용은 API를 참고해주세요.](http://developer.android.com/preview/features/multi-window.html)
+
+<br />
 
 ## drag and drop 모드 지원
 
