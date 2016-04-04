@@ -9,6 +9,7 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 살펴보기 전에 지금까지 정리하였던 멀티 윈도우 관련 내용은 아래와 같습니다.
 
 [Android N Multi Window 살펴보기](http://thdev.tech/Android-N-Preview-Multi-Window/)
+
 [Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
 
 <br />
@@ -123,7 +124,8 @@ onMultiWindowChanged()
  멀티 윈도우에 대해서 API 문서를 살펴보고, 실제 코드 상으로 테스트까지 진행해보았습니다.(Freeform 모드를 적용해보기도 하였습니다.)
 
  [Android N Multi Window 살펴보기](http://thdev.tech/Android-N-Preview-Multi-Window/)
-[Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
+ 
+ [Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
 
   정리해둔 onResume/onPause에 대해서 꼭 필수로 정의가 필요합니다.
   또한 화면 사이즈가 다시 그려지는 부분에 대해서 대응이 필요해 보입니다.
