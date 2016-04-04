@@ -14,7 +14,7 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 
 <br />
 
-##안드로이드 멀티 윈도우
+##안드로이드 멀티 윈도우##
 
  안드로이드 N 멀티 윈도우에 관련된 API는 다음 링크를 확인해주세요.
 [Android N Multi Window API](http://developer.android.com/preview/features/multi-window.html)
