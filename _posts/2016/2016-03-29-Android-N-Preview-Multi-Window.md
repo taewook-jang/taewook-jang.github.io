@@ -10,7 +10,7 @@ Google [lan Lake](https://medium.com/@ianhlake)가 medium에 작성한 "[5 tips 
 
 <br />
 
-##Android N Multi Window
+## Android N Multi Window
 
 Android N에 포함된 Multi Window는 Andoid M에도 있었습니다. 초기 버전에만 존재하는데 Nexus 6p에서만 확인이 되었던 적이 있습니다. 개발자 옵션에 잠시 포함되었다가 11월 패치쯤에 해당 기능이 사라졌었습니다.
 
@@ -20,7 +20,7 @@ Android N에 포함된 Multi Window는 Andoid M에도 있었습니다. 초기 �
 
 <br />
 
-##Multi Window Support
+## Multi Window Support
 
 Preview 문서 : [Multi Window Support](http://developer.android.com/preview/features/multi-window.html)
 
@@ -42,7 +42,7 @@ TV Device에서 사용할 수 있는 Picture-in-picture(PIP)는 영상을 시청
 
 <br />
 
-##Activity Lifecycle
+## Activity Lifecycle
 
 Multi-window mode를 지원한다고 해서 별도로 달라지는 Lifecycle은 없다고 합니다. 기본 [Android Activity의 Lifecycle](http://developer.android.com/training/basics/activity-lifecycle/index.html)을 따른다고 합니다.
 
@@ -72,7 +72,7 @@ Multi-window mode를 지원한다고 해서 별도로 달라지는 Lifecycle은 
 
 <br />
 
-##Configuring Your App for Multi-Window Mode
+## Configuring Your App for Multi-Window Mode
 
 Multi-Window 모드는 개발자가 직접 컨트롤 할 수 있습니다. 멀티윈도우를 지원하지 않을 수도 있고(현재 Preview에서는 모두 다 지원하도록 되어 있어서 정식 버전에 어떻게 적용될지 아직은 모르겠습니다.) 지원하면서 최소 사이즈를 지정할 수 있습니다.
 
@@ -127,13 +127,13 @@ freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니
 
 <br />
 
-##Disable features in multi-window mode
+## Disable features in multi-window mode
 
 다음의 경우는 Multi-window를 지원하지 않습니다. 저도 위에서 언급하였는데 screenOrientation을 설정하였을 경우에는 multi-window를 제공하지 않는다고 합니다.
 
 <br />
 
-##Multi-window change notification and querying
+## Multi-window change notification and querying
 
  Multi-window 모드 API가 있습니다. 저도 아직 자세하게 알아보지는 않았는데 API 문서 링크는 아래와 같습니다.
  [Android N Preview API](http://developer.android.com/preview/setup-sdk.html#docs-dl)
@@ -170,17 +170,17 @@ Activity.onPictureInPictureChanged()
 
 <br />
 
-##Etc
+## Etc
 
 앱을 실행과 동시에 Multi-Window 모드를 사용할 수 있습니다. Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT 을 통해서 Multi-window를 실행할 수 있습니다. [자세한 내용은 API를 참고해주세요.](http://developer.android.com/preview/features/multi-window.html)
 
-##drag and drop 모드 지원
+## drag and drop 모드 지원
 
  삼성 멀티윈도우와 같은 파일 복사? 기능을 제공합니다. Multi-window 간 퍼미션을 요청하여 URI을 전달하는 drag and drop 모드입니다.
 
 <br />
 
-##Tip 5
+## Tip 5
 
 [5 tips for preparing for Multi-Window in Android N](https://medium.com/google-developers/5-tips-for-preparing-for-multi-window-in-android-n-7bed803dda64#.x5dd4ku7n)
 에 소개되어 있는 5개 Tip 중에 가장 중요하다고 생각되는 부분을 소개하려고 합니다.
@@ -204,7 +204,7 @@ onResume()에서 너무 많은 처리를 하지 말 것을 강조합니다. 화�
 
 <br />
 
-##Multi-window의 숨겨진 기능
+## Multi-window의 숨겨진 기능
 
 [ganachoco(Young-Ho Cha)님이 Facebook GDG Korea Android](https://www.facebook.com/groups/gdg.korea.android/permalink/1747068618855262/)(가입 필요)에 공유해주신 FreeForm Window 기능을 활성화하는 방법입니다. 위에 API 상으로는 FreeForm이라는 이름이 계속적으로 나오지만 실제 동작은 어떻게 되는지는 알 수 없었습니다. 다음의 방법을 통하면 아래 Remix OS와 같은 화면을 Android N Preview에서도 볼 수 있게 됩니다.
 
@@ -223,7 +223,7 @@ Android N의 FreeForm Window 모드 적용 모습(androidpolice에서 따온 이
 
 <br />
 
-##마무리
+## 마무리
 
 Android N Preview의 멀티 윈도우를 살펴보았습니다. 멀티 윈도우에 동일한 UI를 적용하기 위해서는 Application Context가 아닌 Activity Context를 이용할 것과, 멀티 윈도우 지원 조건을 살펴보았습니다.
 

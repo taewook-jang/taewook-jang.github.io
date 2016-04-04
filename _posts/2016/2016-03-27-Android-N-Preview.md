@@ -14,7 +14,7 @@ title: Android N Preview
  ![Screenshot 2016-03-27 16.54.47.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.54.47.png)
 <br />
 
-##Android Preview 일정
+## Android Preview 일정
 
 Android Preview 일정은 다음과 같습니다.
 ![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.58.45.png)
@@ -31,7 +31,7 @@ Android Preview 일정은 다음과 같습니다.
   생각보다 빠른 배포로 인해 제조사 역시 빠른 대응이 가능할 것이라고 생각됩니다. 최종 배포까지 오래 걸리지 않을 것 같지만 Mashmallow 버전이 업데이트 되는 속도를 보면 최소 6개월까지 걸릴 것이라고 생각됩니다.(초기 모델 제외)
   <br />
 
-##Android Preivew 지원 단말기
+## Android Preview 지원 단말기
 
  Android Preview 지원단말기는 아래와 같습니다.
  **Phone** : Nexus 6, Nexus 5x, Nexus 6p, Android One
@@ -43,13 +43,13 @@ Android Preview 일정은 다음과 같습니다.
 
  <br />
 
-##OTA를 통한 업데이트
+## OTA를 통한 업데이트
 
 이번 버전은 OTA도 지원합니다. Updates over-the-air(OTA)를 지원하다 보니 기존 데이터를 날리지 않고도 올렸다가 내릴 수 있습니다.(rollback도 지원하고 있습니다.) 사용하는데 문제가 많다고 생각되면 언제든 rollback을 통해 기존 버전으로 돌릴 수 있습니다.
 
 <br />
 
-##OTA 방법
+## OTA 방법
 
 [Android N Preivew OTA](https://www.google.com/android/beta)
 위의 링크를 통해 OTA를 신청할 수 있습니다. 로그인을 하여야 넘어갈 수 있습니다.
@@ -76,7 +76,7 @@ UNENROLL DEVICE를 눌러서 언제든지 복구가 가능하다고 합니다. �
 
  <br />
 
-##Devices image를 통한 업데이트
+## Devices image를 통한 업데이트
 
  OTA로 안될 경우에는 Devices image를 통해서 직접 올릴 수 있습니다.
  [Android m device image](http://developer.android.com/preview/download.html)
@@ -87,7 +87,7 @@ OTA로 하지 않으실 분은 위의 링크를 가서 zip을 다운로드하신
 
 <br />
 
-##Android N 주요 변경사항
+## Android N 주요 변경사항
 
 Android M의 주요 변경사항은 아래와 같습니다.
 * 업그레이드 된 Doze 모드

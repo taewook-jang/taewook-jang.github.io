@@ -14,7 +14,7 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 
 <br />
 
-##안드로이드 멀티 윈도우##
+## 안드로이드 멀티 윈도우
 
  안드로이드 N 멀티 윈도우에 관련된 API는 다음 링크를 확인해주세요.
 [Android N Multi Window API](http://developer.android.com/preview/features/multi-window.html)
@@ -71,7 +71,7 @@ Configuration.SCREENLAYOUT_SIZE_SMALL
  화면의 위의 그림과 같이 최대 창 크기(멀티윈도우 기준 최대치)와 최저 창 크기(멀티 윈도우 기준 최저 크기) 일 경우에도 현재는 1의 값을 확인할 수 있습니다.
 <br />
 
-##주요 코드
+## 주요 코드
 
   xml에서는 아래와 같이 코드를 적용하였습니다. 별도 resizableActivity를 정의하지 않아도 동작하게 됩니다.
 
@@ -102,7 +102,8 @@ Configuration.SCREENLAYOUT_SIZE_SMALL
 
 <br />
 
-##java 코드 확인 방법
+## java 코드 확인 방법
+
 Activity 기반에서 다음의 코드를 추가하여 현재 상태를 확인할 수 있습니다.
 
 ```java
@@ -126,7 +127,8 @@ onMultiWindowChanged()
 <br />
 <br />
 
-##마무리
+## 마무리
+
  멀티 윈도우에 대해서 API 문서를 살펴보고, 실제 코드 상으로 테스트까지 진행해보았습니다.(Freeform 모드를 적용해보기도 하였습니다.)
 
  [Android N Multi Window 살펴보기](http://thdev.tech/Android-N-Preview-Multi-Window/)
