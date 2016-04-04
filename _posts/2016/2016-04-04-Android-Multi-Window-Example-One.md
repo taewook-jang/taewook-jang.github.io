@@ -69,6 +69,24 @@ Configuration.SCREENLAYOUT_SIZE_SMALL
 ```
 
  화면의 위의 그림과 같이 최대 창 크기(멀티윈도우 기준 최대치)와 최저 창 크기(멀티 윈도우 기준 최저 크기) 일 경우에도 현재는 1의 값을 확인할 수 있습니다.
+
+ <br />
+ **정리 하면**
+ 전체적인 부분은 다음의 이미지와 같이 동작하게 됩니다.
+ Multi Window mode가 아니라면 inMultiWindow는 false이고, MultiWindow로의 전환이 일어나면 configChanges는
+
+```java
+Configuration.SCREENLAYOUT_SIZE_NORMAL
+```
+
+Size normal이 한번 호출되고 Size small이 호출되었습니다.
+inMultiWindow 상태는 true로 변경되게 됩니다.
+
+다시 빠져나오면 반대로 false로 변경되게 되고
+Size small -> Size normal 이 차례대로 호출됩니다.
+
+![Screenshot_20160405-005032.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-Multi-Window-Example-One/Screenshot_20160405-005032.png)
+
 <br />
 
 ## 주요 코드
