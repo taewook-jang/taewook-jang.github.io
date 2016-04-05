@@ -6,6 +6,7 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 안드로이드 N부터 Multi window를 지원하게 됩니다.<br />
 단순히 Multi window이고 구글 설명상 Activity lifecycle을 그대로 따를 것이라고 합니다.<br />
 이번에는 예제를 통해서 이러한 변화가 어떻게 적용되는지 살펴보겠습니다.<br />
+<br />
 **지난 정리 글 :**
 <br />
 [Android N Multi Window 살펴보기](http://thdev.tech/Android-N-Preview-Multi-Window/)
