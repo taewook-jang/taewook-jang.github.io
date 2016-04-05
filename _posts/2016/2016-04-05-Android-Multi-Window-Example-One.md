@@ -71,7 +71,11 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
  onResume -> onPause(창 크기 변경 시작) -> onStop -> onDestroy -> onCreate(창 크기 변경 종료) -> onStart -> onResume<br />
  <br />
  앱이 onCreate부터 처음부터 다시 시작하고 있습니다.<br />
- 아무런 대응을 하지 않을 경우에는 모든 앱은 이렇게 동작하게 되겠습니다.<br />
+ 이동 중에는 아래의 flowchart처럼 동작하게 됩니다.
+ 
+ ![Screen Shot 2016-04-05 at 2.25.10 PM.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.25.10 PM.png)
+ 
+ 다시 정리하면 Android N 대응을 하지 않을 경우에는 onDestroy -> onCreate가 계속적으로 동작하게 됩니다.<br />
  
  <br />
  **창 크기 변경 - configChange를 적용하였을 경우**<br />
