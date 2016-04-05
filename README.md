@@ -1,5 +1,11 @@
-# Tae-hwan blog
-**Jekyll** 사용하여 블로그를 생성하였습니다. GitHub Page ([Jekyll Repository](https://github.com/jekyll/jekyll)) 을 참고하세요.
+# Github blog
 
-이 블로그는 개발과 관련된 내용을 담게 됩니다.
-이메일 : (taehwan@thdev.net)[mailto:taehwan@thdev.net]
+**Jekyll**을 사용하여 블로그를 생성하였습니다.
+
+GitHubPage : [Jekyll Repository](https://github.com/jekyll/jekyll)
+
+# Contacts
+
+E-mail : [taehwan@thdev.tech](mailto:taehwan@thdev.tech)
+Blog : [http://thdev.net](http://thdev.net)
+Git blog : [http://thdev.tech](http://thdev.tech)
