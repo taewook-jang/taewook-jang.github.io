@@ -26,6 +26,7 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
  - 창 크기 변경 - configChange를 적용하였을 경우
  - 전체적인 정리
 
+<br />
 **onResume/onPause 호출 시점**<br />
  일반적으로는 Activity가 활성화되고, 비활성화 시에 호출되게 됩니다.<br />
  화면이 완전히 사라진다면 onStop이 호출되겠죠.<br />
@@ -75,6 +76,7 @@ android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
 ```
 
 java 코드도 추가했습니다.
+
 ```java
 @Override
 public void onConfigurationChanged(Configuration newConfig) {
@@ -204,3 +206,5 @@ configChanges를 적용하지 않으면 앱의 LifeCycle가 처음부터 다시 
 [테스트 코드 GitHub](https://github.com/taehwandev/BlogExampleAndroidN)
 <br />
 [Multi Window Example](https://github.com/taehwandev/BlogExampleAndroidN/tree/master/app/src/main/java/tech/thdev/blogexampleandroidn/multiwindow)
+<br />
+<br />
