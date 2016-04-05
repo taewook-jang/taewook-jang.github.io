@@ -45,7 +45,16 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
  onPause -> onResume -> onPause -> ...<br />
  onResume(활성화) 상태에서 onPause(비활성화) 상태로의 변환이 계속적으로 일어남을 확인할 수 있습니다.<br />
  <br />
- 이로 인해 onResume, onPause 간에서는 동작을 최소한으로 줄이는 노력이 필요합니다.
+
+이를 그림으로 그리면 다음과 같습니다.<br />
+창간의 전환이 일어나게 되면 빨간 부분의 onResume / onPause 가 계속적으로 호출되게 됩니다.<br />
+특히나 동영상의 onPause에서 동영상 일시 정지를 하게 되는 경우가 많을 것 같습니다.<br />
+이 경우에는 꼭 onPause가 아니라 onStop으로 이동이 필요하다고 생각됩니다.([구글 팁의 lifecycle에서 자세하게 나옵니다.](http://developer.android.com/preview/features/multi-window.html#lifecycle))
+
+ ![Screen Shot 2016-04-05 at 2.13.03 PM.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.13.03 PM.png)
+ 
+ <br />
+ 이로 인해 onResume, onPause 간에서는 동작을 최소한으로 줄이는 노력이 필요해 보입니다.
  
  <br />
  **창 크기 변경에 따른 lifecycle**<br />
