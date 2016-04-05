@@ -113,5 +113,3 @@ Android M의 주요 변경사항은 아래와 같습니다.
 
 그 외 내용은 개발 블로그를 참고해주세요.
 [Android N behavior-changes](http://developer.android.com/preview/behavior-changes.html)
-<br />
-<br />
