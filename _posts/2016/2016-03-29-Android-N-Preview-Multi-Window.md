@@ -190,8 +190,9 @@ Activity.onPictureInPictureChanged()
 
 [5 tips for preparing for Multi-Window in Android N](https://medium.com/google-developers/5-tips-for-preparing-for-multi-window-in-android-n-7bed803dda64#.x5dd4ku7n)
 에 소개되어 있는 5개 Tip 중에 가장 중요하다고 생각되는 부분을 소개하려고 합니다.
-나머지 내용은 원문을 참고해주세요^^;;
-Pro-tip 1 번에 해당하는 내용입니다. Google에서도 다음과 같이 하라고 하더군요.
+나머지 내용은 원문을 참고해주세요^^;;<br />
+Pro-tip 1 번에 해당하는 내용입니다. Google에서도 다음과 같이 하라고 하더군요.<br />
+
 >Loading the proper resources requires the proper Context. If you’re using the Activity context for inflating your layouts, retrieving resources, etc, then you’re good to go.
 However, if you’re using your Application context for anything UI related, you’ll find that the resources that are loaded are blissfully unaware of multi-window. Besides issues with not using your Activity’s theme, you may be loading the wrong resources entirely! Best to keep your UI stuff with the Activity Context.
 
