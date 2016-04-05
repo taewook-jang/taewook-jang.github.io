@@ -106,7 +106,11 @@ public void onConfigurationChanged(Configuration newConfig) {
 바로 위에서 보았던 이미지와는 많이 다름을 확인할 수 있습니다.<br />
 크게 onPause -> onDestroy 가 호출되지 않았습니다.<br />
 코드 상으로 onConfigurationChanged가 호출이 되고 있습니다.<br />
-그리고 숫자 1이 표시됩니다. [Configuration API 문서](http://developer.android.com/reference/android/content/res/Configuration.html)<br />
+그림 상으로는 아래와 같이 표현 할 수 있겠습니다.
+
+![Screen Shot 2016-04-05 at 2.34.57 PM.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.34.57 PM.png)
+
+그리고 숫자 1이 표시되고 있는데 이 값은 API의 [Configuration API 문서](http://developer.android.com/reference/android/content/res/Configuration.html)<br />
 
 ```java
 Configuration.SCREENLAYOUT_SIZE_SMALL
