@@ -20,6 +20,7 @@ title: Android N Preview
 Android Preview 일정은 다음과 같습니다.
 ![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.58.45.png)
  3월에 첫 Preivew이면서 Alpha 버전이 공개되었습니다. 설정이 가장 많이 변했고, 멀티윈도를 지원합니다. 아직 안정적이지는 않고, API도 완성적이지 않은 정말 Alpha 같은 Preview 버전입니다.
+ 
  3월 : Alpha Preview
  4월 : beta
  5월 : beta(Google I/O 예정)
@@ -36,8 +37,11 @@ Android Preview 일정은 다음과 같습니다.
 ## Android Preview 지원 단말기
 
  Android Preview 지원단말기는 아래와 같습니다.
+ <br />
  **Phone** : Nexus 6, Nexus 5x, Nexus 6p, Android One
+ <br />
  **Tablet** : Nexus 9, Nexus 9(4G), Pixel C
+ <br />
  **TV** : Nexus Player
 
  위의 단말기에서 Android Preview를 살펴볼 수 있습니다.
@@ -109,3 +113,5 @@ Android M의 주요 변경사항은 아래와 같습니다.
 
 그 외 내용은 개발 블로그를 참고해주세요.
 [Android N behavior-changes](http://developer.android.com/preview/behavior-changes.html)
+<br />
+<br />
