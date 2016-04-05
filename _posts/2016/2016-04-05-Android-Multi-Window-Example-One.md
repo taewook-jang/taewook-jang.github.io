@@ -3,11 +3,9 @@ layout: post
 title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 ---
 
-안드로이드 N부터 Multi window를 지원하게 됩니다.
-단순히 Multi window이고 구글 설명상 Activity lifecycle을 그대로 따를 것이라고 합니다.
-이번에는 예제를 통해서 이러한 변화가 어떻게 적용되는지 살펴보겠습니다.
-<br />
-<br />
+안드로이드 N부터 Multi window를 지원하게 됩니다.<br />
+단순히 Multi window이고 구글 설명상 Activity lifecycle을 그대로 따를 것이라고 합니다.<br />
+이번에는 예제를 통해서 이러한 변화가 어떻게 적용되는지 살펴보겠습니다.<br />
 **지난 정리 글 :**
 <br />
 [Android N Multi Window 살펴보기](http://thdev.tech/Android-N-Preview-Multi-Window/)
@@ -16,11 +14,12 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 
 **API 문서**
 [Android N Multi Window API](http://developer.android.com/preview/features/multi-window.html)
-
 <br />
 
 ## 안드로이드 멀티 윈도우
+
  멀티 윈도우 적용 시 달라지는 점을 확인하기 위해서 다음과 같은 테스트를 해보았습니다.
+ 
  - onResume/onPause 호출 시점
  - 창 크기 변경에 따른 lifecycle
  - 창 크기 변경 - configChange를 적용하였을 경우
