@@ -206,5 +206,3 @@ configChanges를 적용하지 않으면 앱의 LifeCycle가 처음부터 다시 
 [테스트 코드 GitHub](https://github.com/taehwandev/BlogExampleAndroidN)
 <br />
 [Multi Window Example](https://github.com/taehwandev/BlogExampleAndroidN/tree/master/app/src/main/java/tech/thdev/blogexampleandroidn/multiwindow)
-<br />
-<br />
