@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
-show: true
+isShow: true
 ---
 
 안드로이드 N부터 Multi window를 지원하게 됩니다.<br />
