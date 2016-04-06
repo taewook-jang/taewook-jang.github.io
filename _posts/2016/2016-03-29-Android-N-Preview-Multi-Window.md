@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N Preview 멀티 윈도우 살펴보기
-show: true
+isShow: true
 ---
 
 안드로이드 N에서 정식으로 Multi Window를 제공합니다. N에 숨겨진 멀티 윈도 기능도 있는데 그 기능을 사용하는 방법도 함께 적어보겠습니다.
