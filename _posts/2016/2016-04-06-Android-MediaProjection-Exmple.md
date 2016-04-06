@@ -203,7 +203,6 @@ getWindowManager().getDefaultDisplay().getMetrics(metrics);
 int screenDensity = metrics.densityDpi;
 ```
 
-
 - flag : 가상 화면을 생성하는데 필요한 flag 입니다. 이 flag의 선언에 따라서 다른 가상 화면을 허용할지 말지를 결정할 수 있습니다. 전체 리스트는  [DisplayManager](http://developer.android.com/reference/android/hardware/display/DisplayManager.html)를 참고하세요.
   - VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR
     - 사용자 동의를 얻어 처리합니다.
@@ -219,7 +218,6 @@ int screenDensity = metrics.densityDpi;
     - A 앱에서 미러링을 사용하고, B에서도 사용을 하게 해줄것인가에 대한 여부를 결정합니다. VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY로 선언하게 되면 허용하지 않게됨으로 MediaProjection이 중지될 수 있습니다.
 - surface : 캡쳐한 가상 화면을 출력할 Surface를 셋팅합니다.(오늘 예제에서 확인이 가능합니다.)
 - callback : MediaProjection.Callback과는 다르며, [VirtualDisplay.Callback](http://developer.android.com/reference/android/hardware/display/VirtualDisplay.Callback.html)을 셋팅합니다.<br />
-  - 다음의 상태를 알수 있습니다.
   - onPaused() : 시스템이나 Surface가 detached 되었을 경우 호출됩니다.(setSurface(null))
   - onResumed() : 시작되었을 경우
   - onStopped() : 시스템에서 정지되었을 경우(완전 종료에 해당)
