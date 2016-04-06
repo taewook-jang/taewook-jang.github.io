@@ -21,7 +21,7 @@ isShow: true
 ## 안드로이드 멀티 윈도우
 
  멀티 윈도우 적용 시 달라지는 점을 확인하기 위해서 다음과 같은 테스트를 해보았습니다.
- 
+
  - onResume/onPause 호출 시점
  - 창 크기 변경에 따른 lifecycle
  - 창 크기 변경 - configChange를 적용하였을 경우
@@ -53,10 +53,10 @@ isShow: true
 이 경우에는 꼭 onPause가 아니라 onStop으로 이동이 필요하다고 생각됩니다.([구글 팁의 lifecycle에서 자세하게 나옵니다.](http://developer.android.com/preview/features/multi-window.html#lifecycle))
 
  ![Screen Shot 2016-04-05 at 2.13.03 PM.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.13.03 PM.png)
- 
+
  <br />
  이로 인해 onResume, onPause 간에서는 동작을 최소한으로 줄이는 노력이 필요해 보입니다.
- 
+
  <br />
  **창 크기 변경에 따른 lifecycle**<br />
  창의 크기를 변경할 수 있습니다.<br />
@@ -73,11 +73,11 @@ isShow: true
  <br />
  앱이 onCreate부터 처음부터 다시 시작하고 있습니다.<br />
  이동 중에는 아래의 flowchart처럼 동작하게 됩니다.
- 
+
  ![Screen Shot 2016-04-05 at 2.25.10 PM.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.25.10 PM.png)
- 
+
  다시 정리하면 Android N 대응을 하지 않을 경우에는 onDestroy -> onCreate가 계속적으로 동작하게 됩니다.<br />
- 
+
  <br />
  **창 크기 변경 - configChange를 적용하였을 경우**<br />
   [5 tips for preparing for Multi-Window in Android N](https://medium.com/google-developers/5-tips-for-preparing-for-multi-window-in-android-n-7bed803dda64#.x5dd4ku7n)에서 보았던 configChanges 코드를 적용해보겠습니다.<br />
@@ -95,9 +95,9 @@ java 코드도 추가했습니다.
 @Override
 public void onConfigurationChanged(Configuration newConfig) {
     super.onConfigurationChanged(newConfig);
-    
+
     // ...
-    
+
 }
 ```
 
@@ -186,8 +186,16 @@ Activity 기반에서는 다음의 코드를 통해 Multi window 상태를 알 �
 아래 2개 코드가 존재하고 있는데 boolean 값을 return 해주고 있습니다.<br />
 
 ```java
-inMultiWindow() // 멀티 윈도우 상태를 확인
-onMultiWindowChanged() // 멀티 윈도우 변경 상태를 확인
+/*
+ * 멀티 윈도우 상태를 가져옵니다.
+ */
+boolean inMultiWindow()
+/*
+ * 멀티 윈도우 상태를 변경합니다.
+ * true -> 멀티윈도우로 전환합니다.
+ * false -> 멀티윈도우에서 빠져나옵니다.
+ */
+void onMultiWindowChanged(boolean isMultiWindow)
 ```
 
 제가 테스트 한 코드는 아래와 같습니다.

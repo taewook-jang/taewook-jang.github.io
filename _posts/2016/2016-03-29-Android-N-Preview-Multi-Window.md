@@ -157,7 +157,7 @@ Activity.inPictureInPicture()
 
 <br />
 
-true 일 경우 현재 MultiWindow 모드가 활성화된 경우이고 false라면 MultiWindow에서 일반 모드로 변경된 경우입니다.
+true 일 경우 현재 MultiWindow 모드가 활성화 되고, false라면 MultiWindow에서 일반 모드로 변경됩니다.
 
 ```java
 Activity.onMultiWindowChanged()
