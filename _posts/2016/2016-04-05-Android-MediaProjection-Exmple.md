@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 화면을 가져올 수 있는 Android MediaProjection API
-isShow: true
+isShow: false
 ---
 
 안드로이드 5.0(Lollipop : API 21)부터 Screen 데이터를 가져올 수 있는 API가 추가되었습니다.
