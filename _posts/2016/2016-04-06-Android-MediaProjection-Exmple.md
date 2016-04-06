@@ -42,7 +42,7 @@ MediaProjection API이고, 이 API는 안드로이드 5.0(API 20)을 minSdk로 �
   - 사이즈는 캡쳐한 화면의 크기를 말합니다.
 
 <br />
-제가 직접 작성한 예제를 통해서 자세하게 살펴보겠습니다.
+이번 글에서는 제가 직접 작성한 예제를 통해서 자세하게 살펴보겠습니다.
 
 <br />
 
@@ -62,6 +62,7 @@ MediaProjectionManager mpm = (MediaProjectionManager) getSystemService(Context.M
 startActivityForResult(mpm.createScreenCaptureIntent(), REQUEST_CODE);
 ```
 
+<br />
 **2단계**<br />
 사용자에게 권한을 획득 받음 다음 onActivityResult를 통해 MediaProjection을 사용하게 됩니다.<br />
 
@@ -98,37 +99,36 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
       virtualDisplay = mediaProjection.createVirtualDisplay("VirtualDisplay name", 화면 넓이, 화면 높이, 화면 density, flag, surface(화면을 출력할 곳), null /* Callbacks */, null /* Handler */);
     }
   }
-
-	super.onActivityResult(requestCode, resultCode, data);
+  super.onActivityResult(requestCode, resultCode, data);
 }
 ```
 
 <br />
-2단계로 시스템에서 제공하는 화면을 가져올 수 있습니다.<br />
-오늘은 [TextureView](http://developer.android.com/reference/android/view/TextureView.html)를 이용하여 실시간 화면을 출력하는 예제를 작성해보도록 하겠습니다.
+2단계로 시스템에서 제공하는 화면을 가져올 수 있습니다.
 
 <br />
 **상세 코드 확인**<br />
 간단하게 코드를 알아보았으니 API의 각각 상세를 살펴보겠습니다.<br />
 API를 사용하는 순서대로 다음의 순서대로 설명하도록 하겠습니다.
 
-a. [MediaProjectionManager](http://developer.android.com/reference/android/media/projection/MediaProjectionManager.html) : 권한 획득을 위함
-b. [MediaProjection](http://developer.android.com/reference/android/media/projection/MediaProjection.html) : 실제 MediaProjection을 사용하기 위한 객체
-c. [MediaProjection.Callback](http://developer.android.com/reference/android/media/projection/MediaProjection.Callback.html) : MediaProjection을 사용하는 중 발생한 Callback
+a. [MediaProjectionManager](http://developer.android.com/reference/android/media/projection/MediaProjectionManager.html) : 권한 획득을 위함<br />
+b. [MediaProjection](http://developer.android.com/reference/android/media/projection/MediaProjection.html) : 실제 MediaProjection을 사용하기 위한 객체<br />
+c. [MediaProjection.Callback](http://developer.android.com/reference/android/media/projection/MediaProjection.Callback.html) : MediaProjection을 사용하는 중 발생한 Callback<br />
 d. [VirtualDisplay](http://developer.android.com/reference/android/hardware/display/VirtualDisplay.html) : 가상의 화면을 생성하기 위한 객체(MediaProjection을 통해 생성)
 
 <br />
 **a. MediaProjectionManager**
 
 MediaProjectionManager는 system의 Service를 생성하고, 사용자에게 권한을 요구하기 위한 API 입니다.<br />
-사용자에게 권한을 요구하기 전에 SystemService를 생성해주어야 합니다.<br />
-Context.[MEDIA_PROJECTION_SERVICE](http://developer.android.com/reference/android/content/Context.html#MEDIA_PROJECTION_SERVICE)를 이용하여 MediaProjectionManager를 생성하게 됩니다.
+사용자에게 권한을 요구하기 전에 SystemService를 생성하는데<br />
+Context.[MEDIA_PROJECTION_SERVICE](http://developer.android.com/reference/android/content/Context.html#MEDIA_PROJECTION_SERVICE)를 이용하여 MediaProjectionManager를 return 받습니다.
 <br />
 
 ```java
 MediaProjectionManager getSystemService(Context.MEDIA_PROJECTION_SERVICE);
 ```
 
+<br />
 MediaProjectionManager가 생성되면 사용자에게 통보하여 권한 획득을 요청 하는 단계가 필요합니다.
 
 ```java
@@ -139,6 +139,7 @@ Intent createScreenCaptureIntent()
 startActivityForResult(mpm.createScreenCaptureIntent(), REQUEST_CODE);
 ```
 
+<br />
 사용자는 다음과 같은 창이 표시되었을때 허용/취소을 할 수 있게 됩니다.<br />
 
 /// image
@@ -158,11 +159,11 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
     // ...
   }
-
-	super.onActivityResult(requestCode, resultCode, data);
+  super.onActivityResult(requestCode, resultCode, data);
 }
 ```
 
+<br />
 위와 같이 REUSLT_OK가 처리되었다면 다음의 코드를 통해 MediaProjection을 생성해야 합니다.<br />
 onActivityResult에서 전달받은 resultCode와 Intent data를 셋팅하면 됩니다.
 
@@ -170,6 +171,7 @@ onActivityResult에서 전달받은 resultCode와 Intent data를 셋팅하면 �
 MediaProjection getMediaProjection(int resultCode, Intent resultData)
 ```
 
+<br />
 MediaProjectionManager를 통해 부여 받은 권한으로 MediaProjection이 생성됩니다.
 
 <br />
@@ -187,11 +189,12 @@ void registerCallback(MediaProjection.Callback callback, Handler handler)
 void unregisterCallback(MediaProjection.Callback callback)
 ```
 
+<br />
 VirtualDisplay를 생성합니다.<br />
-name : 가상의 화면에 사용할 이름입니다. 임의로 지정 가능하지만 empty 상태로 설정하면 안됩니다.<br />
-width : 캡쳐할 화면의 넓이(Pixels)<br />
-height : 캡쳐할 화면의 높이(Pixels)<br />
-dpi : 캡쳐할 화면의 dpi 사이즈(dpi) : DisplayMertics를 통해 얻어온 값을 사용하면 됩니다.<br />
+- name : 가상의 화면에 사용할 이름입니다. 임의로 지정 가능하지만 empty 상태로 설정하면 안됩니다.<br />
+- width : 캡쳐할 화면의 넓이(Pixels)<br />
+- height : 캡쳐할 화면의 높이(Pixels)<br />
+- dpi : 캡쳐할 화면의 dpi 사이즈(dpi) : DisplayMertics를 통해 얻어온 값을 사용하면 됩니다.<br />
 
 ```java
 DisplayMetrics metrics = new DisplayMetrics();
@@ -199,21 +202,21 @@ getWindowManager().getDefaultDisplay().getMetrics(metrics);
 int screenDensity = metrics.densityDpi;
 ```
 
-flag : 가상 화면을 생성하는데 필요한 flag 입니다. 이 flag의 선언에 따라서 다른 가상 화면을 허용할지 말지를 결정할 수 있습니다. 전체 리스트는  [DisplayManager](http://developer.android.com/reference/android/hardware/display/DisplayManager.html)를 참고하세요.
-
-- VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR
-  - 사용자 동의를 얻어 처리합니다.
-- VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY
-  - 동의된 사용자에게만 미러링을 제공합니다.
-- VIRTUAL_DISPLAY_FLAG_PRESENTATION
-  - Presentation display을 생성합니다.
-- VIRTUAL_DISPLAY_FLAG_PUBLIC
-  - Public display을 생성합니다.
-- VIRTUAL_DISPLAY_FLAG_SECURE
-  - Secure display을 생성합니다.
-  - 대략적으로 설명하면 다음과 같습니다.
-  - A 앱에서 미러링을 사용하고, B에서도 사용을 하게 해줄것인가에 대한 여부를 결정합니다. VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY로 선언하게 되면 허용하지 않게됨으로 MediaProjection이 중지될 수 있습니다.
-  - surface : 캡쳐한 가상 화면을 출력할 Surface를 셋팅합니다.(오늘 예제에서 확인이 가능합니다.)
+<br />
+- flag : 가상 화면을 생성하는데 필요한 flag 입니다. 이 flag의 선언에 따라서 다른 가상 화면을 허용할지 말지를 결정할 수 있습니다. 전체 리스트는  [DisplayManager](http://developer.android.com/reference/android/hardware/display/DisplayManager.html)를 참고하세요.
+  - VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR
+    - 사용자 동의를 얻어 처리합니다.
+  - VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY
+    - 동의된 사용자에게만 미러링을 제공합니다.
+  - VIRTUAL_DISPLAY_FLAG_PRESENTATION
+    - Presentation display을 생성합니다.
+  - VIRTUAL_DISPLAY_FLAG_PUBLIC
+    - Public display을 생성합니다.
+  - VIRTUAL_DISPLAY_FLAG_SECURE
+    - Secure display을 생성합니다.
+    - 대략적으로 설명하면 다음과 같습니다.
+    - A 앱에서 미러링을 사용하고, B에서도 사용을 하게 해줄것인가에 대한 여부를 결정합니다. VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY로 선언하게 되면 허용하지 않게됨으로 MediaProjection이 중지될 수 있습니다.
+- surface : 캡쳐한 가상 화면을 출력할 Surface를 셋팅합니다.(오늘 예제에서 확인이 가능합니다.)
 - callback : MediaProjection.Callback과는 다르며, [VirtualDisplay.Callback](http://developer.android.com/reference/android/hardware/display/VirtualDisplay.Callback.html)을 셋팅합니다.<br />
   - 다음의 상태를 알수 있습니다.
   - onPaused() : 시스템이나 Surface가 detached 되었을 경우 호출됩니다.(setSurface(null))
