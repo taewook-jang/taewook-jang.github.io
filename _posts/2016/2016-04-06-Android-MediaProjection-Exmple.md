@@ -6,7 +6,7 @@ isShow: false
 
 안드로이드 5.0(Lollipop : API 21)부터 Screen 데이터를 가져올 수 있는 API가 추가되었습니다.
 
-구글에서도 이를 이용한 게임 녹화 앱을 만들었습니다.
+구글에서도 이를 이용한 게임 녹화 앱을 만들었습니다.<br />
  **[Youtue Game app(미국에서만 다운로드 가능합니다)](https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.gaming&hl=en)**
 
 MediaProjection API이고, 이 API는 안드로이드 5.0(API 20)을 minSdk로 설정하면 사용할 수 있습니다.
@@ -22,13 +22,13 @@ MediaProjection API이고, 이 API는 안드로이드 5.0(API 20)을 minSdk로 �
 위의 링크의 API 문서에는 아래와 같은 3가지 API가 정의되어 있습니다.
 
 - [MediaProjection](http://developer.android.com/reference/android/media/projection/MediaProjection.html)
-  - A token granting applications the ability to capture screen contents and/or record system audio.
+  - >A token granting applications the ability to capture screen contents and/or record system audio.
   - 화면의 데이터를 가져오거나 음성 데이터를 가지고 가져오기 위한 API 입니다. 실제 동작은 영상만 가능합니다.
 - [MediaProjection.Callback](http://developer.android.com/reference/android/media/projection/MediaProjection.Callback.html)
-  - Callbacks for the projection session.
+  - >Callbacks for the projection session.
   - MediaProjection 처리에 대한 Callback을 받을 수 있습니다.(Stop 등)
 - [MediaProjectionManager](http://developer.android.com/reference/android/media/projection/MediaProjectionManager.html)
-  - Manages the retrieval of certain types of MediaProjection tokens.
+  - >Manages the retrieval of certain types of MediaProjection tokens.
   - MediaProjection에 대한 권한을 처리합니다.
 - [VirtualDisplay](http://developer.android.com/reference/android/hardware/display/VirtualDisplay.html)
   - MediaProjection API에는 포함되어 있지 않지만 중요한 API입니다. 생성된 가상화면을 사용할 수 있는 API입니다.
