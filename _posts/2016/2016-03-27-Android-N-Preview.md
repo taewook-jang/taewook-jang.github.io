@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N Preview
-show: true
+isShow: true
 ---
 
  Google I/O가 시작되기 전에 안드로이드 N Preview 버전이 공개되었습니다.
