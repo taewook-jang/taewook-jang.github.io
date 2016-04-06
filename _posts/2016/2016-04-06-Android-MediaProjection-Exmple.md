@@ -191,6 +191,7 @@ void unregisterCallback(MediaProjection.Callback callback)
 
 <br />
 VirtualDisplay를 생성합니다.<br />
+
 - name : 가상의 화면에 사용할 이름입니다. 임의로 지정 가능하지만 empty 상태로 설정하면 안됩니다.<br />
 - width : 캡쳐할 화면의 넓이(Pixels)<br />
 - height : 캡쳐할 화면의 높이(Pixels)<br />
@@ -203,6 +204,7 @@ int screenDensity = metrics.densityDpi;
 ```
 
 <br />
+
 - flag : 가상 화면을 생성하는데 필요한 flag 입니다. 이 flag의 선언에 따라서 다른 가상 화면을 허용할지 말지를 결정할 수 있습니다. 전체 리스트는  [DisplayManager](http://developer.android.com/reference/android/hardware/display/DisplayManager.html)를 참고하세요.
   - VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR
     - 사용자 동의를 얻어 처리합니다.
