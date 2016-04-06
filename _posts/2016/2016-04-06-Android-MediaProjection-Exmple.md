@@ -203,7 +203,6 @@ getWindowManager().getDefaultDisplay().getMetrics(metrics);
 int screenDensity = metrics.densityDpi;
 ```
 
-<br />
 
 - flag : 가상 화면을 생성하는데 필요한 flag 입니다. 이 flag의 선언에 따라서 다른 가상 화면을 허용할지 말지를 결정할 수 있습니다. 전체 리스트는  [DisplayManager](http://developer.android.com/reference/android/hardware/display/DisplayManager.html)를 참고하세요.
   - VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR
