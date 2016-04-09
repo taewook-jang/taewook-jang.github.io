@@ -40,7 +40,7 @@ API 문서 페이지에는 3개의 API 링크를 담고 있습니다.
 구글에 검색해보면 MediaProjectionDemo를 쉽게 구할 수 있습니다. 다음 예제는 참고하시면 됩니다.<br />
 
 - [MediaProjectionDemo](https://android.googlesource.com/platform/development/+/master/samples/ApiDemos/src/com/example/android/apis/media/projection/MediaProjectionDemo.java)
-  - MediaProjection을 640*360, 960*540, 1366*768, 1600*900으로 테스트하는 MediaProjection 예제입니다.
+  - MediaProjection을 640x360, 960x540, 1366x768, 1600x900으로 테스트하는 MediaProjection 예제입니다.
   - 사이즈는 캡처한 화면의 크기를 말합니다.
 
 <br />
