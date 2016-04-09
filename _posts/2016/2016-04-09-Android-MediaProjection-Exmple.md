@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: 안드로이드 캡쳐하기 : Android MediaProjection API 사용해보기
+isShow: true
+---
 
 안드로이드 5.0(Lollipop : API 21)부터 Screen 데이터를 가져올 수 있는 API가 추가되었습니다.
 
