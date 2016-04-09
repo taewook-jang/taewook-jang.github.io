@@ -1,13 +1,34 @@
-# Github blog
+# Summary
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
-**Jekyll**을 사용하여 블로그를 생성하였습니다.
+Jekyll-now Repository을 fork하여 작성한 블로그입니다.
+[Jekyll now Repository](https://github.com/barryclark/jekyll-now)
 
-GitHubPage : [Jekyll Repository](https://github.com/jekyll/jekyll)
+## Domain
+[http://thdev.tech](http://thdev.tech)을 사용하고 있으며, [http://taehwandev.github.io](http://taehwandev.github.io)로 접근 가능합니다.
 
-# Contacts
-
+## Contacts
 E-mail : [taehwan@thdev.tech](mailto:taehwan@thdev.tech)
-<br />
-Blog : [http://thdev.net](http://thdev.net)
-<br />
-Git blog : [http://thdev.tech](http://thdev.tech)
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Barry Clark
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
