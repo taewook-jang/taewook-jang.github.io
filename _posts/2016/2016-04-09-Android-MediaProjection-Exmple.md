@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 안드로이드 화면 캡쳐 API - Android MediaProjection 사용해보기
+title: 안드로이드 화면 캡쳐 API - MediaProjection 사용해보기
 isShow: true
 ---
 
