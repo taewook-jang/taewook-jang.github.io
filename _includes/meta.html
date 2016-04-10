@@ -1,5 +1,9 @@
-    <meta property="fb:app_id" content="1093577184027253" />
-    <meta property="fb:admins" content="taehwan.dev"/>
+    {% if site.facebook_app_id %}
+    <meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
+    {% endif %}
+    {% if site.facebook_user_id %}
+    <meta property="fb:admins" content="{{ site.facebook_user_id }}"/>
+    {% endif %}
 
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
