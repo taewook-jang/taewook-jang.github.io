@@ -4,6 +4,10 @@ title: Android N Preview 멀티 윈도우 살펴보기
 isShow: true
 ---
 
+Edit. 2016. 04. 14
+Preview 2 버전이 나오면서 변경된 사항을 업데이트 합니다.
+ - 일부 API 이름 변경
+
 안드로이드 N에서 정식으로 Multi Window를 제공합니다. N에 숨겨진 멀티 윈도 기능도 있는데 그 기능을 사용하는 방법도 함께 적어보겠습니다.
 
 Google [lan Lake](https://medium.com/@ianhlake)가 medium에 작성한 "[5 tips for preparing for Multi-Window in Android N](https://medium.com/google-developers/5-tips-for-preparing-for-multi-window-in-android-n-7bed803dda64#.x5dd4ku7n)"
@@ -111,17 +115,30 @@ Google 문서상 freeform mode라는 이름으로 다음을 정의하고 있습�
 android:defaultWidth
 android:defaultHeight
 android:gravity
-android:minimalSize
+android:minimalHeight
+android:minimalWidth
+
+<!-- Preview 2 change -->
+<!-- Remove API Name : android:minimalSize -->
+<!-- Add API Name : android:minimalWidth -->
+<!-- Add API Name : android:minimalHeight -->
 ```
 
 AndroidManifest.xml에 다음과 같이 정의합니다.
 
 ```xml
 <activity android:name=".MyActivity">
-   <layout android:defaultHeight="500dp"
-         android:defaultWidth="600dp"
-         android:gravity="top|end"
-         android:minimalSize="450dp" />
+   <layout
+       android:defaultHeight="500dp"
+       android:defaultWidth="600dp"
+       android:gravity="top|end"
+       android:minimalHeight="450dp"
+       android:minimalWidth="300dp" />
+
+   <!-- Preview 2 change -->
+   <!-- Remove API Name : android:minimalSize -->
+   <!-- Add API Name : android:minimalWidth -->
+   <!-- Add API Name : android:minimalHeight -->
 </activity>
 ```
 
@@ -143,16 +160,20 @@ freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니
 현재 모드가 멀티 윈도우인지 확인할 수 있습니다.
 
 ```java
-Activity.inMultiWindow()
+// Preview 2 API 이름 변경
+// Activity.inMultiWindow()
+Activity.isInMultiWindowMode()
 ```
 
 <br />
 
 PictureInPicutre 모드인지 확인합니다.
-**Note**: inPicutreInPicture() 모드가 true라면 inMultiWindow() 역시 true가 return 된다고 합니다.
+**Note**: isInPictureInPictureMode() 모드가 true라면 isInMultiWindowMode() 역시 true가 return 된다고 합니다.
 
 ```java
-Activity.inPictureInPicture()
+// Preview 2 API 이름 변경
+// Activity.inPictureInPicture()
+Activity.isInPictureInPictureMode()
 ```
 
 <br />
@@ -160,7 +181,9 @@ Activity.inPictureInPicture()
 true 일 경우 현재 MultiWindow 모드가 활성화 되고, false라면 MultiWindow에서 일반 모드로 변경됩니다.
 
 ```java
-Activity.onMultiWindowChanged()
+// Preview 2 API 이름 변경
+// Activity.onMultiWindowChanged()
+Activity.onMultiWindowModeChanged()
 ```
 
 <br />
@@ -168,16 +191,19 @@ Activity.onMultiWindowChanged()
 onMultiWindowChanged와 기본 동작은 동일합니다.
 
 ```java
-Activity.onPictureInPictureChanged()
+// Preview 2 API 이름 변경
+// Activity.onPictureInPictureChanged()
+Activity.onPictureInPictureModeChanged()
 ```
 
-추가로 Fragment에서도 동일하며 Fragment.inMultiWindow()입니다.
+추가로 Fragment에서도 동일하며 Fragment.isInMultiWindowMode()입니다.
 
 <br />
 
 ## Etc
 
-앱을 실행과 동시에 Multi-Window 모드를 사용할 수 있습니다. Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT 을 통해서 Multi-window를 실행할 수 있습니다. [자세한 내용은 API를 참고해주세요.](http://developer.android.com/preview/features/multi-window.html)
+// Flag 이름 변경 FLAG_ACTIVITY_LAUNCH_ADJACENT -> FLAG_ACTIVITY_LAUNCH_TO_ADJACENT
+앱을 실행과 동시에 Multi-Window 모드를 사용할 수 있습니다. Intent.FLAG_ACTIVITY_LAUNCH_TO_ADJACENT 을 통해서 Multi-window를 실행할 수 있습니다. [자세한 내용은 API를 참고해주세요.](http://developer.android.com/preview/features/multi-window.html)
 
 <br />
 
@@ -242,3 +268,9 @@ Android N Preview의 멀티 윈도우를 살펴보았습니다. 멀티 윈도우
 실제 테스트했던 부분은 문서상 적용 안되는 경우에 해당이 되어서... 별로 한건 없네요. 크게 변경되지 않고 Multi-Window를 지원받을 수 있으리라고 생각되는데 정식 버전에서도 기본 값이 true 인지 false가 될지는 아직 알 수 없어 보입니다. 하지만 true가 기본일 것 같은...
 
 true가 기본이라면 아이패드보다 더 많은 멀티 윈도우를 맛볼 수 있으리라고 생각되며, 그에 따른 동영상 재생 문제도 해결을 위해서 onPause()에서 stop() 코드를 제거하는 게 좋을 것 같습니다.(안정성 테스트는 해야겠죠...)
+
+
+## MultiWindow 다루기
+
+MultiWindow를 적용하는데 필요한 내용을 정리한 글입니다.
+[Android N 멀티윈도우 - 어떻게 대응해야 할까?](http://thdev.tech/Android-Multi-Window-Example-One/)
