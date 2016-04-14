@@ -5,7 +5,7 @@ isShow: true
 ---
 
 Edit.
-Preivew 2가 나오면서 일부 API 이름도 변경되었습니다.
+Preivew 2가 나오면서 일부 API 이름이 변경되었습니다.
 
 <br />
 
