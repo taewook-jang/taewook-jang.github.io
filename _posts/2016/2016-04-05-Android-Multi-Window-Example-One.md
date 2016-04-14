@@ -4,6 +4,10 @@ title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 isShow: true
 ---
 
+Edit.
+Preivew 2가 나오면서 일부 API 이름도 변경되었습니다.
+
+
 안드로이드 N부터 Multi window를 지원하게 됩니다.<br />
 단순히 Multi window이고 구글 설명상 Activity lifecycle을 그대로 따를 것이라고 합니다.<br />
 이번에는 예제를 통해서 이러한 변화가 어떻게 적용되는지 살펴보겠습니다.<br />
@@ -174,7 +178,13 @@ Configuration.SCREENLAYOUT_SIZE_SMALL
         android:defaultHeight="500dp"
         android:defaultWidth="600dp"
         android:gravity="top|end"
-        android:minimalSize="450dp" />
+        android:minimalHeight="450dp"
+        android:minimalWidth="300dp" />
+
+    <!-- Preview 2 change -->
+    <!-- Remove API Name : android:minimalSize -->
+    <!-- Add API Name : android:minimalWidth -->
+    <!-- Add API Name : android:minimalHeight -->
 </activity>
 ```
 
@@ -189,19 +199,23 @@ Activity 기반에서는 다음의 코드를 통해 Multi window 상태를 알 �
 /*
  * 멀티 윈도우 상태를 가져옵니다.
  */
-boolean inMultiWindow()
+// Preview 2 API 이름 변경
+// boolean inMultiWindow()
+boolean isInMultiWindowMode()
 /*
  * 멀티 윈도우 상태를 변경합니다.
  * true -> 멀티윈도우로 전환합니다.
  * false -> 멀티윈도우에서 빠져나옵니다.
  */
-void onMultiWindowChanged(boolean isMultiWindow)
+// Preview 2 API 이름 변경
+// void onMultiWindowChanged(boolean isMultiWindow)
+void onMultiWindowModeChanged(boolean isMultiWindow)
 ```
 
 제가 테스트 한 코드는 아래와 같습니다.
 
 ```java
-multiWindowAdapter.addItem("onResume() inMultiWindow " + inMultiWindow(), true);
+multiWindowAdapter.addItem("onResume() isInMultiWindowMode " + isInMultiWindowMode(), true);
 ```
 
 <br />
@@ -228,5 +242,7 @@ configChanges를 적용하지 않으면 앱의 LifeCycle가 처음부터 다시 
 <br />
 
 ## 테스트 코드 주소
+
+Preview 2. Android Studio 2.1 Beta에 맞게 수정한 내용을 적용하였습니다.
 
 [Multi window example code - GitHub](https://github.com/taehwandev/BlogExample/tree/master/Android/2016-04-05-N-Preview-MultiWindow)
