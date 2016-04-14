@@ -7,7 +7,9 @@
   <li class="previous disabled"><a>&larr; Previous</a></li>
   {% endif %}
   {% if page.next %}
+  {% if page.next.isShow %}
   <li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}">Next ({{ page.next.title }}) &rarr;</a></li>
+  {% endif %}
   {% else %}
   <li class="next disabled"><a>Next &rarr;</a>
   {% endif %}
