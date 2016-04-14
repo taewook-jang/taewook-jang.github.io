@@ -306,22 +306,22 @@ footer {
   display:inline-block;
   padding:5px 14px;
   background-color:#fff;
-  board:1px solid #ddd;
-  border-redius:15px;
+  border:1px solid #ddd;
+  border-radius:15px;
 }
 .pager li>a:hover, .pager li>a:focus {
   text-decoration:none;
-  backgorund-color:#eee;
+  background-color:#eee;
 }
 .pager .next>a, .pager .next>span {
   float:right;
 }
 .pager .pervious>a, .pager .pervious>span {
-  floag:left;
+  float:left;
 }
 .pager .disabled>a, .pager .disabled>a:hover, .pager .disabled>a:focus, .pager .disabled>span {
   color:#999;
-  cusor:not-allowed;
+  cursor:not-allowed;
   background-color:#fff;
 }
 
