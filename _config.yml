@@ -23,12 +23,12 @@ footer-links:
   flickr:
   github: taehwandev
   instagram:
-  linkedin: taehwankwon
+  linkedin:
   pinterest:
   rss: http://thdev.tech/ # just type anything here for a working RSS icon
-  twitter: cafe_k
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: channel/UCh6GWRutyWK-ZvcxEbaDieQ # channel/<your_long_string> or user/<user-name>
+  youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
