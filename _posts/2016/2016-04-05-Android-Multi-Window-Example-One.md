@@ -7,6 +7,7 @@ isShow: true
 Edit.
 Preivew 2가 나오면서 일부 API 이름도 변경되었습니다.
 
+<br />
 
 안드로이드 N부터 Multi window를 지원하게 됩니다.<br />
 단순히 Multi window이고 구글 설명상 Activity lifecycle을 그대로 따를 것이라고 합니다.<br />
