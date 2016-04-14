@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N Preview 멀티 윈도우 살펴보기
-isShow: true
+published: true
 ---
 
 Edit. 2016. 04. 14

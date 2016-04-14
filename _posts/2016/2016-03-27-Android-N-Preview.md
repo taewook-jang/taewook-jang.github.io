@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N Preview
-isShow: true
+published: true
 ---
 
  Google I/O가 시작되기 전에 안드로이드 N Preview 버전이 공개되었습니다.
@@ -21,7 +21,7 @@ isShow: true
 Android Preview 일정은 다음과 같습니다.
 ![Screenshot 2016-03-27 16.58.45.png]({{ site.baseurl }}/images/2016/2016-03-27-Android-N-Preview/Screenshot 2016-03-27 16.58.45.png)
  3월에 첫 Preivew이면서 Alpha 버전이 공개되었습니다. 설정이 가장 많이 변했고, 멀티윈도를 지원합니다. 아직 안정적이지는 않고, API도 완성적이지 않은 정말 Alpha 같은 Preview 버전입니다.
- 
+
  3월 : Alpha Preview
  4월 : beta
  5월 : beta(Google I/O 예정)

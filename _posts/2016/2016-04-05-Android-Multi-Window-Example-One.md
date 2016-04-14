@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
-isShow: true
+published: true
 ---
 
 Edit.
