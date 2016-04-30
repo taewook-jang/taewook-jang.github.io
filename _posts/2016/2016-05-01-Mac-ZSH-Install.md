@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mac ZSH 설치하기
+title: Mac OS 터미널에 ZSH 설치하기
 published: true
 ---
 
