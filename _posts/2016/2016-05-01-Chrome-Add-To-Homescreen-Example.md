@@ -88,3 +88,80 @@ json에는 화면의 회전 상태를 강제로 지정할 수 있고, 단축아�
   "orientation": "landscape"
 }
 ```
+
+모질라 개발 부분에 각 Members의 상세한 설명이 달려있습니다.
+
+[Mozilla Developers](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+
+### background_color
+
+위에는 없지만 앱이 실행될때 보여질 백그라운드 색상을 지정할 수 있습니다.
+
+```json
+"background_color": "red"
+```
+
+### display
+
+화면의 상태를 지정할 수 있습니다. 브라우저 형태로 뜨게 할것인지 전체화면을 적용하여 앱처럼 뜨게 할 것인지 지정이 가능합니다.
+
+총 4개의 옵션을 제공합니다.
+
+- fullscreen : 전체화면을 사용하게 됩니다.
+- standalone : 일반 앱처럼 동작하게 됩니다.
+- minimal-ui : 최소한의 WebUI를 포함합니다.
+- browser : 그냥 크롬 웹에 표시되는것과 동일하며 이 값이 기본값입니다.
+
+### icons
+
+구글에서 제공하는 예제에는 density가 포함되어 있지만 mozilla에서 제공하는 예제에는 포함되어 있지 않습니다. 아이콘이 뜨지 않아 해당 코드를 제거했더니 아이콘이 정상으로 표시됩니다.
+
+- size : 아이콘의 사이즈를 정의합니다.(모질라 예제에서는 멀티 사이즈 지정도 가능하네요)
+- src : 이미지의 경로를 정의합니다.
+- type : 이미지의 타입을 지정합니다.
+
+### description
+
+웹앱에 대한 설명을 정의합니다.
+
+### start_url
+
+앱이 실행될 위치 페이지를 지정합니다.
+
+```json
+"start_url": "index.html"
+```
+
+### short_name
+
+단축 아이콘을 생성할 이름을 지정합니다.
+
+```json
+"short_name": "Shortcut name"
+```
+
+### theme_color
+
+앱이 실행될때 표시할 앱 색상을 지정합니다.
+
+```json
+"theme_color": "black"
+```
+
+### orientation
+
+화면 회전을 지정할 수 있습니다. 강제로 가로/세로를 고정할수도 있고, any 명령으로 자유롭게 둘 수도 있습니다.
+
+```json
+"orientation": "any"
+```
+
+<br />
+
+## Example
+
+제 Github 블로그에 적용해본 결과물입니다.
+
+[manifest.json](manifest.json)에 background_color 검정색으로 정의하였습니다.
+
+![chrome-web-app-example](/images/2016/2016-05-01-Chrome-Add-To-Homescreen-Example/chrome-web-app-example.gif)
