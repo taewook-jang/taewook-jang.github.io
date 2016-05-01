@@ -164,4 +164,4 @@ json에는 화면의 회전 상태를 강제로 지정할 수 있고, 단축아�
 
 [manifest.json](manifest.json)에 background_color 검정색으로 정의하였습니다.
 
-![chrome-web-app-example](/images/2016/2016-05-01-Chrome-Add-To-Homescreen-Example/chrome-web-app-example.gif)
+![chrome-web-app-example](/images/2016/2016-05-02-Chrome-Add-To-Homescreen-Example/chrome-web-app-example.gif)
