@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mac OS 터미널에 ZSH 설치하기
-published: true
+published: false
 ---
 
 Mac OS x에서 zsh를 설치해보았습니다.
