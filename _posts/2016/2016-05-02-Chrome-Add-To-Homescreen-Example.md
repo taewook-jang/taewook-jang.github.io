@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 모바일 크롬에서 단축 아이콘 생성(WebApp 만들기?)
-published: true
 ---
 
 Chrome 31 버전부터 웹앱을 만들 수 있는 Shortcut을 제공하고 있었다고 합니다.
