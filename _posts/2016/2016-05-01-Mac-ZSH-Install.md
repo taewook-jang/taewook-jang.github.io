@@ -130,6 +130,14 @@ open ~/.zshrc
 ZSH_THEME="robbyrussell"
 ```
 
+참고로 사용자의 이름을 지정하지 않으면 ~ 앞에 사용자 이름이 표시됩니다.
+
+.zshrc에 추가하려면 다음과 같이 추가해주시면 됩니다.
+
+```
+DEFAULT_USER="$USER"
+```
+
 저는 **agnoster** 을 사용하였습니다.
 
 저장하고 터미널을 다시 실행합니다.
@@ -155,13 +163,13 @@ ZSH_THEME는 커맨드 라인에서 사용할 색상을 뜻합니다.(텍스트�
 
 제가 사용하는 테마는 **agnoster** 을 사용하게 되는데 다음 글을 참고하여 작성합니다.
 
-[iterm2-solarized](https://gist.github.com/kevin-smets/8568070)
+- [iterm2-solarized](https://gist.github.com/kevin-smets/8568070)
 
 터미널에서도 동일하기에 설명을 하겠습니다.
 
 iTerm2와 터미널에서 사용할 테마는 다음 링크를 통해 다운로드하시면 됩니다.
 
-[iTerm2 Themes](http://iterm2colorschemes.com/)
+- [iTerm2 Themes](http://iterm2colorschemes.com/)
 
 다운로드해 압축을 풀어주세요.
 
@@ -288,6 +296,8 @@ iTerm2에서도 적용되면 아래와 같이 정상적인 텍스트가 보입�
 <br />
 
 ## ZSH Path 설정하기
+
+**ZSH에서 Path를 설정하지 않고, .bash_profile에 적용된 내용도 그대로 사용이 가능합니다.**
 
 ZSH에서 Path를 설정할 수 있습니다.
 
