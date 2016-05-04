@@ -1,7 +1,7 @@
 ---
 layout: post
 title: androidTest - JUnit4, Espresso를 이용한 테스트 코드 작성
-published: false
+published: true
 ---
 
 Android를 테스트하기 위해서 AndroidTest 작성하는 방법을 다루어보겠습니다.
