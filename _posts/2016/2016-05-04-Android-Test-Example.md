@@ -15,7 +15,7 @@ Android의 앱 완성도를 높이기 위해서 AndroidTest를 작성하게 됩�
 - [Android Testing Concepts](http://developer.android.com/tools/testing/testing_android.html#TestAPI)
 - [Android user interface testing with Espresso - Tutorial](http://www.vogella.com/tutorials/AndroidTestingEspresso/article.html)
 - [Android Studio Tips: Unit Testing 적용하기 (Part 1)](https://www.davidlab.net/ko/tech/android-studio-tips-applying-unit-testing-part1/)
-- [GDE 정승욱 : Android-MVP-AdapterRoleSample](https://github.com/ZeroBrain/Android-MVP-AdapterRoleSample)]
+- [GDE 정승욱 : Android-MVP-AdapterRoleSample](https://github.com/ZeroBrain/Android-MVP-AdapterRoleSample)
 
 다음은 Google Github page를 통해서 제공하는 Android Test의 목차입니다.
 
