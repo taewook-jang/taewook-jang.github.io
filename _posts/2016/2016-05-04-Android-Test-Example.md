@@ -39,7 +39,7 @@ Android Test를 하기 위해서는 각각의 dependency를 추가해주어야 �
 
 우선 android.defaultConfig에 다음을 추가해주어야 하며, 이를 추가하면 안드로이드 테스트를 하겠다는 의미가 됩니다.
 
-```gradle
+```
 testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 ```
 
@@ -47,7 +47,7 @@ build.gradle의 전체 코드를 보면 다음과 같으며, support-annotations
 
 test runner의 Annotation 버전과 중복되어 오류가 발생하기에 다음과 같이 추가해줄 수 있습니다.
 
-```gradle
+```
 apply plugin: 'com.android.application'
 
 android {
@@ -76,7 +76,7 @@ dependencies {
 
 또는 강제로 사용하지 않도록 다음과 같이 지정해줄 수도 있습니다.
 
-```gradle
+```
 configurations.all {
     resolutionStrategy {
         force 'com.android.support:support-annotations:23.3.0'
@@ -285,7 +285,7 @@ ButterKnife 8.0.1과 Retrofit 2를 사용하였고, MVP를 작성해보았습니
 
 제가 사용한 예제에는 [dexmaker-mockito](https://github.com/crittercism/dexmaker) 사용하였습니다.
 
-```gradle
+```xml
 ext {
     supportLibVersion = '23.3.0'
 
