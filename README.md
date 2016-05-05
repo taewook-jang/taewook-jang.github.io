@@ -6,7 +6,9 @@ Jekyll-now Repository을 fork하여 작성한 블로그입니다.
 [Jekyll now Repository](https://github.com/barryclark/jekyll-now)
 
 ## Domain
-Github domain : [http://thdev.tech](http://thdev.tech)/[http://taehwandev.github.io](http://taehwandev.github.io)
+
+- [http://thdev.tech](http://thdev.tech)
+- [http://taehwandev.github.io](http://taehwandev.github.io)
 
 ## Contacts
 E-mail : [taehwan@thdev.tech](mailto:taehwan@thdev.tech)
