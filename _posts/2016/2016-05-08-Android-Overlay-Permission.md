@@ -12,7 +12,7 @@ Android 6.0부터는 Overlay(윈도우 레이아웃) 사용을 권장하지 않�
 
 ## Marshmallow 부터 변경된 사항
 
--**
+<hr>
 
 API 23(Marshmallow)부터 직접적으로 [SYSTEM_ALERT_WINDOW](http://developer.android.com/intl/ko/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW) 권한 사용을 하지 않도록 권고하고 있습니다.
 
@@ -30,7 +30,7 @@ WindowManager의 type에 따라서 Marshmallow 권한 설정이 변경될 수 �
 
 ## Overlay 권한으로의 문제
 
--**
+<hr>
 
 대략 Overlay을 사용하는 앱들은 다음과 같을 것 같습니다.
 
@@ -51,7 +51,7 @@ WindowManager의 type에 따라서 Marshmallow 권한 설정이 변경될 수 �
 
 ![2016-05-08 03.47.00](/images/2016/2016-05-08-Android-Overlay-Permission/2016-05-08 03.47.00.png)
 
--**
+<hr>
 
 활성화 하기 위해서는 Overlay에 대한 설정을 변경 처리해주어야 하는데 사용자가 어느 앱에서 이러한 문제가 발생하고 있는지 알기는 어렵습니다.
 
@@ -75,7 +75,7 @@ WindowManager의 type에 따라서 Marshmallow 권한 설정이 변경될 수 �
 
 ## Marshmallow 대응
 
--**
+<hr>
 
 여기에서 테스트한 예제는 아래 github 링크를 참고해주세요.
 
@@ -87,7 +87,7 @@ TYPE_SYSTEM_DIALOG을 처리한느 경우에는 권한 설정을 하지 않아�
 
 아래 예제는 TYPE_SYSTEM_ALERT을 이용하게 됩니다.
 
--**
+<hr>
 
 기존과 동일하게 Alert window 권한 설정을 합니다.
 
@@ -149,7 +149,7 @@ private void initWindowLayout(LayoutInflater layoutInflater) {
 
 ## 마무리
 
--**
+<hr>
 
 Overlay가 적용되면 반투명 배경도 나오지 않을 뿐더러 다른 앱에 영향을 미칠 수 있습니다.
 
@@ -159,7 +159,7 @@ Overlay가 적용되면 반투명 배경도 나오지 않을 뿐더러 다른 �
 
 ![Screenshot_20160508-121133](/images/2016/2016-05-08-Android-Overlay-Permission/Screenshot_20160508-121133.png)
 
--**
+<hr>
 
 WindowManager를 활용한 onTouchEvent 처리하기는 이전글을 참고하시면 됩니다.
 
