@@ -10,6 +10,7 @@ published: true
 
 이 같은 API를 이용하여 구글에서도 게임 녹화 앱을 만들었습니다.<br />
 - **[Youtue Game app(미국에서만 다운로드 가능합니다)](https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.gaming&hl=en)**
+
 - [Play games(기본 설치 프로그램)](https://play.google.com/store/apps/details?id=com.google.android.play.games)
 
 화면 캡처를 할 수 있는 API의 이름은 MediaProjection입니다. 이 API는 안드로이드 5.0(API 20)을 minSdk로 설정하면 사용할 수 있습니다.
