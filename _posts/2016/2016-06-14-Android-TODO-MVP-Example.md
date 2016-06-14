@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android TODO MVP 어떻게 적용할까?
-published: false
+published: true
 ---
 
 저는 최근 Android 코드를 작성할 때 MVP 패턴을 적용하고 있습니다. Github에 예제로 작성한 코드에서도 MVP를 기본으로 적용하려고 하고 있습니다.
