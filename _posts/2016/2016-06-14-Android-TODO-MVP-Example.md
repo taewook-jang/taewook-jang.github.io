@@ -12,6 +12,18 @@ Presenter를 통해서 네트워크의 데이터가 잘 받아왔는지에 대�
 
 <br />
 
+## TODO MVP를 적용하는 이유?
+
+MVP를 안드로이드에 적용하려는 이유가 뭘까요?
+
+- TDD의 가능성
+- View와 Model 간의 구분이 가능
+- View와 Model의 사용법이 분리되면서 Clean code가 가능하다
+
+위와 같이 나열해볼 수 있습니다. 또 다른 이유가 있다면 공유 부탁드려요!
+
+<br />
+
 ## Google에서 제공하는 Android Architecture
 
 저는 MVP를 처음 공부해보자고 생각한 게 토스랩 정승욱(GDE이기도 합니다.)님의 [Adapter, 누구냐 넌? — Data? View?](https://medium.com/@jsuch2362/adapter-%EB%88%84%EA%B5%AC%EB%83%90-%EB%84%8C-data-view-2db7eff11c20#.ev6d22ow1)을 보고서입니다.
