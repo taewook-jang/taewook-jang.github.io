@@ -79,7 +79,7 @@ WindowManager의 type에 따라서 Marshmallow 권한 설정이 변경될 수 �
 
 여기에서 테스트한 예제는 아래 github 링크를 참고해주세요.
 
-- [Android-Overlay-Permission-Example](https://github.com/taehwandev/BlogExample/tree/master/Android/2016-05-08-Android-Overlay-Permission-Example)
+- [Android-Overlay-Permission-Example](https://github.com/taehwandev/Android-BlogExample/tree/master/2016-05-08-Android-Overlay-Permission-Example)
 
 Target 23 이상일 경우 설정을 해주어야 하는데... 테스트를 해보니 View type [TYPE_SYSTEM_ALERT](http://developer.android.com/intl/ko/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ALERT)인 경우에는 사용자의 권한 설정을 요구해야 합니다.
 
@@ -166,6 +166,6 @@ WindowManager를 활용한 onTouchEvent 처리하기는 이전 글을 참고하�
 아래와 같은 결과물을 확인할 수 있습니다.
 
 - [WindowManager의 onTouchEvent 처리하기](http://thdev.net/617)
-- [Android-Overlay-Permission-Example](https://github.com/taehwandev/BlogExample/tree/master/Android/2016-05-08-Android-Overlay-Permission-Example)
+- [Android-Overlay-Permission-Example](https://github.com/taehwandev/Android-BlogExample/tree/master/2016-05-08-Android-Overlay-Permission-Example)
 
 ![android-overlay-permission](/images/2016/2016-05-08-Android-Overlay-Permission/android-overlay-permission.gif)

@@ -246,4 +246,4 @@ configChanges를 적용하지 않으면 앱의 LifeCycle가 처음부터 다시 
 
 Preview 2. Android Studio 2.1 Beta에 맞게 수정한 내용을 적용하였습니다.
 
-[Multi window example code - GitHub](https://github.com/taehwandev/BlogExample/tree/master/Android/2016-04-05-N-Preview-MultiWindow)
+[Multi window example code - GitHub](https://github.com/taehwandev/Android-BlogExample/tree/master/2016-04-05-N-MultiWindow)

@@ -53,7 +53,7 @@ Android Architecture는 가장 Basic 단계인 todo-mvp부터 todo-mvp-dagger, t
 
 - [Adapter, 누구냐 넌? — Data? View?](https://medium.com/@jsuch2362/adapter-%EB%88%84%EA%B5%AC%EB%83%90-%EB%84%8C-data-view-2db7eff11c20#.ev6d22ow1)
 - Dagger, RxJava, Lambda를 모르신다면... 제가 작성한 코드를 보셔도 좋을 것 같습니다.
-  [ButterKnifeExample](https://github.com/taehwandev/BlogExample/tree/master/Android/2016-04-29-ButterKnifeExample)
+  [ButterKnifeExample](https://github.com/taehwandev/Android-BlogExample/tree/master/ButterKnifeExample)
 
 
 <br />

@@ -317,7 +317,7 @@ public void testChangeTextToSecondActivity() throws Exception {
 
 AndroidTest를 테스트하기 위해서 예제를 하나 작성하였습니다.
 
-- [AndroidTest ButterKnife Example](https://github.com/taehwandev/BlogExample/tree/master/Android/2016-04-29-ButterKnifeExample)
+- [AndroidTest ButterKnife Example](https://github.com/taehwandev/Android-BlogExample/tree/master/ButterKnifeExample)
 
 ButterKnife 8.0.1과 Retrofit 2.0.2를 사용하였고, MVP로 작성해보았습니다.
 
