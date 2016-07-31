@@ -14,6 +14,11 @@ JetBrains의 Plugin을 설치하고 사용이 가능합니다. Kotlin 역시 간
 
 첫 번째로 안드로이드 샘플 프로젝트를 Kotlin으로 변환하는 방법을 간단하게 정리하고, 이후 기본적인 코틀린 문법을 설명하겠습니다.
 
+- Kotlin 홈페이지 - [https://kotlinlang.org/](https://kotlinlang.org/)
+- Try Kotlin - [http://try.kotlinlang.org/](http://try.kotlinlang.org/)
+
+Try kotlin 사이트를 통해서 간단하게 Kotlin을 연습 해볼 수 있습니다.
+
 <br />
 
 ## Kotlin 설치하기
