@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Kotlin 기본 문법 정리 - 01
+title: Kotlin 기본 문법 정리
 published: false
 ---
 
 ## Kotlin 관련 글
 
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)를 통해서 Android 개발 시에 Kotlin을 사용하기 위한 준비과정을 살펴보았습니다.
+- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
 
 <br />
 
@@ -332,168 +332,13 @@ if (x !in 0..array.size - 1)
 
 <br />
 
-## 코틀린 기본 문법 - 안전한 null 처리
-
-참고자료
-
-- [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html)
-- [Realm - 안녕하세요. 코틀린 #3](https://realm.io/kr/news/kotlin-03/)
-
-찰스 앤터니 리처드 호어는 null을 컴퓨터 프로그래밍에 도입한 것에 대하여 [The Billion Dollar Mistake.](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)라고 하였습니다.
-
-코틀린도 이에 대한 예외가 있을 수는 없습니다. 하지만 Kotlin은 null을 예외 할 수 있도록 개발되었다고 합니다.
-
-코틀린으로 작성된 예제를 살펴보다 보면 ?를 많이 보게 됩니다. 이 물음표의 역할이 무엇일까요?
-
-물음표를 이용하여 안전한 null 처리에 대해서 익혀보겠습니다.
-
-kotlin은 기본적으로 null을 허용하지 않습니다.
-
-```java
-var a: String = "abc"
-a = null // 컴파일 오류
-```
-
-null을 허용하려면 다음과 같이 작성하면 됩니다.
-
-```java
-var b: String? = "abc"
-b = null // 정상적인 동작
-```
-
-위의 값을 각각 사용하게 되면 다음과 같습니다.
-
-첫 번째의 a의 length를 사용하였을 때는 안전하게 동작합니다. null이 사용될 수 없기 때문이죠.
-
-```java
-val length: Int = a.length
-```
-
-하지만 b 의 경우는 안전하지 않게 됩니다.
-
-b가 null을 허용하기 때문에 실제 null이 발생할 경우 NullPointerException이 발생하게 됩니다.
-
-```java
-val length: Int = b.length
-```
-
-**null 체크를 통한 해결**
-
-위의 코드를 안전하게 처리하기 위해서는 java처럼 if 문을 활용하여 다음과 같이 조치할 수 있습니다.
-
-```java
-val length: Int = if (b != null) b.length else -1
-```
-
-위의 코드는 b의 null 체크를 하여 null이면 -1을 null이 아니면 length을 return 하게 됩니다.
-
-**코틀린에서 제공하는 Safe Calls**
-
-그렇다면 코틀린 만의 코드 접근법을 알아보도록 하겠습니다.
-
-코틀린에서는 ?를 제공하여 null을 사용할 수 있도록 하고 있습니다.
-
-하지만 ?와 .을 함께 사용하면 안전한 호출이 가능합니다. ?.
-
-```java
-val length: Int = b?.length
-```
-
-간단하게 위와 같게 됩니다. 만약 b가 null이라면 자동으로 null이 return 되게 될 뿐 NullPointerException이 발생하지는 않습니다.
-
-예를 들면
-
-```java
-abc = ABC()
-bbb = BBB()
-ddd = null
-
-abc?.bbb?.ddd?.name
-```
-
-위와 같은 코드가 있습니다. abc, bbb까지는 정상적으로 호출되지만 ddd는 null이라서 원래대로는 NullPointerException이 발생하게 됩니다.
-
-하지만 kotlin의 ?.을 사용하였기에 ddd는 무시되고 다음 라인을 수행하게 됩니다.
-
-**Elvis Operator**
-
-?.을 사용할 경우 무조건 null이 return 되게 됩니다.
-
-null이 아닌 Int 또는 "" 등의 문법을 사용할 수 있어야 합니다.
-
-그래서 ?: 의 문법도 제공되게 됩니다.
-
-?:은 null 일 경우 자동으로 타게 됩니다.
-
-```java
-// Java에서 Safe 하게 처리하기
-int length = b != null ? b.length : -1
-
-// Kotlin
-val length: Int = b?.length ?: -1
-```
-
-Java와 Kotlin을 위와 같이 정의하였습니다.
-
-**!! Operator**
-
-?.을 사용하면 NullPointerException이 발생하지 않습니다. !! 을 사용하면 NullPointerException을 발생시킬 수 있습니다.
-
-쓰지 않아도 발생하긴 합니다.
-
-```java
-val length: Int = b!!.length
-```
-
-!! 을 사용하면 b는 무조건 null이 아니어야 합니다. 하지만 b가 null로 초기화되었을 경우에는 무조건 NPE가 발생하게 됩니다.
-
-![Screenshot 2016-07-31 22.17.45](/images/2016/2016-08-02-Basic-Kotlin-01/Screenshot 2016-07-31 22.17.45.png)
-
-!! 을 사용할 때는 주의해서 사용해야 합니다.
-
-**안전한 형 변환**
-
-?을 적절하게 사용하여 안전하게 형 변환도 가능합니다.
-
-a가 String인데 이를 Int로 형 변환하게 됩니다.
-
-```java
-val a: String? = "ABC"
-
-// String을 강제로 형 변환 할 경우에는 CastException이 발생하여 이 경우 null이 저장
-val aInt: Int? = a as? Int
-
-// null이 아닌 0을 저장하려면
-val aInt: Int? = a as? Int ?: 0
-```
-
-위와 같이 안전한 형 변환이 가능합니다.
-
-**filterNotNull**
-
-List에 filterNotNull이라는 메서드가 제공됩니다. List Copy 시 null을 제외한 값을 복사하게 됩니다.
-
-```java
-val nullableList: List<Int?> = listOf(1, 2, null, 4)
-for (i in nullableList) {
-  print("${i} ")
-}
-println("")
-
-// null filter
-val intList: List<Int> = nullableList.filterNotNull()
-for (i in intList) {
-  print("${i} ")
-}
-```
-
-<br />
-
 ## 마무리
 
 코틀린 기본 문법을 정리해보았습니다.
 
-그 외에 Idioms라는 부분도 있고, Generics 도 다루어 볼 수 있습니다.
+코틀린은 안전한 null을 처리할 수 있도록 지원하고 있습니다.
+
+기본 문법에서 보았던 null 처리에 대해서 조금더 상세하게 다루어보고, Idioms, Generics 도 다루어 보도록 하겠습니다.
 
 이런 부분은 추후 하나씩 정리해보도록 하겠습니다.
 
@@ -503,4 +348,4 @@ for (i in intList) {
 
 ## Kotlin 관련 글
 
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)를 통해서 Android 개발 시에 Kotlin을 사용하기 위한 준비과정을 살펴보았습니다.
+- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
