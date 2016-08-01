@@ -15,6 +15,7 @@ published: false
 
 - [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html) 문서를 살펴보면 Kotlin에서 제공하는 안전한 null 사용 방법을 제공하고 있습니다. 해당 내용을 포함하여 정리하였습니다.
 - [Realm - 안녕하세요. 코틀린 #3](https://realm.io/kr/news/kotlin-03/)
+- [커니의 안드로이드 이야기 - 코틀린의 유용한 함수들 - let, apply, run, with](http://kunny.github.io/lecture/kotlin/2016/07/06/kotlin_let_apply_run_with/)
 
 <br />
 
