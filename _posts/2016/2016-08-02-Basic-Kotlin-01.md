@@ -4,12 +4,6 @@ title: Kotlin 기본 문법 정리
 published: true
 ---
 
-## Kotlin 관련 글
-
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
-
-<br />
-
 Kotlin으로 Convert와 Util 등을 만들어보면서 Kotlin 기본 문법을 익혀보았습니다.
 
 그에 따라서 기본적인 코드를 살펴보려고 합니다.
@@ -17,6 +11,12 @@ Kotlin으로 Convert와 Util 등을 만들어보면서 Kotlin 기본 문법을 �
 - [Kotlin lang 홈페이지](https://kotlinlang.org/)
 - [Kotlin lang 연습해보기](http://try.kotlinlang.org/#/Examples/Hello,%20world!/Simplest%20version/Simplest%20version.kt)
 - [Kotlin 문서](https://kotlinlang.org/docs/reference/)
+
+<br />
+
+## Kotlin 관련 글
+
+- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
 
 <br />
 
