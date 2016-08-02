@@ -20,8 +20,11 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-function update(search_keyword, param_select_sort_type) {
-	document.getElementById("search_keyword").value = search_keyword;
+function updateSearch(keyword) {
+  document.getElementById("search_keyword").value = keyword;
+}
+
+function updateSortType(param_select_sort_type) {
 	document.getElementById("param_select_sort_type").innerHTML = param_select_sort_type;
 }
 </script>
