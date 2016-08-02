@@ -4,9 +4,7 @@ title: Kotlin 기본 문법 정리
 published: true
 ---
 
-Kotlin으로 Convert와 Util 등을 만들어보면서 Kotlin 기본 문법을 익혀보았습니다.
-
-그에 따라서 기본적인 코드를 살펴보려고 합니다.
+Android를 Kotlin으로 연습하면서 코틀린 플러그인을 통해 제공하는 Convert Java를 이용하여 기본 문법을 익혔습니다. 그와 Kotlin에서 제공하는 기본 문법을 정리하였습니다.
 
 - [Kotlin lang 홈페이지](https://kotlinlang.org/)
 - [Kotlin lang 연습해보기](http://try.kotlinlang.org/#/Examples/Hello,%20world!/Simplest%20version/Simplest%20version.kt)
