@@ -1,14 +1,20 @@
 <html>
 <head>
 <script type="text/javascript">
-function textclick(){
-	WebViewTest.showSearch();
+function showInResultPage(keyword, keywordHint){
+	WebViewTest.showInResultPage(keyword, keywordHint);
+}
+
+function showShortMenu() {
+  WebViewTest.showShortMenu();
 }
 </script>
 </head>
 <body>
-<h1 onClick="textclick()">Show</h1>
+  <br />
+  <br />
+<h1 onClick="showInResultPage('검색', '검색 힌트')">Show result page</h1>
 <br />
-<h1 href="">Dialog test</h1>
+<h1 onClick="showShortMenu()">Show result page</h1>
 </body>
 </html>
