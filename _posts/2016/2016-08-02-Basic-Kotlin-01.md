@@ -12,7 +12,7 @@ Android를 Kotlin으로 연습하면서 코틀린 플러그인을 통해 제공�
 
 <br />
 
-## Kotlin 관련 글
+## Kotlin 관련 정리 글
 
 - [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
 
@@ -344,6 +344,6 @@ if (x !in 0..array.size - 1)
 
 <br />
 
-## Kotlin 관련 글
+## Kotlin 관련 정리 글
 
 - [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
