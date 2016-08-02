@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kotlin 기본 문법 정리
-published: false
+published: true
 ---
 
 ## Kotlin 관련 글
