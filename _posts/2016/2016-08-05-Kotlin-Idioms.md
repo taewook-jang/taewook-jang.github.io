@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kotlin 코틀린을 좀 더 편하게 써보자
+title: Kotlin 코틀린의 문법들
 published: false
 ---
 
