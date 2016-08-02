@@ -21,10 +21,8 @@ function getParameterByName(name, url) {
 }
 
 window.onload = function() {
-	document.getElementById("search_keyword").value = "aaa";
-
-	var param_select_sort_type = document.getElementById("param_select_sort_type");
-	param_select_sort_type = getParameterByName('param_select_sort_type');
+	document.getElementById("search_keyword").value = getParameterByName('search_keyword');
+	document.getElementById("param_select_sort_type").value = getParameterByName('param_select_sort_type');
 }
 </script>
 </head>
