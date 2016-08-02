@@ -20,13 +20,15 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-var selectSortType = getParameterByName('selectSortType');
+var search = document.getElementById("search");
+search = getParameterByName('selectSortType');
 var search_keyword = getParameterByName('search_keyword');
 </script>
 </head>
 <body>
   <br />
   <br />
+  <p id="search">Search keyword</p>
   <br />
   <input type="text" id="search_keyword" value="검색" />
 <h1 onClick="showInResultPage('검색 힌트')">Show in result page</h1>
