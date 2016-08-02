@@ -1,20 +1,38 @@
 <html>
 <head>
 <script type="text/javascript">
-function showInResultPage(keyword, keywordHint){
+function showInResultPage(keywordHint){
+  var keyword = document.getElementById("search_keyword").value;
 	WebViewTest.showInResultPage(keyword, keywordHint);
 }
 
 function showSortMenu(selectSortType) {
   WebViewTest.showSortMenu(selectSortType);
 }
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var selectSortType = getParameterByName('selectSortType');
+var search_keyword = getParameterByName('search_keyword');
 </script>
 </head>
 <body>
   <br />
   <br />
-<h1 onClick="showInResultPage('검색', '검색 힌트')">Show in result page</h1>
+  <br />
+  <input type="text" id="search_keyword" value="검색" />
+<h1 onClick="showInResultPage('검색 힌트')">Show in result page</h1>
 <br />
 <h1 onClick="showSortMenu('0')">Show sort menu</h1>
+
+
 </body>
 </html>
