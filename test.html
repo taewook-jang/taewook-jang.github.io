@@ -14,6 +14,10 @@ function showComparePriceDetail(a, b, c, keyword, d) {
   WebViewTest.showComparePriceDetail(a,b,c,keyword,d);
 }
 
+function onShowDetailCategory(a, b, c) {
+  WebViewTest.showDetailCategory(a,b,c);
+}
+
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -44,7 +48,8 @@ function updateSortType(param_select_sort_type) {
 <h1 onClick="showSortMenu('0')">Show sort menu</h1>
 <br />
 <h1 onClick="showComparePriceDetail('a','b','c','aaa','0')">Show price</h1>
-
+<br />
+<h1 onClick="onShowDetailCategory('a','b','c')">Show price</h1>
 
 </body>
 </html>
