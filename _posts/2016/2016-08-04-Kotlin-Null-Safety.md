@@ -11,7 +11,7 @@ published: false
 
 <br />
 
-이번 글을 작성하면서 참고한 문서를 아래와 같습니다.
+이번 글을 작성하면서 참고한 문서는 아래와 같습니다.
 
 - [Null Safety](https://kotlinlang.org/docs/reference/null-safety.html) 문서를 살펴보면 Kotlin에서 제공하는 안전한 null 사용 방법을 제공하고 있습니다. 해당 내용을 포함하여 정리하였습니다.
 - [Realm - 안녕하세요. 코틀린 #3](https://realm.io/kr/news/kotlin-03/)
@@ -19,13 +19,13 @@ published: false
 
 <br />
 
-코틀린은 안전한 null 처리를 지향하고 있습니다.
+코틀린은 안전한 null 처리를 지향합니다. NullPointerException은 아주 흔하게 볼 수 있는 오류입니다.
 
-NullPointerException. 줄여서 NPE라고도 합니다. 이는 모든 개발 언어에서 발생할 수 있고, 개발자가 안고 가야 할 숙명과도 같습니다.
+줄여서 NPE라고도 하는데 Null을 처음 도입한 "찰스 앤터니 리처드 호어" 조차 다음과 같이 말했다고 합니다.
 
-Null을 처음 도입한 "찰스 앤터니 리처드 호어" 조차 [The Billion Dollar Mistake.](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)라고 하였다고 합니다.
+- [The Billion Dollar Mistake. : wikipedia](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)
 
-이번 글은 코틀린에서 제공하는 안전한 null 처리를 정리해보았습니다.
+이번 글에서는 코틀린에서 제공하는 안전한 null 처리를 정리해보았습니다.
 
 <br />
 
@@ -33,20 +33,20 @@ Null을 처음 도입한 "찰스 앤터니 리처드 호어" 조차 [The Billion
 
 코틀린으로 작성된 코드를 보게 되면 아주 흔하게 ? 사용을 볼 수 있습니다.
 
-Java에서는 이를 @Nullable로 변환하여 보여줍니다.
+Java에서는 이를 @Nullable로 표기해주는데 코틀린에서는 물음표로 이를 대체할 수 있습니다.
 
-말 그대로 물음표를 함께 사용하였을 경우 null이 될 수 있다는 것을 의미합니다.
+물음표를 사용할 경우 null을 포함할 수 있는 변수가 정의됩니다.
 
-코틀린은 기본적으로 null을 담을 수 없도록 설계하였습니다.
+물음표를 포함하지 않을 경우에는 모든 구문은 @NotNull로 표기됩니다.
 
 ```java
 var temp: String = "abc"
 temp = null // 문법 오류
 ```
 
-temp 변수에 null을 초기화하려면 그 즉시 문법 오류를 발생시킵니다.
+그래서 위와 같이 String 변수를 선언하고, 여기에 null을 포함하게 된다면 문법 오류가 발생하게 됩니다.
 
-코틀린에서 null을 사용하기 위해서는 아래와 같습니다.
+코틀린에서 null을 사용하기 위해서는 아래와 같이 작성해주시면 됩니다.
 
 ```java
 var temp: String? = "abc"
@@ -57,7 +57,9 @@ temp = null
 
 ## null 체크를 통한 해결
 
-일반적으로 java에서는 null을 피하기 위해서는 아래와 같은 코드를 사용하고 있습니다.
+java에서 null을 피하는 방법은 아래와 같습니다.
+
+try/catch를 이용할 수도 있죠.
 
 ```java
 int size = -1;
@@ -71,7 +73,9 @@ if (!TextUtils.isEmpty(temp)) {
 }
 ```
 
-위와 같은 방법으로 null을 피할 수 있는데 코틀린도 비슷한 형태로 null을 피할 수 있습니다.
+java에서는 위와 같은 방법으로 null을 피할 수 있습니다.
+
+kotlin도 비슷한 방법으로 null을 피할 수 있습니다.
 
 ```java
 // java를 닮은 kotlin
