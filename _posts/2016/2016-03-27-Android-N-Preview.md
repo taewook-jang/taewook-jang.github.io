@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android N Preview
-categories: [Android Dev]
+categories: [AndroidDev]
 tags: [Android N Preview, Android]
 fullview: false
 comments: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android Kotlin  시작하기
-categories: [Android Dev, Kotlin]
+categories: [AndroidDev, Kotlin]
 tags: [Android Kotlin, Android, Kotlin]
 fullview: false
 comments: true

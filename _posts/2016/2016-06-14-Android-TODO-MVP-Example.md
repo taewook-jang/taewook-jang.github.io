@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android TODO MVP 어떻게 적용할까?
-categories: [Android Dev]
+categories: [AndroidDev]
 tags: [Android MVP, Android, MVP]
 fullview: false
 comments: true
