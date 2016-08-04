@@ -30,10 +30,6 @@ rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-# Enter your Facebook app-code
-facebook_user_id: taehwan.dev
-facebook_app_id: 1093577184027253
-
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
 
