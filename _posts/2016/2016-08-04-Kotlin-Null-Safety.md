@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kotlin 안전한 null 처리
-published: false
+published: true
 ---
 
 ## Kotlin 관련 글
@@ -19,10 +19,9 @@ published: false
 
 <br />
 
-NullPointerException은 아주 흔하게 볼 수 있는 오류입니다.
+`NullPointerException`은 아주 흔하게 볼 수 있는 오류입니다.
 
-NullPointerException을 줄여서 NPE라고도 하는데 이 Null을 처음 도입한 "찰스 앤터니 리처드 호어"가 다음과 같이 말했다고 합니다.
-
+>`NullPointerException`을 줄여서 `NPE`라고도 하는데 이 Null을 처음 도입한 `"찰스 앤터니 리처드 호어"`가 다음과 같이 말했다고 합니다.
 - [The Billion Dollar Mistake. : wikipedia](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)
 
 코틀린도 null에 대한 예외는 따로 없습니다. 하지만 기본적으로 null을 허용하지 않도록 개발되었고, null을 쓰더라도 안전하게 사용될 수 있도록 구성하고 있습니다.
@@ -51,29 +50,28 @@ fun set(a: String, b: String?) {
 }
 ```
 
-기존 @NotNull을 포함하던 코드는 아래와 같이 아무것도 없이 변환됩니다.
+기존 `@NotNull`을 포함하던 코드는 아래와 같이 아무것도 없이 변환됩니다.
 
 ```
 @NotNull String a -> a: String
 ```
 
-@Nullable으로 작성하였던 b String은 물음표가 포함되었습니다.
+`@Nullable`으로 작성하였던 `b String`은 `?` 포함되었습니다.
 
-Kotlin에서는 물음표가 Nullable 임을 말합니다.
-
+Kotlin에서는 `?`는 Java의 `Nullable` 임을 뜻합니다.
 
 ```
 @Nullable String b -> b: String?
 ```
 
-다시 코틀린으로 돌아와서 문법 오류를 통해서 NotNull과 Nullable을 확인할 수 있습니다.
+다시 코틀린으로 돌아와서 문법 오류를 통해서 `NotNull`과 `Nullable`을 확인할 수 있습니다.
 
 ```java
 var temp: String = "abc"
 temp = null // 문법 오류
 ```
 
-위의 String은 NotNull을 뜻 함으로 null 입력이 불가능하며, 문법상 오류가 발생하게 됩니다.
+위의 String은 `NotNull`을 뜻 함으로 `null` 입력이 불가능하며, 문법상 오류가 발생하게 됩니다.
 
 null을 사용하고 싶다면 다음과 같이 물음표를 포함하는 코드를 작성해야 합니다.
 
@@ -82,7 +80,7 @@ var temp: String? = "abc"
 temp = null
 ```
 
-이 경우에는 null을 담을 수 있고, null이 포함되더라도 오류가 발생하지 않습니다.
+이 경우에는 null을 담을 수 있고, `null`이 포함되더라도 문법 오류가 발생하지 않습니다.
 
 
 <br />
@@ -91,9 +89,8 @@ temp = null
 
 Java와 코틀린에서 각각 null을 피하는 방법을 간단하게 적어보겠습니다.
 
-가장 기본적인 방법으로 null을 피하는 방법은 아래와 같습니다.
+우선 자바에서는 다음의 코드와 같이 null을 회피할 수 있습니다.
 
-try/catch를 통해서도 피할 수 있으나, if의 null 체크를 통해서 String의 TextSize를 확인하는 방법입니다.
 
 ```java
 String temp = null;
@@ -110,25 +107,34 @@ if (!TextUtils.isEmpty(temp)) {
 
 위와 비슷하게 kotlin에서도 사용할 수 있습니다.
 
-뭐 같은 방법으로 한줄로 줄여줄 수 있지만 아래와 같습니다.
+java에서 간단하게 한 줄로 줄여서 작성할 수 있습니다.
 
 ```java
 var temp: String? = null
-// java를 닮은 kotlin
+var size = -1
+if (temp != null) {
+  size = temp.length
+}
+
+// 좀 더 줄이면 아래와 같습니다.
+var temp: String? = null
 val size = if (temp != null) temp.length else -1
 ```
 
-temp가 null이므로 -1이 size가 됩니다.
+`temp`가 `null`이므로 `-1`이 size가 됩니다.
+
 
 <br />
 
 ## Safe Calls
 
-if 문을 이용해 null을 체크하지 않고도 null을 피할 수 있는 방법이 있습니다.
+코틀린에서 제공하는 Safe 한 방법을 사용해보겠습니다.
 
-좀 더 코틀린 스러운 접근 방법입니다.
+kotlin에서는 물음표를 제공하고 있는데 이 물음표는 null입니다. 하지만 null의 변수에 `?`를 포함하여 사용하게 되면 `null`을 간단하게 회피할 수 있습니다.
 
-문법상 "?." 라는게 제공됩니다. null을 사용하는 코드에 물음표를 포함하고 .으로 이어지면 코틀린에서 제공하는 가장 쉽게 널을 피하는 방법입니다.
+전체적으로는 `?.` 의 형태가 되겠습니다.
+
+아래의 코드와 같이 String 뒤에 물음표를 통해 null을 정의하고, null을 사용할 때는 `?.length`와 같이 사용이 가능합니다.
 
 ```java
 // null을 포함 할 수 있는 temp var 변수이며, null로 초기화 합니다.
@@ -138,16 +144,18 @@ var temp: String? = null
 val size = temp?.length
 ```
 
-위의 결과는 다음과 같습니다. temp가 null이기 때문에 val size를 출력하면 다음과 같은 결과를 확인할 수 있습니다.
+위의 결과는 아래와 같습니다.
 
-//// TODO images 추가
+`temp`가 `null`이므로 `temp.length`는 성립되지 않습니다.
+
+`temp?`가 `null` 인가에서 `return true`이므로 size에는 null이 담기게 됩니다.
+
+![Screenshot 2016-08-04 22.33.21](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-04 22.33.21.png)
 
 
-다음은 함수에서의 사용 방법입니다.
+**함수에서의 사용 방법**
 
-다음의 함수는 null을 포함할 수 있는 변수 temp를 입력 받아 Int로 return 하는 함수입니다.
-
-Int 역시 null을 포함할 수 있습니다.
+다음의 함수는 null을 포함할 수 있는 변수 temp를 입력받아 `Int?`로 return 하는 함수입니다.
 
 ```java
 // 함수를 정의할 경우는
@@ -156,11 +164,15 @@ fun getSize(temp: String?): Int? {
 }
 ```
 
-위의 결과도 이전과 같습니다. temp가 null이면 return은 null이 됩니다.
+앞선 결과와 같습니다. temp가 null이면 return은 null이 됩니다.
 
-null이 포함된 함수에 물음표를 이용하여 null 체크하였을때의 장점은 다음과 같은 코드입니다.
+**?.을 이용하였을 때 장점**
 
-타고타고 넘어가는 다음과 같은 코드에서도 아래 자바 코드 처럼 할 필요 없이
+null이 포함된 함수에 물음표를 이용하여 null 체크하였을 때의 장점은 다음과 같은 코드입니다.
+
+여러 변수를 중첩으로 호출하게 되었을 때 장점을 가집니다.
+
+java에서는 아래와 같이 null 체크를 하게 됩니다.
 
 ```java
 if (abc != null && bbb != null && ddd != null) {
@@ -169,7 +181,7 @@ if (abc != null && bbb != null && ddd != null) {
 return null;
 ```
 
-아래와 같이 간결하게 ?.을 붙여줌으로써 중간에 어디서든 null이라면 간단하게 null을 return 하게됩니다.
+위의 코드를 Kotlin에서 사용하게 되면 아래와 같이 축소하여 표현할 수 있습니다.
 
 ```java
 // 다음과 같이 초기화 되었을 경우
@@ -180,7 +192,13 @@ return null;
 return abc?.bbb?.ddd?.name
 ```
 
-별도의 null 체크해줄 필요 없이 간단하게 처리가 가능합니다.
+- abc is null ? false
+- bbb is null ? false
+- ccc is null ? true
+- return is null
+
+java에서 보다 코드가 간결해졌을 뿐 내용은 같습니다.
+
 
 <br />
 
@@ -188,15 +206,17 @@ return abc?.bbb?.ddd?.name
 
 null을 완전히 배제해야 하는 경우도 있습니다.
 
-list에서 null을 제외한 값을 뽑아야 하는 경우가 있습니다.
+예를 들면 list에서 null을 제외한 값을 사용해야 하는 경우가 있습니다.
 
-커니님이 정리해두신 다음의 글을 참고하시면 많은 도움이 되실것 같습니다.
+null을 완전히 배제하는 방법을 소개하기 전에 커니님이 정리해두신 다음의 글을 먼저 소개합니다.
+
+**이번 글에서 소개할 let 함수를 소개하고 있으니 다음 글을 먼저 보시는 것을 추천드립니다.**
 
 - [커니의 안드로이드 이야기 - 코틀린의 유용한 함수들 - let, apply, run, with](http://kunny.github.io/lecture/kotlin/2016/07/06/kotlin_let_apply_run_with/)
-- [Safe Calls](http://kotlinlang.org/docs/reference/null-safety.html#safe-calls) 부분에 .let{} 부분을 보시면 됩니다.
+- [Kotlin document - Safe Calls](http://kotlinlang.org/docs/reference/null-safety.html#safe-calls)
 
 
-list에서 null을 배제하기 위해서는 다음의 코드를 사용하게 됩니다.
+우선 Java에서는 list에서 null을 배제하기 위해서는 다음과 같은 방법으로 접근하게 됩니다.
 
 ```java
 List<String> itemList = new ArrayList<>();
@@ -211,13 +231,15 @@ for (String text : itemList) {
 }
 ```
 
-코틀린에서는 ?.let {}을 함께 사용하면 null을 제외한 결과를 출력할 수 있습니다.
+코틀린에서도 위와 같은 방법으로 사용할 수 있지만 `.let{}` 함수가 있으니 간단하게 해결할 수 있습니다.
 
-?.let를 함께 사용할 경우 null 아이템이면 let {} 구문을 타지 않고 다음 라인을 타게 됩니다.
+`.let{}`는 `?.`을 함께 사용할 경우 `if (type != null) {}` 을 대체할 수 있습니다.
 
-출력이나 List 복사를 할때에는 null을 제외하여야 하기 때문에 .let{} 구문을 사용해야 합니다.
+위와 같은 구문을 kotlin에서는 아래와 같이 작성이 가능하게 됩니다.
 
-아래 구문에는 위의 Java와 같이 null을 리스트에 포함하고 있습니다.
+여기에서 it은 원래 다음과 같습니다.
+
+`name -> name ...` 의 형태인데 이를 `it`으로 대체할 수 있습니다.
 
 ```java
 val listWithNulls: List<String?> = listOf("A", null, "B")
@@ -226,22 +248,22 @@ for (item in listWithNulls) {
 }
 ```
 
-![Screenshot 2016-08-01 22.57.37](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-01 22.57.37.png)
+위의 결과는 아래와 같습니다. java 코드와 kotlin 모두 동일합니다.
 
-위와 같은 결과를 확인 가능합니다.
+![Screenshot 2016-08-01 22.57.37](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-01 22.57.37.png)
 
 
 <br />
 
 ## ?.을 이용하면 null이 return 되는데 다른 값을 하려면?
 
-?.을 이용하였을때 결과는 아래와 같습니다.
+`?.`을 이용하였을 때 결과는 아래와 같습니다.
 
 ![Screenshot 2016-08-01 23.05.21](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-01 23.05.21.png)
 
-하지만 java에서는 ? : 을 이용하면 조건에 맞는 값을 return 할 수 있습니다.
+하지만 java에서는 `조건 ? true : false` 을 이용하면 조건에 맞는 값을 return 할 수 있습니다.
 
-코틀린에서는 없을까요? 우선 Java 문법으로는 다음과 같이 축약 할 수 있습니다.
+코틀린에서는 없을까요? 우선 Java 문법으로는 다음과 같이 축약할 수 있습니다.
 
 ```java
 String temp = "";
@@ -255,9 +277,9 @@ var temp: String? = ""
 val size = if (temp != null) temp.length else 0
 ```
 
-더 복잡하게 if와 else 까지 붙여야 하지는 않습니다.
+더 복잡하게 if와 else까지 붙여야 하지는 않습니다.
 
-다음 코드는 null이 리턴되게됩니다.
+다음 코드는 null이 리턴되게 됩니다.
 
 ```java
 var temp: String? = null
@@ -266,13 +288,13 @@ val size = temp?.length
 
 ![Screenshot 2016-08-01 23.05.21](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-01 23.05.21.png)
 
-결과를 보시면 첫 줄은 String이 널이 아니라서 0을 출력하였지만 2번째는 null이라서 ?. 문법이 통과하지 못하여 null을 리턴합니다.
+결과를 보시면 첫 줄은 String이 널이 아니라서 0을 출력하였지만 2번째는 null이라서 `?.` 문법이 통과하지 못하여 null을 리턴합니다.
 
 하지만 temp의 length 또는 0이 return 되어야 합니다.
 
-Kotlin에서는 다음과 같은 코드를 제공하고 있습니다. ?뒤에 : 을 붙여주면 ?:이 됩니다.
+Kotlin에서는 다음과 같은 코드를 제공하고 있습니다.
 
-if 에 대체되는 문법이 물음표라면, else에 대체되는 문법이 ?:이 됩니다.
+`if`에 대체되는 문법이 `?`라면, `else`에 대체되는 문법이 `?:`이 됩니다.
 
 아래 코드와 같이 작성해주면 length 또는 0이 return 되게 됩니다.
 
@@ -286,34 +308,31 @@ val size = temp?.length ?: 0
 ![Screenshot 2016-08-01 23.08.02](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-01 23.08.02.png)
 
 
-?: 문법 뒤에 throw 를 붙여서 오류를 낼 수도 있습니다.
-
-```java
-var temp: String? = null
-val size = temp?.length ?: throw IllegalArgumentException("temp is null")
-```
-
-?: 뒤에 throw의 결과는 아래와 같이 Exception이 됩니다.
-
-![Screenshot 2016-08-01 23.09.43](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-01 23.09.43.png)
-
-
 <br />
 
 ## NPE를 발생시키려면??
 
 NullPointerException을 발생시키는 방법도 있습니다.
 
-throw을 이용하여서도 Exception을 발생시킬 수 있지만 좀 더 쉬운 방법을 제공합니다.
+`?:` 문법 뒤에 `throw`를 붙여서 Exception을 낼 수 있습니다.
 
-NotNull이어야 할 경우 "!!"을 사용합니다. 느낌표 두개가 null일 경우 Exception을 발생시키게 됩니다.
+```java
+var temp: String? = null
+val size = temp?.length ?: throw IllegalArgumentException("temp is null")
+```
+
+`?:` 뒤에 `throw`의 결과는 아래와 같이 Exception이 됩니다.
+
+![Screenshot 2016-08-01 23.09.43](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-08-01 23.09.43.png)
+
+throw으로 정의해야할 경우라면 위와 같이 작성해주면 되지만 단순히 NPE를 발생시키려면 `!!`을 사용해주면 훨씬 편하겠습니다.
 
 ```java
 var temp: String? = null
 val size = temp!!.length
 ```
 
-위의 경우 무조건 NullPointerException이 발생하게 됩니다.
+위의 예제는 temp가 null이므로 무조건 NullPointerException이 발생하게 됩니다.
 
 ![Screenshot 2016-07-31 22.17.45](/images/2016/2016-08-04-Kotlin-Null-Safety/Screenshot 2016-07-31 22.17.45.png)
 
@@ -322,9 +341,9 @@ val size = temp!!.length
 
 ## 안전한 형 변환
 
-안전한 형 변환을 제공합니다. 형 변환이 불가능한 곳에서 형 변환을 시도할 경우 "?"을 활용하여 오류가 발생하지 않게 할 수 있습니다.
+안전한 형 변환을 제공합니다. 형 변환이 불가능한 곳에서 형 변환을 시도할 경우 `?`을 활용하여 오류가 발생하지 않게 할 수 있습니다.
 
-String a를 aInt로 변환할 경우 null이 return 됩니다. ?: 을 함께 활용한다면 원하는 값으로 초기화도 가능합니다.
+String a를 aInt로 변환할 경우 null이 return 됩니다. `?:` 을 함께 활용한다면 원하는 값으로 초기화도 가능합니다.
 
 ```java
 val a: String? = "ABC"
@@ -336,15 +355,16 @@ val aInt: Int? = a as? Int
 val aInt: Int? = a as? Int ?: 0
 ```
 
+
 <br />
 
 ## filterNotNull
 
-filterNotNull이라는 메소드가 제공되고 있습니다.
+filterNotNull이라는 메서드가 제공되고 있습니다.
 
-List copy 시 위에서 정의하였던 ?.let {}를 이용할 수도 있지만 이미 구현된 코드가 filterNotNull이 있습니다.
+List copy 시 위에서 정의하였던 `?.let {}`를 이용할 수도 있지만 이미 구현된 코드가 `filterNotNull`이 있습니다.
 
-List에 filterNotNull이라는 메서드가 제공됩니다. List Copy 시 null을 제외한 값을 복사하게 됩니다.
+null을 제외한 데이터를 새로운 list에 복사해주게 되어 null 아이템을 제거하기 훨씬 편합니다.
 
 ```java
 val nullableList: List<Int?> = listOf(1, 2, null, 4)
@@ -372,9 +392,9 @@ for (i in intList) {
 
 Android Annotations을 활용하면 @Nullable와 @NotNull을 Annotations으로 적용할 수 있습니다.
 
-@Nullable이 올 경우 개발자가 if () 등을 활용하여 null을 명시적으로 예외 처리해 주어야 합니다.
+java에서는 @Nullable이 올 경우 개발자가 `if ()` 등을 활용하여 null을 명시적으로 예외 처리해 주어야 합니다.
 
-코틀린에서는 이를 ?. 또는 ?.let {}을 사용한다면 안전하게 처리할 수 있고, 문법도 짧아지게 됩니다.
+코틀린에서는 이를 `?.` 또는 `?.let {}`을 사용한다면 안전하게 null을 사용할 수 있습니다.
 
 기본 문법에 이어 Kotlin의 null 예외 처리를 정리해보았습니다.
 
