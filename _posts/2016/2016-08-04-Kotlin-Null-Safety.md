@@ -4,12 +4,14 @@ title: Kotlin 안전한 null 처리
 published: true
 ---
 
-## Kotlin 관련 글
+`NullPointerException`은 아주 흔하게 볼 수 있는 오류입니다.
 
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
-- [Kotlin 기본 문법 정리](http://thdev.tech/Basic-Kotlin-01/)
+>`NullPointerException`을 줄여서 `NPE`라고도 하는데 이 Null을 처음 도입한 `"찰스 앤터니 리처드 호어"`가 다음과 같이 말했다고 합니다.
+- [The Billion Dollar Mistake. : wikipedia](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)
 
-<br />
+코틀린도 null에 대한 예외는 따로 없습니다. 하지만 기본적으로 null을 허용하지 않도록 개발되었고, null을 쓰더라도 안전하게 사용될 수 있도록 구성하고 있습니다.
+
+안전한 null 처리를 위한 글이 코틀린 문서에 나와 있어서 정리해보았습니다.
 
 이번 글을 작성하면서 참고한 문서는 아래와 같습니다.
 
@@ -19,14 +21,10 @@ published: true
 
 <br />
 
-`NullPointerException`은 아주 흔하게 볼 수 있는 오류입니다.
+## Kotlin 관련 글
 
->`NullPointerException`을 줄여서 `NPE`라고도 하는데 이 Null을 처음 도입한 `"찰스 앤터니 리처드 호어"`가 다음과 같이 말했다고 합니다.
-- [The Billion Dollar Mistake. : wikipedia](https://en.wikipedia.org/wiki/Tony_Hoare#Apologies_and_retractions)
-
-코틀린도 null에 대한 예외는 따로 없습니다. 하지만 기본적으로 null을 허용하지 않도록 개발되었고, null을 쓰더라도 안전하게 사용될 수 있도록 구성하고 있습니다.
-
-안전한 null 처리를 위한 글이 코틀린 문서에 나와 있어서 정리해보았습니다.
+- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
+- [Kotlin 기본 문법 정리](http://thdev.tech/Basic-Kotlin-01/)
 
 <br />
 
