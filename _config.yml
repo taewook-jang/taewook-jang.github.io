@@ -5,7 +5,7 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
-disqus: dbyll
+disqus: taehwandev
 google_analytics: UA-75649351-1
 title: 꿈 많은 개발자가 되자
 
@@ -24,7 +24,7 @@ author:
   twitter: cafe_k
   linkedin: taehwankwon
   bio: Android, Kotlin .. Write to developers.
-  email_md5: 2d67fb7f6b94f0ae7c619716463fa2fc
+  email_md5: 7589a5a8fec022e8af4e46525150a291
 
 rss_path: feed.xml
 categories_path: categories.html
