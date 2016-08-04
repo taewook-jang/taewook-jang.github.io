@@ -3,7 +3,7 @@ layout: post
 title: Android N Preview 멀티 윈도우 살펴보기
 categories: [Android Dev]
 tags: [Android N Preview, Android]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---

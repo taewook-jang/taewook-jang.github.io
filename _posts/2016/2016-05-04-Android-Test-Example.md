@@ -3,7 +3,7 @@ layout: post
 title: androidTest - JUnit4, Espresso를 이용한 테스트 코드 작성
 categories: [Android Dev]
 tags: [Android Test code, Android]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---

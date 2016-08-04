@@ -3,7 +3,7 @@ layout: post
 title: Mac OS 터미널에 ZSH 설치하기
 categories: [Mac]
 tags: [Mac Terminal]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---

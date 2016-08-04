@@ -3,7 +3,7 @@ layout: post
 title: Android N Preview
 categories: [Android Dev]
 tags: [Android N Preview, Android]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---

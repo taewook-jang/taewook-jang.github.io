@@ -3,7 +3,7 @@ layout: post
 title: Kotlin 기본 문법 정리
 categories: [Kotlin]
 tags: [Kotlin]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---

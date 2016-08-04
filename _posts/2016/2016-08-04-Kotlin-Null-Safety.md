@@ -3,7 +3,7 @@ layout: post
 title: Kotlin 안전한 null 처리
 categories: [Kotlin]
 tags: [Kotlin]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---

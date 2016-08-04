@@ -3,7 +3,7 @@ layout: post
 title: Android N 멀티윈도우 - 어떻게 대응해야 할까?
 categories: [Android Dev]
 tags: [Android N Preview, Android]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---

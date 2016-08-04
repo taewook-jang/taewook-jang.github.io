@@ -3,7 +3,7 @@ layout: post
 title: Google MediaProjection을 이용한 Accessibility Scanner
 categories: [Android Dev]
 tags: [Android MediaProjection, Android]
-fullview: true
+fullview: false
 comments: true
 published: true
 ---
