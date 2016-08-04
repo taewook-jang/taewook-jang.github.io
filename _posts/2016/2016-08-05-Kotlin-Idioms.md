@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Kotlin 코틀린의 문법들
+categories: [Kotlin]
+tags: [Kotlin]
+fullview: true
+comments: true
 published: false
 ---
 

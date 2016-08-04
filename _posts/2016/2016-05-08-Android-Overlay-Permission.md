@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Android 윈도우(Overlay) 권한 획득하기
+categories: [Android Dev]
+tags: [Android Overlay, Android]
+fullview: true
+comments: true
 published: true
 ---
 

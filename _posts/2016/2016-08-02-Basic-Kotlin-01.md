@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Kotlin 기본 문법 정리
+categories: [Kotlin]
+tags: [Kotlin]
+fullview: true
+comments: true
 published: true
 ---
 

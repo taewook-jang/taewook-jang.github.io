@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Kotlin 안전한 null 처리
+categories: [Kotlin]
+tags: [Kotlin]
+fullview: true
+comments: true
 published: true
 ---
 

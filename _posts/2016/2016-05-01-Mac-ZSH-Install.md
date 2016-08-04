@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Mac OS 터미널에 ZSH 설치하기
+categories: [Mac]
+tags: [Mac Terminal]
+fullview: true
+comments: true
 published: true
 ---
 
@@ -60,7 +64,7 @@ oh my zsh의 경우 커뮤니티 활동이 활발하여 많은 자료를 가지�
 ```
 zsh --version
 ```
- 
+
 저는 맥 최신 버전에서 5.0.8 버전이 설치되어 있었고, brew를 이용하여 최신? 버전을 설치합니다.
 
 ```

@@ -1,6 +1,10 @@
 ---
 layout: post
 title: 안드로이드 화면 캡쳐 API - MediaProjection 사용해보기
+categories: [Android Dev]
+tags: [Android MediaProjection, Android]
+fullview: true
+comments: true
 published: true
 ---
 
