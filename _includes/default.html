@@ -2,7 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
+	{% if page.facebook_app_id %}
+	<meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
+	{% endif %}
+	{% if page.facebook_user_id %}
+	<meta property="fb:admins" content="{{ site.facebook_user_id }}"/>
+	{% endif %}
+
 	<title>{{ page.title }}</title>
+
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
 	{% endif %}

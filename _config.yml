@@ -6,21 +6,21 @@ exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
 disqus: dbyll
-google_analytics: dbyll
-title: dbyll
+google_analytics: UA-75649351-1
+title: 꿈 많은 개발자가 되자
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: 꿈 많은 개발자가 되자
 
-description: Stylish Jekyll Theme
+description: THdev
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
+  name: Tae-hwan
+  email: taehwan@thdev.tech
+  github: taehwadev
   twitter: dbtek
   pinterest: asd123
   linkedin: asd123
@@ -30,6 +30,10 @@ author:
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
+
+# Enter your Facebook app-code
+facebook_user_id: taehwan.dev
+facebook_app_id: 1093577184027253
 
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
