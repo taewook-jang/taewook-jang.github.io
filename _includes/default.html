@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
 	{% if site.facebook_app_id %}
-	<meta property="fb:app_id" content="{{ page.facebook_app_id }}" />
+	<meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
 	{% endif %}
 	{% if site.facebook_user_id %}
-	<meta property="fb:admins" content="{{ page.facebook_user_id }}"/>
+	<meta property="fb:admins" content="{{ site.facebook_user_id }}"/>
 	{% endif %}
 
 	<title>{{ page.title }}</title>
