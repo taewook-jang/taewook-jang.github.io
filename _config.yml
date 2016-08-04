@@ -5,7 +5,7 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
-disqus: taehwandev
+disqus: thdev-1
 google_analytics: UA-75649351-1
 title: 꿈 많은 개발자가 되자
 
