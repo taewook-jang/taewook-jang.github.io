@@ -20,12 +20,11 @@ description: THdev
 author:
   name: Tae-hwan
   email: taehwan@thdev.tech
-  github: taehwadev
-  twitter: dbtek
-  pinterest: asd123
-  linkedin: asd123
-  bio: Your stylish, minimalist theme!
-  email_md5: 726351295ec82e145928582f595aa3aa
+  github: taehwandev
+  twitter: cafe_k
+  linkedin: taehwankwon
+  bio: Android, Kotlin .. Write to developers.
+  email_md5: 2d67fb7f6b94f0ae7c619716463fa2fc
 
 rss_path: feed.xml
 categories_path: categories.html
