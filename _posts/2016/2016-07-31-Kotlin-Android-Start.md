@@ -23,6 +23,17 @@ JetBrains의 Plugin을 설치하고 사용이 가능합니다. Kotlin 역시 간
 
 Try kotlin 사이트를 통해서 간단하게 Kotlin을 연습 해볼 수 있습니다.
 
+
+<br />
+
+## 코틀린 관련 포스트 목록
+
+- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들]()
+
+
 <br />
 
 ## Kotlin 설치하기
@@ -299,3 +310,13 @@ fab.setOnClickListener {
 완전 Kotlin을 이용하여 프로젝트를 진행해보고, 그에 대한 필요한 개념을 정리해보도록 하겠습니다.
 
 최종적으로는 Kotlin을 이용한 Adapter 사용 및 RxJava 등을 간단하게 사용하려고 합니다.
+
+
+<br />
+
+## 코틀린 관련 포스트 목록
+
+- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들]()

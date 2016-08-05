@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kotlin 코틀린의 문법들
+title: Kotlin 코틀린의 주요 문법들
 categories: [Kotlin]
 tags: [Kotlin]
 fullview: false
@@ -8,17 +8,24 @@ comments: true
 published: false
 ---
 
-## Kotlin 관련 글
+코틀린을 사용하기 위한 기본 문법 정리에 이어서 좀 더 디테일한 문법을 정리해보고자 합니다.
 
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
-- [Kotlin 기본 문법 정리](http://thdev.tech/Basic-Kotlin-01/)
-- [Kotlin 안전한 null 처리](http://thdev.tech/Kotlin-Null-Safety/)
+Kotlin 문서에 Idioms가 정리가 되어 있습니다. 해당 문서를 참조하여 작성합니다.
+
+- [Idioms 문서](https://kotlinlang.org/docs/reference/idioms.html)
+
+간단한 Data class 생성과 Java/Kotlin에서 접근 방법 등을 살펴봅니다.
+
 
 <br />
 
-코틀린을 좀 더 편하게 사용하기 위한 문법들을 정리합니다.
+## 코틀린 관련 포스트 목록
 
-Kotlin의 Idioms 페이지를 참고하여 다음의 글을 정리합니다.
+- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들]()
+
 
 <br />
 
@@ -29,13 +36,30 @@ Kotlin의 Idioms 페이지를 참고하여 다음의 글을 정리합니다.
 - POJO : [Plain Old Java Object](https://en.wikipedia.org/wiki/Plain_Old_Java_Object)
 - POCO : [Plain Old CLR Object](http://stackoverflow.com/questions/3392580/a-better-explanation-of-poco)
 
-코틀린을 접근하면서 가장 많이 보았던 코드 중에 하나입니다.
+코틀린을 사용하면서 get/set을 사용할 필요가 없다는 말을 들었습니다.
 
-바로 data 클래스를 아주 쉽게 생성할 수 있습니다.
+실제 코틀린은 data class를 간단하게 생성할 수 있는 DTO를 제공하고 있습니다.
 
-data 클래스를 간단하게 생성할 수 있는데 우선 Java에서는 data 클래스를 다음과 같이 정의합니다.
+java에서는 아래와 같은 일반적인 get/set을 포함하거나 public 변수를 선언하여 사용하게됩니다.
 
-get/set을 정의하기도 하지만 아래의 코드에서는 정의를 해보았습니다.
+```java
+public class Sample() {
+  public String name;
+  public String email;
+
+  public Sample(String name, String email) {
+    this.name = name;
+    this.email = email;
+  }
+}
+```
+
+위와 같이 별도의 get/set을 선언하지 않고 만들거나, 아래와 같이 get/set을 각각 추가하여 만들기도 합니다.
+
+더 쉬운 방법으로는 get/set을 만들어주는 Annotation을 사용하는게 더 좋긴 합니다....
+
+**get/set을 쉽게 만들 수 있도록 Java9에서는 추가해준다는데 ... 사실 이건 사용하려면 한참 후에나...**
+
 
 ```java
 public class Sample() {
@@ -60,44 +84,111 @@ public class Sample() {
 }
 ```
 
-Kotlin으로 이를 동일하게 구현하면 한 줄의 data class를 통해 간단하게 구현할 수 있습니다.
+kotlin으로는 data class를 아래와 같이 구현할 수 있습니다.
+
+아래는 읽기 전용의 val로 선언한 data class 입니다.
 
 ```Kotlin
 data class Sample(val name: String, val email: String)
 ```
 
-Kotlin으로 data 클래스를 생성하면 java와 코틀린에서 아래와 같이 사용할 수 있습니다.
+아래는 read/write가 가능하도록 구현한 data class 입니다.
 
-**Java에서 Sample 접근시**
+```kotlin
+data class Sample(var name: String, var email: String)
+```
 
-Java에서는 Sample을 아래와 같이 접근할 수 있습니다.
+위의 두개의 코드는 당연히 다릅니다.
 
-data class는 기본적으로 생성자에 값을 초기화하게 되는데 아래 그림과 같이 사용할 수 있습니다.
+일반적으로 Java의 data class를 생성한다면 var이 되겠고, Read-only로 작성한다면 val이 됩니다.
 
-그리고 코틀린은 기본적으로 NotNull을 지향하기에 NotNull 어노테이션이 자동으로 지정된 상태로 보입니다.
-
-![Screenshot 2016-08-02 21.48.56](/images/2016/2016-08-05-Kotlin-Idioms/Screenshot 2016-08-02 21.48.56.png)
-
-생성자에서 값을 초기화하고, 이후에는 getters를 통해서 접근할 수 있습니다. setters는 기본적으로 생성되지는 않네요.
-
-![Screenshot 2016-08-02 21.49.06](/images/2016/2016-08-05-Kotlin-Idioms/Screenshot 2016-08-02 21.49.06.png)
-
-**Kotlin에서 Sample 접근시**
-
-코틀린에서 접근하면 코틀린 방법으로 접근하여 사용할 수 있으며 별도의 get은 생성되지 않고 직접 접근할 수 있습니다.
-
-![Screenshot 2016-08-02 21.58.02](/images/2016/2016-08-05-Kotlin-Idioms/Screenshot 2016-08-02 21.58.02.png)
+데이터 클래스니깐 Read-only 보다는 var이 맞겠죠.
 
 
 <br />
 
-## 함수에 기본값 정의
+###Java에서 val로 선언된 data class 접근 시
 
-변수에 기본값을 가지도록 정의할 수 있습니다.
+Java에서 val을 사용하여 접근할때는 다음과 같습니다.
 
-처음 C++을 배웠을 때 유용하게 사용하였던 방법인데 Java에서는 제공되지 않습니다.
+val을 사용하기 때문에 수정이 불가능하고 Read-only가 됩니다.
 
-대신 비슷한 형태로 Overloading을 제공하고 있는데 다음과 같이 사용할 수 있죠?
+**java에서는 final 을 붙인것과 같습니다.**
+
+Sample에 다음과 같이 초기화 합니다.
+
+![Screenshot 2016-08-02 21.48.56](/images/2016/2016-08-05-Kotlin-Idioms/Screenshot 2016-08-02 21.48.56.png)
+
+위의 값을 초기화 한 다음에는 val로 선언하였기에 접근만 가능하고, 셋은 할 수 없습니다.
+
+![Screenshot 2016-08-02 21.49.06](/images/2016/2016-08-05-Kotlin-Idioms/Screenshot 2016-08-02 21.49.06.png)
+
+
+<br />
+
+###java에서 var로 선언된 data class 접근 시
+
+var로 선언하였기에 다음과 같이 set을 사용할 수 있습니다.
+
+Read-only로 선언하는 data 클래스는 거의 없다고 봐야 하니 아래와 같이 사용 될 수 있도록 만들면 좋겠습니다.
+
+**특정 변수만 Read-only로 만드는것도 가능하니 잘 활용하면 편하게 사용 가능합니다.**
+
+![Screen Shot 2016-08-05 at 6.14.21 PM](/images/2016/2016-08-05-Kotlin-Idioms/Screen Shot 2016-08-05 at 6.14.21 PM.png)
+
+<br />
+
+###Kotlin에서 Sample 접근시
+
+코틀린에서도 java와 같지만 get/set이 없이 아이템에 직접 접근하게 됩니다.
+
+코틀린에서도 var은 get/set 모두 간으하고 val은 get 만 가능한건 동일합니다.
+
+![Screenshot 2016-08-02 21.58.02](/images/2016/2016-08-05-Kotlin-Idioms/Screenshot 2016-08-02 21.58.02.png)
+
+<br />
+
+###data 클래스는 생성자로만 초기화 할 수 있나?
+
+코틀린의 data 클래스에서는 최소 한개의 값을 생성자에 추가해주어야 합니다.
+
+코틀린에서는 default 값을 정의하여 초기화를 하지 않을 수 있지만 Java에서는 무조건 1개의 값을 추가해야 합니다.
+
+아쉽지만 다음과 같은 형태로 만들 수 있습니다.
+
+```java
+data class Sample(var abc: String) {
+    var name: String = ""
+    var email: String = ""
+}
+```
+
+또는 data를 제외하고 다음과 같은 클래스를 만드셔도 됩니다.
+
+```java
+class Sample() {
+    var abc: String = ""
+    var name: String = ""
+    var email: String = ""
+}
+```
+
+위와 같이 선언해주더라도 java에서는 get/set을 모두 사용 가능하기에 문제 없습니다.
+
+data class 사용할 경우에는 좀 더 data 클래스 처럼 사용이 가능한데 다음의 문서를 참고해주세요.
+
+- [Data class 정의](https://kotlinlang.org/docs/reference/data-classes.html)
+
+
+<br />
+
+###함수에 기본값 정의
+
+함수 정의에서 기본값을 가지도록 정의할 수 있습니다.
+
+처음 C++을 배울 때 유용하게 사용하였었는데 Java에서는 제공되지 않았었습니다.
+
+Overloading을 이용해서 비슷하게 구현이 가능합니다.
 
 ```java
 public void add(String name) {
@@ -117,11 +208,16 @@ fun add(name: String, email: String = "default") {
 }
 ```
 
-위와 같이 변수 뒤에 "="을 활용하여 입력하지 않을 경우 초기화 값을 지정할 수 있습니다.
+코틀린에서는 변수 뒤에 `=`을 붙임으로 초기값을 지정할 수 있습니다.
+
+초기값으 지정되어 있으면 별도로 지정하지 않아도 email은 default를 가지게 됩니다.
 
 Kotlin으로 작성한 코드를 Java와 Kotlin으로 각각 사용하면 다음과 같습니다.
 
-**Kotlin에서 접근시**
+
+<br />
+
+###Kotlin에서 접근시
 
 Kotlin으로 접근할 경우에는 아래와 같이 Default 값 정의를 확인할 수 있으며, default로 초기화되어 있는 값은 입력하지 않아도 됩니다.
 
@@ -414,8 +510,9 @@ Kotlin에서 자주 사용하는 표현들을 정리하였습니다.
 
 <br />
 
-## Kotlin 관련 글
+## 코틀린 관련 포스트 목록
 
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
-- [Kotlin 기본 문법 정리](http://thdev.tech/Basic-Kotlin-01/)
-- [Kotlin 안전한 null 처리](http://thdev.tech/Kotlin-Null-Safety/)
+- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들]()

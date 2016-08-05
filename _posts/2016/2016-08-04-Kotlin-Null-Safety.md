@@ -25,10 +25,12 @@ published: true
 
 <br />
 
-## Kotlin 관련 글
+## 코틀린 관련 포스트 목록
 
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
-- [Kotlin 기본 문법 정리](http://thdev.tech/Basic-Kotlin-01/)
+- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들]()
 
 <br />
 
@@ -402,7 +404,9 @@ java에서는 @Nullable이 올 경우 개발자가 `if ()` 등을 활용하여 n
 
 <br />
 
-## Kotlin 관련 글
+## 코틀린 관련 포스트 목록
 
-- [Android Kotlin 시작하기](http://thdev.tech/Kotlin-Android-Start/)
-- [Kotlin 기본 문법 정리](http://thdev.tech/Basic-Kotlin-01/)
+- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들]()
