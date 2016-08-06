@@ -7,6 +7,10 @@ highlighter: rouge
 markdown: kramdown
 disqus: thdev-1
 google_analytics: UA-75649351-1
+# Enter your Facebook app-code
+facebook_user_id: taehwan.dev
+facebook_app_id: 1793677387533254
+
 title: 꿈 많은 개발자가 되자
 
 defaults:
@@ -29,10 +33,6 @@ author:
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
-
-# Enter your Facebook app-code
-facebook_user_id: taehwan.dev
-facebook_app_id: 1793677387533254
 
 # set it as url of an image
 # sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
