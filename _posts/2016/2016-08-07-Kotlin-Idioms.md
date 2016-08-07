@@ -112,7 +112,7 @@ data class Sample(var name: String, var email: String)
 
 <br />
 
-###Java에서 val로 선언된 data class 접근 시
+**Java에서 val로 선언된 data class 접근 시**
 
 Java에서 val을 사용하여 접근할 때는 다음과 같이 `Read-only`로 초기화되기 때문에 java에서 final을 사용한 초기화와 같습니다.
 
@@ -129,7 +129,7 @@ val로 선언하였기에 `getName`, `getEmail` 만 접근할 수 있습니다.
 
 <br />
 
-###java에서 var로 선언된 data class 접근 시
+**java에서 var로 선언된 data class 접근 시**
 
 Java에서 선언된 Data 구조와 동일합니다.
 
@@ -142,7 +142,7 @@ get/set을 사용 가능합니다. 가장 일반적인 `data class`이므로 `va
 
 <br />
 
-###Kotlin에서 Sample 접근시
+**Kotlin에서 Sample 접근시**
 
 코틀린에서는 `get/set`을 별도로 사용하지 않고, 직접 접근하여 사용합니다.
 
@@ -153,7 +153,7 @@ get/set을 사용 가능합니다. 가장 일반적인 `data class`이므로 `va
 
 <br />
 
-###data 클래스는 생성자로만 초기화할 수 있나?
+**data 클래스는 생성자로만 초기화할 수 있나?**
 
 코틀린의 data 클래스는 최소 한 개의 값을 생성자에 추가해주어야 합니다.
 
@@ -189,7 +189,7 @@ data class 사용에 대해서 좀 더 자세한 내용은 아래 문서를 참�
 
 <br />
 
-###함수에 기본값 정의
+**함수에 기본값 정의**
 
 함수 정의에서 기본값을 가지도록 정의할 수 있습니다.
 
@@ -225,7 +225,7 @@ default 값은 `=`을 사용하여 값을 초기화합니다.
 
 <br />
 
-###Kotlin에서 접근시
+**Kotlin에서 접근시**
 
 Kotlin에서 접근하면 default 값을 별도로 입력하지 않아도 되며, 다음과 같이 초기화를 확인할 수 있습니다.
 
@@ -233,7 +233,7 @@ Kotlin에서 접근하면 default 값을 별도로 입력하지 않아도 되며
 
 <br />
 
-###Java에서 접근시
+**Java에서 접근시**
 
 Java에서 Kotlin에서 default로 정의한 함수를 접근하여도 default 값이 적용되지 않습니다.
 
