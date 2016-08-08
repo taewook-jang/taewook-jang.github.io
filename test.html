@@ -1,5 +1,9 @@
-<html>
-<head>
+---
+layout: page
+title: Webview sample
+header: Webview sample
+---
+
 <script type="text/javascript">
 function showInResultPage(keywordHint){
   var keyword = document.getElementById("search_keyword").value;
@@ -40,13 +44,10 @@ function updateSortType(param_select_sort_type) {
 	document.getElementById("param_select_sort_type").innerHTML = param_select_sort_type;
 }
 </script>
-</head>
-<body>
-  <br />
-  <br />
-  <p id="param_select_sort_type">param_select_sort_type</p>
-  <br />
-  <input type="text" id="search_keyword" value="검색" />
+
+<p id="param_select_sort_type">param_select_sort_type</p>
+<br />
+<input type="text" id="search_keyword" value="검색" />
 <h1 onClick="showInResultPage('검색 힌트')">Show search</h1>
 <br />
 <h1 onClick="showSortMenu('0')">Show sort</h1>
@@ -56,5 +57,3 @@ function updateSortType(param_select_sort_type) {
 <h1 onClick="onShowDetailCategory('a','b','c')">Show detail</h1>
 <br />
 <h1 onClick="showProductWebView('a','b','c','d','e','f','g')">Show product</h1>
-</body>
-</html>
