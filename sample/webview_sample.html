@@ -5,3 +5,19 @@ header: Webview sample
 ---
 
 Webview sample page
+
+<script type="text/javascript">
+// Android WebView call
+function showSearch() {
+  var keyword = document.getElementById("search_keyword").value;
+  WebViewTest.showSearch(keyword);
+}
+
+// Android WebView called. - keyword change
+function updateKeyword(keyword) {
+  document.getElementById("search_keyword").value = keyword;
+}
+</script>
+
+<input type="text" id="search_keyword" value="Search keyword" />
+<button text="Search" onClick="showSearch('')" />
