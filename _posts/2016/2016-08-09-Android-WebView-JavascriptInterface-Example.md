@@ -5,7 +5,7 @@ categories: [AndroidDev]
 tags: [Android, AndroidDev]
 fullview: false
 comments: true
-published: true
+published: false
 ---
 
 안드로이드 웹뷰를 이용하여 Web에서 javascriptInterface를 호출하고, WebView에서 Web의 javascript를 호출하는 방법을 정리하려고 합니다.
