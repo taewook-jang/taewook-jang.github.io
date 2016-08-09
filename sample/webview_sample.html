@@ -14,6 +14,7 @@ function updateKeyword() {
 // Android WebView called. - keyword change
 function setKeyword(keyword) {
   document.getElementById("search_keyword").value = keyword;
+  document.getElementById("message").innerHtml = keyword;
 }
 
 function showAlert() {
@@ -21,11 +22,14 @@ function showAlert() {
 }
 </script>
 
-<p id="test">Android WebView sample page</p>
+Android WebView sample page
 
 <br />
 <br />
+<p id="message"></p>
 
+<br />
+<br />
 <input type="text" id="search_keyword" value="Search keyword" />
 
 <br />
