@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Webview sample
-header: Webview sample
+title: Android WebView sample
+header: WebView sample
 ---
 
 <script type="text/javascript">
 // Android WebView call
-function showSearch() {
+function updateKeyword() {
   var keyword = document.getElementById("search_keyword").value;
-  WebViewTest.showSearch(keyword);
+  WebViewTest.updateKeyword(keyword);
 }
 
 // Android WebView called. - keyword change
-function updateKeyword(keyword) {
+function setKeyword(keyword) {
   document.getElementById("search_keyword").value = keyword;
 }
 
@@ -21,7 +21,7 @@ function showAlert() {
 }
 </script>
 
-Webview sample page
+Android WebView sample page
 
 <br />
 <br />
@@ -29,7 +29,9 @@ Webview sample page
 <input type="text" id="search_keyword" value="Search keyword" />
 
 <br />
-<input id="btn" type="button" value="Update keyword" onclick="showSearch();" />
+<br />
+<input id="btn" type="button" value="Update keyword" onclick="updateKeyword();" />
 
+<br />
 <br />
 <input id="btn" type="button" value="Show alert" onclick="showAlert();" />
