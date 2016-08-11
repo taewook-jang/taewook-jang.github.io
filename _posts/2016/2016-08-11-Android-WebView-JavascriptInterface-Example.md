@@ -40,7 +40,7 @@ Android TestCode 적용으로 인해 저는 API 18 이상을 사용하여 작업
 
 <br />
 
-##API 문서
+## API 문서
 
 다음을 정리하면서 참고한 자료들입니다. TDD는 별도의 글에서 작성합니다.
 
@@ -53,7 +53,7 @@ Android TestCode 적용으로 인해 저는 API 18 이상을 사용하여 작업
 
 <br />
 
-##Sample Project 정보
+## Sample Project 정보
 
 해당 프로젝트는 [dependencies.gradle](https://github.com/taehwandev/Android-BlogExample/blob/master/dependencies.gradle)에 API 사용 정보를 별도 명시하고 있습니다.
 
@@ -66,7 +66,7 @@ Android TestCode 적용으로 인해 저는 API 18 이상을 사용하여 작업
 
 <br />
 
-##Sample Project 링크
+## Sample Project 링크
 
 샘플 프로젝트는 아래와 같이 확인이 가능합니다.
 
@@ -76,7 +76,7 @@ Android TestCode 적용으로 인해 저는 API 18 이상을 사용하여 작업
 
 <br />
 
-##CustomWebView 생성하기
+## CustomWebView 생성하기
 
 안드로이드 CustomWebView를 생성하였습니다. WebView를 상속받아 CustomWebView를 만들고, 거기에 필요한 WebChromeClient, WebViewClient를 각각 구성하였습니다.
 
@@ -199,7 +199,7 @@ public void changeWebView(String url) {
 
 <br />
 
-##WebView 정의 코드는?
+## WebView 정의 코드는?
 
 이제 WebView의 정의 코드를 살펴보겠습니다. WebView는 CustomWebView로 init()을 조금 편하게 만들었습니다. 그 외에 다른 부분은 `Override`하지는 않았습니다.
 
@@ -274,7 +274,7 @@ webView.addJavascriptInterface(getPresenter().getCustomJavaScript(), "WebViewTes
 
 <br />
 
-##전체 구동
+## 전체 구동
 
 아래와 같이 간단하게 WebView를 테스트하도록 구성하였습니다.
 
@@ -287,7 +287,7 @@ webView.addJavascriptInterface(getPresenter().getCustomJavaScript(), "WebViewTes
 
 <br />
 
-##Web 페이지 간단한 코드 보기
+## Web 페이지 간단한 코드 보기
 
 WebPage의 간단한 코드를 보여드리도록 하겠습니다.
 
@@ -315,7 +315,7 @@ Web의 button을 눌러주면 `updateKeyword`가 호출되고 `WebViewTest.updat
 
 <br />
 
-##마무리
+## 마무리
 
 간단하게 웹뷰의 `@JavascriptInterface`를 구현하여보았습니다. 다음 글에서는 이를 WebView TestCode를 통해서 검증하는 과정과 Kotlin 코드, Kotlin TestCode 작성하는 방법 등을 살펴보도록 하겠습니다.
 
@@ -336,7 +336,7 @@ Web의 button을 눌러주면 `updateKeyword`가 호출되고 `WebViewTest.updat
 
 <br />
 
-##Sample Project 링크
+## Sample Project 링크
 
 샘플 프로젝트는 아래와 같이 확인이 가능합니다.
 
