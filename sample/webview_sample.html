@@ -20,6 +20,11 @@ function setKeyword(keyword) {
 function showAlert() {
   alert("Hello! I am an alert box!!");
 }
+
+function changeWebView() {
+  var url = document.getElementById("url").value;
+  WebViewTest.changeWebView(url);
+}
 </script>
 
 Android WebView sample page
@@ -39,3 +44,8 @@ Android WebView sample page
 <br />
 <br />
 <input id="showAlertBtn" type="button" value="Show alert" onclick="showAlert();" />
+
+<br />
+<input type="text" id="url" value="http://google.com/"
+<br />
+<input id="changeWebView" type="button" value="Change WebView" onclick="changeWebView();" />
