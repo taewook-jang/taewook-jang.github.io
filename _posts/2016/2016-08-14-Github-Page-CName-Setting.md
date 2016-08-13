@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Github page CNAME 설정하기
+title: GitHub page CNAME 설정으로 개인 도메인 사용하기
 categories: [Web]
 tags: [Web]
 fullview: false
@@ -8,13 +8,13 @@ comments: true
 published: true
 ---
 
-Github에 개인의 도메인을 연결하는 방법을 정리합니다.
+GitHub에 개인의 도메인을 연결하는 방법을 정리합니다.
 
-Github에는 `자신의 이름.github.io`를 이용하여 블로그를 운영할 수 있습니다. `Jekyll`를 base로 하여 간단한 웹 페이지를 생성할 수 있습니다.
+GitHub에는 `자신의 이름.github.io`를 이용하여 블로그를 운영할 수 있습니다. `Jekyll`를 base로 하여 간단한 웹 페이지를 생성할 수 있습니다.
 
-Github 페이지 생성하는 방법은 기존 작성 글을 참고해주세요.
+GitHub 페이지 생성하는 방법은 기존 작성 글을 참고해주세요.
 
-[Github 블로그 빠르게 시작하기!](http://thdev.net/653)
+[GitHub 블로그 빠르게 시작하기!](http://thdev.net/653)
 
 
 <br />
