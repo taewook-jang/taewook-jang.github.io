@@ -5,7 +5,7 @@ categories: [AndroidDev]
 tags: [Android, AndroidDev]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 Android WebView javascriptInterface 사용하는 방법에 대해서 정리했었습니다.
