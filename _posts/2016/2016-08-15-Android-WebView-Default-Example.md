@@ -260,6 +260,13 @@ public void webViewProgressChanged(int newProgress) {
 
 - [Fragment 전체 코드](https://github.com/taehwandev/Android-BlogExample/blob/master/2016-08-15-webviewexample/src/main/java/tech/thdev/webviewexample/view/main/MainFragment.java#L161)
 
+ProgressBar는 아래와 같이 동작하게 됩니다.
+
+왼쪽에는 Android N(API 24) 오른쪽은 Android JellBean(API 16)입니다. 아래와 같이 Toolbar와 같은 색에 파란색만 겹쳐지는 것을 확인할 수 있고, 오른쪽에서는 기본 색상 값으로 적용된 것을 확인할 수 있습니다.
+
+`ContentLoadingProgressBar`가 아닌 ProgressBar를 사용하면 같은 결과를 만들 수 있습니다.
+
+![device-2016-08-15-203620](/images/2016/2016-08-15-Android-WebView-Default-Example/device-2016-08-15-203620.png)
 
 <br />
 
