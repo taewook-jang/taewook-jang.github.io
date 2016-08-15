@@ -14,7 +14,7 @@ published: true
 
 <br />
 
-## 관련글
+## 관련 글
 
 - Android WebView javascriptInterface 사용하기
 - Android WebView TestCode 작성하기
@@ -326,7 +326,7 @@ Web의 button을 눌러주면 `updateKeyword`가 호출되고 `WebViewTest.updat
 
 <br />
 
-## 관련글
+## 관련 글
 
 - Android WebView javascriptInterface 사용하기
 - Android WebView TestCode 작성하기
