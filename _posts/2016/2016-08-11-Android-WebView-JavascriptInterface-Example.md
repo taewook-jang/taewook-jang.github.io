@@ -16,8 +16,9 @@ published: true
 
 ## 관련 글
 
-- Android WebView javascriptInterface 사용하기
-- Android WebView TestCode 작성하기
+- [Android WebView javascriptInterface 사용하기](http://thdev.tech/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
+- Android WebView TestCode 작성하기 기본 테스트 진행하기
+- Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)
 - Android WebView Kotlin Base 코드 정의 살펴보기
 - Android WebView Kotlin TestCode 작성하기
 
@@ -328,8 +329,9 @@ Web의 button을 눌러주면 `updateKeyword`가 호출되고 `WebViewTest.updat
 
 ## 관련 글
 
-- Android WebView javascriptInterface 사용하기
-- Android WebView TestCode 작성하기
+- [Android WebView javascriptInterface 사용하기](http://thdev.tech/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
+- Android WebView TestCode 작성하기 기본 테스트 진행하기
+- Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)
 - Android WebView Kotlin Base 코드 정의 살펴보기
 - Android WebView Kotlin TestCode 작성하기
 

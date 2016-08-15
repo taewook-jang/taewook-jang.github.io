@@ -258,7 +258,7 @@ public void webViewProgressChanged(int newProgress) {
 }
 ```
 
-- [Fragment 전체 코드](https://github.com/taehwandev/Android-BlogExample/blob/master/2016-08-15-webviewexample/src/main/java/tech/thdev/webviewexample/view/main/MainFragment.java)
+- [Fragment 전체 코드](https://github.com/taehwandev/Android-BlogExample/blob/master/2016-08-15-webviewexample/src/main/java/tech/thdev/webviewexample/view/main/MainFragment.java#L161)
 
 
 <br />
@@ -290,7 +290,7 @@ public boolean onKey(View view, int i, KeyEvent keyEvent) {
 }
 ```
 
-- [Fragment 전체 코드](https://github.com/taehwandev/Android-BlogExample/blob/master/2016-08-15-webviewexample/src/main/java/tech/thdev/webviewexample/view/main/MainFragment.java)
+- [Fragment 전체 코드](https://github.com/taehwandev/Android-BlogExample/blob/master/2016-08-15-webviewexample/src/main/java/tech/thdev/webviewexample/view/main/MainFragment.java#L106)
 
 Activity의 `onBackPressed`에서 다음의 코드를 사용할 수 있습니다.
 
@@ -317,7 +317,7 @@ public void onBackPressed() {
 }
 ```
 
-- [Activity 전체 코드](https://github.com/taehwandev/Android-BlogExample/blob/master/2016-08-15-webviewexample/src/main/java/tech/thdev/webviewexample/view/main/MainActivity.java)
+- [Activity 전체 코드](https://github.com/taehwandev/Android-BlogExample/blob/master/2016-08-15-webviewexample/src/main/java/tech/thdev/webviewexample/view/main/MainActivity.java#L59)
 
 
 <br />
