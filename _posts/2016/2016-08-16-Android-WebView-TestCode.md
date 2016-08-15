@@ -12,12 +12,12 @@ Android WebView javascriptInterface 사용하는 방법에 대해서 정리했�
 
 오늘은 2번째 글로 WebView에 대한 TestCode 작성하는 방법을 정리해보려고 합니다.
 
-- `test runner`
-- `test rule`
-- `espresso` : UI 테스트를 위한 도구
-- `uiautomator` : 시스템 UI를 테스트해볼 수 있음(Alert 등)
-- `dexmaker mockito` : mock 테스트를 진행할 수 있음
-- `awaitility` : Thread sleep과 비슷함
+- test runner
+- test rule
+- espresso : UI 테스트를 위한 도구
+- uiautomator : 시스템 UI를 테스트해볼 수 있음(Alert 등)
+- dexmaker mockito : mock 테스트를 진행할 수 있음
+- awaitility : Thread sleep과 비슷함
 
 가장 기본이 되는 Android TestCode 작성은 다음의 글을 참고하시면 되겠습니다.
 
