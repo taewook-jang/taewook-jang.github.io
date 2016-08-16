@@ -59,11 +59,11 @@ Sample Project는 다음의 레이아웃 선택 화면에서 `Navigation Drawer 
 
 **ETC**
 
-- [MVP 패턴 적용](http://thdev.tech/androiddev/2016/06/14/Android-TODO-MVP-Example.html)
+- [MVP 패턴 적용](/androiddev/2016/06/14/Android-TODO-MVP-Example.html)
 
 **이전 작성글**
 
-- [Android WebView javascriptInterface 사용하기](http://thdev.tech/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
+- [Android WebView javascriptInterface 사용하기](/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
 
 
 
@@ -337,10 +337,10 @@ Kotlin으로 작성한 코드는 BaseActivity, BaseFragment, BasePresenter, Base
 
 코틀린에 대해서 상세한 정리는 다음의 글들을 참고해주세요.
 
-- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
-- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
-- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
-- [Kotlin 코틀린의 주요 문법들](http://thdev.tech/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 
 
 <br />
@@ -351,7 +351,7 @@ Kotlin으로 작성한 코드는 BaseActivity, BaseFragment, BasePresenter, Base
 
 코틀린을 몰라도 여기에서 작성한 예제들은 MVP 패턴만 알고 있으시다면 이해할 수 있으리라고 생각됩니다. 혹시라도 이해하는데 어려움이 있으시다면 댓글로 부탁드립니다.
 
-- [MVP 패턴 적용](http://thdev.tech/androiddev/2016/06/14/Android-TODO-MVP-Example.html)
+- [MVP 패턴 적용](/androiddev/2016/06/14/Android-TODO-MVP-Example.html)
 
 해당 글은 과거에 작성하였던 WebView를 GitHub에 새로 파기 위해서 다시 작성하였습니다.
 

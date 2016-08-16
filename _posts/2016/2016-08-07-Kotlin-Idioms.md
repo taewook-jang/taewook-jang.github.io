@@ -23,10 +23,10 @@ Kotlin 문서 중 Idioms를 참조하여 정리하였습니다.
 
 ## 코틀린 관련 포스트 목록
 
-- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
-- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
-- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
-- [Kotlin 코틀린의 주요 문법들](http://thdev.tech/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 
 
 <br />
@@ -561,7 +561,7 @@ Kotlin에서 자주 사용하는 표현들을 정리하였습니다.
 
 ## 코틀린 관련 포스트 목록
 
-- [Android Kotlin  시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
-- [Kotlin 기본 문법 정리](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
-- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
-- [Kotlin 코틀린의 주요 문법들](http://thdev.tech/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)

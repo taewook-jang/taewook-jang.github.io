@@ -21,7 +21,7 @@ Android WebView javascriptInterface 사용하는 방법에 대해서 정리했�
 
 가장 기본이 되는 Android TestCode 작성은 다음의 글을 참고하시면 되겠습니다.
 
-- [androidTest - JUnit4, Espresso를 이용한 테스트 코드 작성](http://thdev.tech/androiddev/2016/05/04/Android-Test-Example.html)
+- [androidTest - JUnit4, Espresso를 이용한 테스트 코드 작성](/androiddev/2016/05/04/Android-Test-Example.html)
 
 
 <br />
@@ -36,8 +36,8 @@ Android WebView javascriptInterface 사용하는 방법에 대해서 정리했�
 
 ## 관련 글
 
-- [Android WebView javascriptInterface 사용하기](http://thdev.tech/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
-- [Android WebView TestCode 작성하기 기본 테스트 진행하기](http://thdev.tech/androiddev/2016/08/16/Android-WebView-TestCode.html)
+- [Android WebView javascriptInterface 사용하기](/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
+- [Android WebView TestCode 작성하기 기본 테스트 진행하기](/androiddev/2016/08/16/Android-WebView-TestCode.html)
 - Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)
 - Android WebView Kotlin Base 코드 정의 살펴보기
 - Android WebView Kotlin TestCode 작성하기
@@ -625,8 +625,8 @@ javascript를 add 해서 테스트하거나, Alert Dialog를 자동으로 닫히
 
 ## 관련 글
 
-- [Android WebView javascriptInterface 사용하기](http://thdev.tech/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
-- [Android WebView TestCode 작성하기 기본 테스트 진행하기](http://thdev.tech/androiddev/2016/08/16/Android-WebView-TestCode.html)
+- [Android WebView javascriptInterface 사용하기](/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
+- [Android WebView TestCode 작성하기 기본 테스트 진행하기](/androiddev/2016/08/16/Android-WebView-TestCode.html)
 - Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)
 - Android WebView Kotlin Base 코드 정의 살펴보기
 - Android WebView Kotlin TestCode 작성하기
