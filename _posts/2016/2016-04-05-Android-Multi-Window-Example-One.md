@@ -19,13 +19,22 @@ Preivew 2가 나오면서 일부 API 이름이 변경되었습니다.
 <br />
 **지난 정리 글 :**
 <br />
-[Android N Multi Window 살펴보기](http://thdev.tech/Android-N-Preview-Multi-Window/)
+[Android N Multi Window 살펴보기](/Android-N-Preview-Multi-Window/)
 <br />
 [Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
 
 **API 문서**
 [Android N Multi Window API](http://developer.android.com/preview/features/multi-window.html)
 <br />
+
+
+<br />
+
+## 테스트 코드 주소
+
+Android Studio 2.2+에 맞게 수정한 내용을 적용하였습니다.
+
+[Multi window example code - GitHub](https://github.com/taehwandev/Android-BlogExample/tree/master/2016-04-05-N-MultiWindow)
 
 ## 안드로이드 멀티 윈도우
 
@@ -230,7 +239,7 @@ multiWindowAdapter.addItem("onResume() isInMultiWindowMode " + isInMultiWindowMo
  멀티 윈도우에 대해서 전반적인 내용을 살펴보았습니다.<br />
  API 문서를 정리하였고, Freeform 모드를 적용해보기도 하였습니다.
 <br />
- [Android N Multi Window 살펴보기](http://thdev.tech/Android-N-Preview-Multi-Window/)
+ [Android N Multi Window 살펴보기](/Android-N-Preview-Multi-Window/)
 <br />
  [Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
 <br />
@@ -248,6 +257,6 @@ configChanges를 적용하지 않으면 앱의 LifeCycle가 처음부터 다시 
 
 ## 테스트 코드 주소
 
-Preview 2. Android Studio 2.1 Beta에 맞게 수정한 내용을 적용하였습니다.
+Android Studio 2.2+에 맞게 수정한 내용을 적용하였습니다.
 
 [Multi window example code - GitHub](https://github.com/taehwandev/Android-BlogExample/tree/master/2016-04-05-N-MultiWindow)

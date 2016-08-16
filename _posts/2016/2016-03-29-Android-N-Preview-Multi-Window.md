@@ -39,6 +39,7 @@ Preview 문서 : [Multi Window Support](http://developer.android.com/preview/fea
 
 **스마트폰** : 스마트폰에서는 상/하 모드로 Split-Screen mode를 지원합니다.
 구글 문서에 나와 있는 사진입니다. 아래와 같이 화면 분할이 되고, 기존 Overview screen(태스크?) 모양이 2개의 네모로 분리됩니다.
+
 ![Screenshot 2016-03-28 22.18.59.png](/images/2016/2016-03-29-Android-N-Preview-Multi-Window/Screenshot 2016-03-28 22.18.59.png)
 
 Tablet은 별도의 설명이 없습니다. 기본 기능은 모두 스마트폰과 동일하게 동작합니다. 다만 태블릿에서는 화면 회전을 지원하지 않을 경우 분할 모드를 지원하지 않습니다.
@@ -49,9 +50,9 @@ SDK를 통해 멀티윈도우를 제어할 수 있습니다. 창의 최소 사�
 
 **TV Device** : Picture-in-picture(PIP) 모드를 지원합니다.
 
-TV Device에서 사용할 수 있는 Picture-in-picture(PIP)는 영상을 시청 중에 다른 행동을 할 수 있습니다. 영상을 틀어놓고 사진을 볼 수 있는데 일반적인 TV/모니터의 PIP 기능이라고 볼 수 있겠습니다.(팝업 플레이어? 정도라고 생각할 수도 있겠네요)
-[Picture-in-picture](http://developer.android.com/preview/features/picture-in-picture.html)
+TV Device에서 사용할 수 있는 Picture-in-picture(PIP)는 영상을 시청 중에 다른 행동을 할 수 있습니다. 영상을 틀어놓고 사진을 볼 수 있는데 일반적인 TV/모니터의 PIP 기능이라고 볼 수 있겠습니다.(팝업 플레이어? 정도라고 생각할 수도 있겠네요) [Picture-in-picture](http://developer.android.com/preview/features/picture-in-picture.html)
 구글 문서에 나와있는 사진입니다.
+
 ![Screenshot 2016-03-28 22.17.54.png](/images/2016/2016-03-29-Android-N-Preview-Multi-Window/Screenshot 2016-03-28 22.17.54.png)
 
 <br />
@@ -163,6 +164,7 @@ freeform mode는 화면 자체를 자유롭게 이동할 수 있는 모드입니
 ## Multi-window change notification and querying
 
  Multi-window 모드 API가 있습니다. 저도 아직 자세하게 알아보지는 않았는데 API 문서 링크는 아래와 같습니다.
+
  [Android N Preview API](http://developer.android.com/preview/setup-sdk.html#docs-dl)
 
 현재 모드가 멀티 윈도우인지 확인할 수 있습니다.
@@ -252,15 +254,16 @@ onResume()에서 너무 많은 처리를 하지 말 것을 강조합니다. 화�
 
 Freeform mode는 [Remix OS](http://www.jide.com/en/remixos)와 유사하게 보입니다.
 Remix OS의 멀티 윈도우
+
 ![Screenshot 2016-03-28 23.33.03.png](/images/2016/2016-03-29-Android-N-Preview-Multi-Window/Screenshot 2016-03-28 23.33.03.png)
 
 다음 글에 Android N Feature FreeForm을 활성화 하는 방법을 담고 있습니다.
 자세한 설명은 다음글을 참고하시면 되고, 적용 방법은 크게 2가지가 있습니다.
 실물 기기에서는 TWRP 등의 커스텀롬 리커버리 모드를 이용하시거나
-에뮬레이터를 통한 적용 방법입니다.
-[Android N Feature FreeForm Window](http://www.androidpolice.com/2016/03/21/android-n-feature-spotlight-freeform-window-mode-offers-true-windowed-multitasking-but-its-disabled-by-default/)
+에뮬레이터를 통한 적용 방법입니다. [Android N Feature FreeForm Window](http://www.androidpolice.com/2016/03/21/android-n-feature-spotlight-freeform-window-mode-offers-true-windowed-multitasking-but-its-disabled-by-default/)
 
 Android N의 FreeForm Window 모드 적용 모습(androidpolice에서 따온 이미지입니다.)
+
 ![Screenshot 2016-03-28 23.35.50.png](/images/2016/2016-03-29-Android-N-Preview-Multi-Window/Screenshot 2016-03-28 23.35.50.png)
 
 <br />
@@ -281,4 +284,5 @@ true가 기본이라면 아이패드보다 더 많은 멀티 윈도우를 맛볼
 ## MultiWindow 다루기
 
 MultiWindow를 적용하는데 필요한 내용을 정리한 글입니다.
+
 [Android N 멀티윈도우 - 어떻게 대응해야 할까?](/androiddev/2016/04/05/Android-Multi-Window-Example-One.html)
