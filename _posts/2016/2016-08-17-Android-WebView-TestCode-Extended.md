@@ -5,7 +5,7 @@ categories: [AndroidDev]
 tags: [Android, AndroidDev]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 Android WebView TestCode 작성 2번째 글입니다.
@@ -29,7 +29,7 @@ Alert을 자동으로 테스트하기 위한 uiautomator에 대해서는 추후 
 
 - [Android WebView javascriptInterface 사용하기](/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
 - [Android WebView TestCode 작성하기 기본 테스트 진행하기](/androiddev/2016/08/16/Android-WebView-TestCode.html)
-- Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)
+- <a href="/androiddev/2016/08/17/Android-WebView-TestCode-Extended">Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)</a>
 - Android WebView Kotlin Base 코드 정의 살펴보기
 - Android WebView Kotlin TestCode 작성하기
 
@@ -394,6 +394,6 @@ lock이 걸리는 코드 부분에는 별도 Thread를 실행시켜 Test 코드�
 
 - [Android WebView javascriptInterface 사용하기](/androiddev/2016/08/11/Android-WebView-JavascriptInterface-Example.html)
 - [Android WebView TestCode 작성하기 기본 테스트 진행하기](/androiddev/2016/08/16/Android-WebView-TestCode.html)
-- Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)
+- <a href="/androiddev/2016/08/17/Android-WebView-TestCode-Extended">Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)</a>
 - Android WebView Kotlin Base 코드 정의 살펴보기
 - Android WebView Kotlin TestCode 작성하기
