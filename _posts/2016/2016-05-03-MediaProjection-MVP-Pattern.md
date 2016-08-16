@@ -10,7 +10,7 @@ published: true
 
 지난번에 작성하였던 MediaProjection 예제를 수정하였습니다.
 
-- [안드로이드 화면 캡쳐 API - MediaProjection 사용해보기](http://thdev.tech/Android-MediaProjection-Exmple/)
+- [안드로이드 화면 캡쳐 API - MediaProjection 사용해보기](/androiddev/2016/04/09/Android-MediaProjection-Exmple.html)
 - [GitHub Repository : MediaProjectionExample ](https://github.com/taehwandev/MediaProjectionExample)
 
 Model View Presenter를 구분하여 리팩토링을 진행하였고, 다음의 자료를 참고하여 MVP 패턴을 적용해보았습니다.
