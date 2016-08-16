@@ -2,7 +2,7 @@
 layout: post
 title: Android WebView 예제
 categories: [AndroidDev]
-tags: [Android, AndroidDev]
+tags: [Android, AndroidDev, WebView]
 fullview: false
 comments: true
 published: true

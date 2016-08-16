@@ -2,7 +2,7 @@
 layout: post
 title: Android WebView javascriptInterface 사용하기
 categories: [AndroidDev]
-tags: [Android, AndroidDev]
+tags: [Android, AndroidDev, WebView]
 fullview: false
 comments: true
 published: true

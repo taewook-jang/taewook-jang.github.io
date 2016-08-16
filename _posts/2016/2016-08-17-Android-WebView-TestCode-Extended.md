@@ -2,7 +2,7 @@
 layout: post
 title: Android WebView TestCode 작성하기 확장(Alert, Script 만들어 테스트)
 categories: [AndroidDev]
-tags: [Android, AndroidDev]
+tags: [Android, AndroidDev, WebView]
 fullview: false
 comments: true
 published: true

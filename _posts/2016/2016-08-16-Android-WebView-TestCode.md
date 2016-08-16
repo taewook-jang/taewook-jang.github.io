@@ -2,7 +2,7 @@
 layout: post
 title: Android WebView TestCode 작성하기 기본 테스트 진행하기
 categories: [AndroidDev]
-tags: [Android, AndroidDev]
+tags: [Android, AndroidDev, WebView]
 fullview: false
 comments: true
 published: true
