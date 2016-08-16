@@ -19,6 +19,7 @@ MediaProjection으로 화면을 캡쳐하고 이를 분석해 일부 UI의 속�
 <br />
 
 ## 다운로드
+
 [Accessibility Scanner](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor)
 
 <br />
@@ -35,7 +36,7 @@ MediaProjection으로 화면을 캡쳐하고 이를 분석해 일부 UI의 속�
 
 ## MediaProjection
 
-[MediaProjection 살표보기](http://thdev.tech/Android-MediaProjection-Exmple/)
+[MediaProjection 살표보기](/androiddev/2016/04/09/Android-MediaProjection-Exmple.html)
 
 위의 글을 보시면 되겠지만 MediaProjection은 다음과 같은 환경에서 동작합니다.
 
@@ -59,7 +60,7 @@ MediaProjection을 사용하였고, Accessibility(접근성)에 등록되어 사
 
 바로 접근성에 등록이 되며, 접근성에서 Accessibility Scanner을 활성화해주어야 합니다.
 
-![2016-04-17 05.32.36-1]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.32.36-1.png)
+![2016-04-17 05.32.36-1](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.32.36-1.png)
 
 <br />
 
@@ -69,7 +70,7 @@ MediaProjection을 사용하였고, Accessibility(접근성)에 등록되어 사
 
 아래와 같이 Off 상태에서 On를 전환해주시면 됩니다.
 
-![2016-04-17 05.32.36-2]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.32.36-2.png)
+![2016-04-17 05.32.36-2](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.32.36-2.png)
 
 <br />
 
@@ -77,7 +78,7 @@ MediaProjection을 사용하였고, Accessibility(접근성)에 등록되어 사
 
 아래와 같이 start capture... 창에서 시작을 눌러주면 됩니다.
 
-![2016-04-17 05.33.01]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.01.png)
+![2016-04-17 05.33.01](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.01.png)
 
 <br />
 
@@ -87,7 +88,7 @@ MediaProjection을 사용하였고, Accessibility(접근성)에 등록되어 사
 
 최초 앱 실행 후 이 화면을 다시 열더라도 스캔을 다시 시작할 수 있는 창은 제공되지 않고, 완료된 목록을 볼 수 있습니다.
 
-![2016-04-17 05.33.09]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.09.png)
+![2016-04-17 05.33.09](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.09.png)
 
 <br />
 
@@ -97,7 +98,7 @@ MediaProjection을 사용하였고, Accessibility(접근성)에 등록되어 사
 
 종료/시작이 쉽지는 않습니다. 접근성을 통해서 시작/종료를 할 수 있으니깐요.
 
-![2016-04-17 05.33.41]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.41.png)
+![2016-04-17 05.33.41](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.41.png)
 
 <br />
 
@@ -109,7 +110,7 @@ MediaProjection을 사용하였고, Accessibility(접근성)에 등록되어 사
 
 다만 UI 분석이... 어렵겠죠...
 
-![2016-04-17 05.33.44]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.44.png)
+![2016-04-17 05.33.44](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.44.png)
 
 UI 분석이 완료되면 다음과 같은 화면을 볼 수 있습니다.
 
@@ -119,7 +120,7 @@ UI 분석이 완료되면 다음과 같은 화면을 볼 수 있습니다.
 
 아직은... 분석하는데 수준이 낮은 것이죠.
 
-![2016-04-17 05.34.29]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.34.29.png)
+![2016-04-17 05.34.29](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.34.29.png)
 
 <br />
 
@@ -131,7 +132,7 @@ UI 분석이 완료되면 다음과 같은 화면을 볼 수 있습니다.
 
 그냥 이 정도로만 보여주네요. 예제라서 그런지 버튼은 찾아주지 못하고 있습니다.
 
-![device-2016-04-30-114740]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/device-2016-04-30-114740.png)
+![device-2016-04-30-114740](/images/2016/2016-04-30-Google-Accessibility-Scanner/device-2016-04-30-114740.png)
 
 
 **시작과 종료**
@@ -140,7 +141,7 @@ UI 분석이 완료되면 다음과 같은 화면을 볼 수 있습니다.
 
 설정 > 접근성 > Accessibility Scanner 메뉴로 접근하여 On/Off 할 수 있습니다.
 
-![2016-04-17 05.33.14]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.14.png)
+![2016-04-17 05.33.14](/images/2016/2016-04-30-Google-Accessibility-Scanner/2016-04-17 05.33.14.png)
 
 
 시작과 종료가 불편하네요.
@@ -149,9 +150,10 @@ UI 분석이 완료되면 다음과 같은 화면을 볼 수 있습니다.
 
 Android Studio의 Device Manager의 dump를 이용하여 UI를 분석할 수 있습니다.
 
-![Screenshot 2016-04-30 11.38.33]({{ site.baseurl }}/images/2016/2016-04-30-Google-Accessibility-Scanner/Screenshot 2016-04-30 11.38.33.png)
+![Screenshot 2016-04-30 11.38.33](/images/2016/2016-04-30-Google-Accessibility-Scanner/Screenshot 2016-04-30 11.38.33.png)
 
 <br />
 
 ## 다운로드
+
 [Accessibility Scanner](https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor)
