@@ -151,7 +151,7 @@ startActivityForResult(mpm.createScreenCaptureIntent(), REQUEST_CODE);
 <br />
 사용자는 다음과 같은 창이 표시되었을 때 시작/취소를 할 수 있고 이 창을 다시 표시하지 않을 수 있습니다.<br />
 
-![device-2016-04-09-201521.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-MediaProjection-Exmple/device-2016-04-09-201521.png)
+![device-2016-04-09-201521.png](/images/2016/2016-04-09-Android-MediaProjection-Exmple/device-2016-04-09-201521.png)
 
 사용자가 동의하면 resultCode는 RESULT_OK가 떨어지고 아니라면 그 외의 값이 떨어지게 됩니다. 그에 대한 처리는 다음과 같이 할 수 있습니다.
 
@@ -283,26 +283,27 @@ Android 4.0(API 14)에 적용된 [TextureView](http://developer.android.com/refe
 - Activity에서 MediaProjection 권한을 획득합니다.
 - 권한이 획득되면 Service의 TextureView의 Surface를 통해 초기화합니다.
 
-![Screenshot 2016-04-09 21.30.38.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-MediaProjection-Exmple/Screenshot 2016-04-09 21.30.38.png)
+![Screenshot 2016-04-09 21.30.38.png](/images/2016/2016-04-09-Android-MediaProjection-Exmple/Screenshot 2016-04-09 21.30.38.png)
 
 적용이 완료된 전체 화면이 다음과 같습니다.
 
 MediaProjection이 동작을 하게 되면 테스크의 쉐어링 아이콘이 표시되고, 아래와 같이 특정 영역이 그려지게 됩니다.
 
-![device-2016-04-09-201635.png]({{ site.baseurl }}/images/2016/2016-04-09-Android-MediaProjection-Exmple/device-2016-04-09-201635.png)
+![device-2016-04-09-201635.png](/images/2016/2016-04-09-Android-MediaProjection-Exmple/device-2016-04-09-201635.png)
 
 
 예제가 완벽하지 않아서 Android의 화면 일부를 가져와 출력해주고 있습니다. 이를 전체를 다 보게 하고 싶으시다면 "createVirtualDisplay"의 화면 크기를 변경해주시면 됩니다.
 
 대략 createVirtualDisplay에서 생성한 화면과 Surface의 크기가 1:1이라면 가장 이상적이겠으나 createVirtualDisplay의 크기 변경은 쉬비 않을 겁니다.
 
-**가장 쉽게 접근**<br />
+**가장 쉽게 접근**
 
 1. Projection의 크기를 일정 크기로 지정한다.(구글의 샘플을 참고하셔서 적용하시면 됩니다.)
 2. Surface에 실제 그려질 텍스처 크기를 지정할 수 있도록 개발한다.
 
    - 동영상에서 텍스처 그리는 방법을 접근하셔도 좋을 것 같습니다.
    - 구글 CTS 코드에 MediaCodec을 함께 사용하는 예제가 있습니다. 이를 참고하시면 좋을 것 같습니다.
+
 
 <br />
 
