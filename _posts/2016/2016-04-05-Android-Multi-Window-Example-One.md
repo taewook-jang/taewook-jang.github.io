@@ -18,13 +18,13 @@ Preivew 2가 나오면서 일부 API 이름이 변경되었습니다.
 이번에는 예제를 통해서 이러한 변화가 어떻게 적용되는지 살펴보겠습니다.<br />
 <br />
 **지난 정리 글 :**
-<br />
-[Android N Multi Window 살펴보기](/Android-N-Preview-Multi-Window/)
-<br />
-[Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
 
-**API 문서**
-[Android N Multi Window API](http://developer.android.com/preview/features/multi-window.html)
+- [Android N Multi Window 살펴보기](/androiddev/2016/03/29/Android-N-Preview-Multi-Window.html)
+- [Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
+
+**API 문서 :**
+
+- [Android N Multi Window API](http://developer.android.com/preview/features/multi-window.html)
 <br />
 
 
@@ -94,14 +94,17 @@ Android Studio 2.2+에 맞게 수정한 내용을 적용하였습니다.
 
  ![Screen Shot 2016-04-05 at 2.25.10 PM.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.25.10 PM.png)
 
- 다시 정리하면 Android N 대응을 하지 않을 경우에는 onDestroy -> onCreate가 계속적으로 동작하게 됩니다.<br />
+ 다시 정리하면 Android N 대응을 하지 않을 경우에는 onDestroy -> onCreate가 계속적으로 동작하게 됩니다.
 
  <br />
- **창 크기 변경 - configChange를 적용하였을 경우**<br />
-  [5 tips for preparing for Multi-Window in Android N](https://medium.com/google-developers/5-tips-for-preparing-for-multi-window-in-android-n-7bed803dda64#.x5dd4ku7n)에서 보았던 configChanges 코드를 적용해보겠습니다.<br />
-  <br />
-  configChanges를 적용하였을 경우 lifeCycle이 어떻게 변화되는지 살펴보겠습니다.<br />
-  우선 xml에 다음의 코드를 추가하였습니다.<br />
+
+ **창 크기 변경 - configChange를 적용하였을 경우**
+
+[5 tips for preparing for Multi-Window in Android N](https://medium.com/google-developers/5-tips-for-preparing-for-multi-window-in-android-n-7bed803dda64#.x5dd4ku7n)에서 보았던 configChanges 코드를 적용해보겠습니다.
+
+configChanges를 적용하였을 경우 lifeCycle이 어떻게 변화되는지 살펴보겠습니다.
+
+우선 xml에 다음의 코드를 추가하였습니다.
 
 ```xml
 android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
@@ -238,10 +241,10 @@ multiWindowAdapter.addItem("onResume() isInMultiWindowMode " + isInMultiWindowMo
 
  멀티 윈도우에 대해서 전반적인 내용을 살펴보았습니다.<br />
  API 문서를 정리하였고, Freeform 모드를 적용해보기도 하였습니다.
-<br />
- [Android N Multi Window 살펴보기](/Android-N-Preview-Multi-Window/)
-<br />
- [Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
+
+ - [Android N Multi Window 살펴보기](/androiddev/2016/03/29/Android-N-Preview-Multi-Window.html)
+ - [Android N Multi Window Freeform mode 에뮬레이터에 적용해보기](http://thdev.net/657)
+
 <br />
 <br />
 onResume/onPause와 configChanges에 대한 대응은 꼭 필요하다고 생각됩니다.<br />
