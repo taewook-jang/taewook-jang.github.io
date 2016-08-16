@@ -55,7 +55,7 @@ Android Studio 2.2+에 맞게 수정한 내용을 적용하였습니다.
 **다음 테스트 결과는 위쪽에 최신 데이터를 가지게 됩니다.**
 <br />
 
- ![Screenshot_20160404-234814.png]({{ site.baseurl }}/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160404-234814.png)
+ ![Screenshot_20160404-234814.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160404-234814.png)
 
  정상적으로 앱이 실행되었습니다.<br />
  onCreate -> onStart -> onResume 가 순서대로 동작합니다.<br />
@@ -70,7 +70,7 @@ Android Studio 2.2+에 맞게 수정한 내용을 적용하였습니다.
 특히나 동영상의 onPause에서 동영상 일시 정지를 하게 되는 경우가 많을 것 같습니다.<br />
 이 경우에는 꼭 onPause가 아니라 onStop으로 이동이 필요하다고 생각됩니다.([구글 팁의 lifecycle에서 자세하게 나옵니다.](http://developer.android.com/preview/features/multi-window.html#lifecycle))
 
- ![Screen Shot 2016-04-05 at 2.13.03 PM.png]({{ site.baseurl }}/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.13.03 PM.png)
+ ![Screen Shot 2016-04-05 at 2.13.03 PM.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.13.03 PM.png)
 
  <br />
  이로 인해 onResume, onPause 간에서는 동작을 최소한으로 줄이는 노력이 필요해 보입니다.
@@ -81,7 +81,7 @@ Android Studio 2.2+에 맞게 수정한 내용을 적용하였습니다.
  분활 된 창의 가운데 부분을 왼쪽/오른쪽, 상/하로 이동하게 되면 창이 커지고 줄어들게 됩니다.<br />
  이때의 창의 크기가 변하는데 실제 lifecycle은 어떻게 동작하는지 살펴보겠습니다.<br />
 
- ![Screenshot_20160404-235109.png]({{ site.baseurl }}/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160404-235109.png)
+ ![Screenshot_20160404-235109.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160404-235109.png)
 
  별다른 것 없어 보입니다. 실제로는 다음을 무한 루프 돌게 됩니다.<br />
  onCreate -> onStart -> onResume<br />
@@ -92,7 +92,7 @@ Android Studio 2.2+에 맞게 수정한 내용을 적용하였습니다.
  앱이 onCreate부터 처음부터 다시 시작하고 있습니다.<br />
  이동 중에는 아래의 flowchart처럼 동작하게 됩니다.
 
- ![Screen Shot 2016-04-05 at 2.25.10 PM.png]({{ site.baseurl }}/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.25.10 PM.png)
+ ![Screen Shot 2016-04-05 at 2.25.10 PM.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.25.10 PM.png)
 
  다시 정리하면 Android N 대응을 하지 않을 경우에는 onDestroy -> onCreate가 계속적으로 동작하게 됩니다.<br />
 
@@ -119,7 +119,7 @@ public void onConfigurationChanged(Configuration newConfig) {
 }
 ```
 
- ![Screenshot_20160405-000516.png]({{ site.baseurl }}/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160405-000516.png)
+ ![Screenshot_20160405-000516.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160405-000516.png)
 
 
 바로 위에서 보았던 이미지와는 많이 다름을 확인할 수 있습니다.<br />
@@ -127,7 +127,7 @@ public void onConfigurationChanged(Configuration newConfig) {
 코드 상으로 onConfigurationChanged가 호출이 되고 있습니다.<br />
 그림 상으로는 아래와 같이 표현 할 수 있겠습니다.
 
-![Screen Shot 2016-04-05 at 2.34.57 PM.png]({{ site.baseurl }}/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.34.57 PM.png)
+![Screen Shot 2016-04-05 at 2.34.57 PM.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screen Shot 2016-04-05 at 2.34.57 PM.png)
 
 그리고 숫자 1이 표시되고 있는데 이 값은 API의 [Configuration API 문서](http://developer.android.com/reference/android/content/res/Configuration.html)<br />
 
@@ -162,7 +162,7 @@ Configuration.SCREENLAYOUT_SIZE_SMALL
  Size가 변경이 일어나게 되면 Normal -> small 이 호출됩니다.<br />
  inMultiWindow 상태도 false -> true로 변경되게 됩니다.<br />
 
-![Screenshot_20160405-005032.png]({{ site.baseurl }}/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160405-005032.png)
+![Screenshot_20160405-005032.png](/images/2016/2016-04-05-Android-Multi-Window-Example-One/Screenshot_20160405-005032.png)
 
 
 <br />
