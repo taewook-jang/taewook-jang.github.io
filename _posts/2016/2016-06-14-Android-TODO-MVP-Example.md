@@ -35,7 +35,7 @@ MVP를 안드로이드에 적용하려는 이유가 뭘까요?
 그래서 승욱님의 코드를 이용해서 초기 MVP를 만들어보았습니다.
 dagger, RxJava, Lambda까지 포함되어있어서 초보가 보기에는 쉽지 않더군요.
 
-여하튼... 이걸 추려서 ButterKnife 예제라고 만들어둔 코드가 있습니다. [androidTest - JUnit4, Espresso를 이용한 테스트 코드 작성](http://thdev.tech/Android-Test-Example/)
+여하튼... 이걸 추려서 ButterKnife 예제라고 만들어둔 코드가 있습니다. [androidTest - JUnit4, Espresso를 이용한 테스트 코드 작성](/androiddev/2016/05/04/Android-Test-Example.html)
 
 오늘은 Google의 Android Architecture를 집중적으로 ?? 살펴보고, 제 BasePresenter 코드도 함께 공유해보겠습니다.
 
