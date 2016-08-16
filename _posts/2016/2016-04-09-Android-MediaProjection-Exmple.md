@@ -21,6 +21,13 @@ published: true
 
 <br />
 
+## 테스트 코드 주소
+
+GitHub Example : [MediaProjection example](https://github.com/taehwandev/MediaProjectionExample)
+
+
+<br />
+
 ## Android MediaProjection
 
  MediaProjection에 대한 문서가 다른 API처럼 예제를 제공하지는 않습니다. 별도로 검색을 해서 찾으면 나오긴 하지만 문서상에는 잘 나오지 않습니다.
