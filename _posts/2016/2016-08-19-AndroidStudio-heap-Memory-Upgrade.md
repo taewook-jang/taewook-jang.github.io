@@ -5,7 +5,7 @@ categories: [DevTools]
 tags: [Android, Android Studio]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 Android Studio의 heap 메모리를 늘려서 쾌적한 개발을 진행할 수 있습니다.
