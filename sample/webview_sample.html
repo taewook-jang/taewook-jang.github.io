@@ -21,6 +21,18 @@ function showAlert() {
   alert("Hello! I am an alert box!!");
 }
 
+function search() {
+  var keyword = document.getElementById("search").value;
+  alert(keyword);
+}
+
+// in JavaScript Code
+function onKeyDown() {
+     if(event.keyCode == 13) {
+          search();
+     }
+}
+
 function changeWebView() {
   var url = document.getElementById("url").value;
   WebViewTest.changeWebView(url);
@@ -52,4 +64,4 @@ Android WebView sample page
 
 <br />
 <br />
-<input type="search" id="search" />
+<input type="search" id="search" onkeypress="return enterKey(event);" /><input id="btnSearch" onclick="search();">
