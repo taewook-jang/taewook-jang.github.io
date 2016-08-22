@@ -22,8 +22,8 @@ function showAlert() {
 }
 
 function search() {
-  var keyword = document.getElementById("search").value;
-  alert(keyword);
+  var url = document.getElementById("url").value;
+  window.location.href = url;
 }
 
 // in JavaScript Code
@@ -58,10 +58,6 @@ Android WebView sample page
 <input id="showAlertBtn" type="button" value="Show alert" onclick="showAlert();" />
 
 <br />
-<input type="text" id="url" value="http://google.com/"
+<input type="text" id="url" value="http://google.com/" onkeypress="return onKeyDown(event);" />
 <br />
 <input id="changeWebView" type="button" value="Change WebView" onclick="changeWebView();" />
-
-<br />
-<br />
-<input type="search" id="search" onkeypress="return onKeyDown(event);" /><input id="btnSearch" onclick="search();">
