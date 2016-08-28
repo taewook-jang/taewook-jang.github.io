@@ -5,7 +5,7 @@ categories: [AndroidDev]
 tags: [Android, AndroidDev]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 안드로이드 7.0 누가에서 DatePickerDialog 예외 사항을 살펴보려고 합니다.
