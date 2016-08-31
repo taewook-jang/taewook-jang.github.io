@@ -363,7 +363,7 @@ bintray {
 
     pkg {
         repo = repositoryName // Repository name (Created in the repository Bintray site)
-        name = project.name // package name
+        name = project.name // module name
         userOrg = user // An optional organization name when the repo belongs to one of the user's orgs
         desc = 'Bintray sample library' // Optional
         licenses = ['Apache-2.0']
@@ -673,6 +673,91 @@ version rootProject.ext.libVersionName // :0.0.1-alpha
 
 위의 부분은 사실 별도로 추가해주실 필요는 없습니다. 잘못 설정하면 파일명이 변경되어 제가 했던것 처럼 원치 않는 결과가 나올 수 있으므로 추가하지 않으시는 편이 좋습니다.(아니면 그대로 ... 설정)
 
+licenses 역시 별도로 정의하지 않아도 되겠지만 저는 아래와 같이 해주었습니다.
+
+licenses라서 여러개의 license가 포함 가능합니다.
+
+```
+licenses {
+    license {
+        name 'The Apache Software License, Version 2.0'
+        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+        distribution 'repo'
+    }
+}
+```
+
+스키마를 정의합니다. 음 역시 해주지 않아도 됩니다. url 정보와 repo 정보를 포함해주시면 됩니다.
+
+**각각도 역시 옵션이라서 추가하고 싶으신 경우만 해주시면 됩니다.**
+
+```
+scm { // Optional setting
+    connection rootProject.ext.defaultRepoUrl
+    developerConnection rootProject.ext.defaultRepoUrl
+    url rootProject.ext.defaultUrl
+}
+```
+
+개발자 정보를 추가할 수 있습니다. 역시 여러개를 정의할 수 있으며, id, name, email이 기본이 됩니다.
+
+```
+developers { // Optional setting
+    developer {
+        id 'taehwandev'
+        name 'taehwan'
+        email 'taehwan@thdev.tech'
+    }
+}
+```
+
+이제 기본 설정이 끝났으니 bintrayUpload을 진행하면 되겠습니다.
+
+
+<br />
+
+## Bintray에 업로드
+
+Bintray에 이제 업로드 준비가 끝났으니 업로드를 진행하면 됩니다.
+
+gradle 명령을 통해서도 진행할 수 있지만 저는 명령이 아닌 Gradle projects 정의되어 있는 install과 bintrayUpload를 통해서 진행하겠습니다.
+
+install은 Override의 성격이라서 별도로 install 해줄 필요는 없습니다.
+
+오른쪽 메뉴의 `Gradle`을 눌러주고, 자신이 생성한 `module`을 선택해줍니다.
+
+아래와 같이 `bintray-library`에서 `Tasks` > `publishing` > `bintrayUpload` 버튼을 눌러만 주시면 됩니다.
+
+![bintrayUpload]
+
+진행이 완료되면 다음과 같이 확인이 가능합니다.
+
+![bintrayUpload-finish]
+
+완료되었으므로 웹에서도 확인할 수 있습니다.
+
+https://bintray.com/UserName/repositoryName 으로 접근 가능합니다.
+
+생성한 reposioty 페이지에 접근하면 다음과 같이 추가된 모듈을 확인 가능합니다.
+
+![result-02]
+
+해당 페이지에 접근하면 publishing 상태를 확인할 수 있습니다.
+
+publishing을 하지 않은 상태라면 별도의 알림으로 표시되고, 해주지 않으면 6일 후에 자동으로 publishing을 하게됩니다.
+
+![result-03]
+
+
+<br />
+
+## JCenter에 동기화(JCenter에 직접 올라가는것이 아니라서 별도로 버튼을 눌러주어야 합니다.)
+
+
+<br />
+
+## JCenter를 통해 배포되면(**첫 배포시 1일 이상 소요**) dependencies에 추가하여 사용 가능
+
 
 
 <br />
@@ -706,3 +791,8 @@ version rootProject.ext.libVersionName // :0.0.1-alpha
 [bintray-repository-create]:  /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/bintray-repository-create.png
 
 [result-01]:  /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/result-01.png
+[result-02]:  /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/result-02.png
+[result-03]:  /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/result-03.png
+
+[bintrayUpload]:  /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/bintrayUpload.png
+[bintrayUpload-finish]:  /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/bintrayUpload-finish.png
