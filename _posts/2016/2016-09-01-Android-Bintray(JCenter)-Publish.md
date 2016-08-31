@@ -548,6 +548,14 @@ publish = true // [Default: false] Whether version should be auto published afte
 
 ![bintray-upload-success]
 
+- githubReleaseNotesFile
+
+`githubReleaseNotesFile`을 설정하면 `Release Note`를 관리할 수 있습니다. README.md를 걸어주시거나 별도의 md 파일을 생성하여 Release note를 관리할 수 있습니다.
+
+```
+githubReleaseNotesFile = 'CONTRIBUTING.md' // Optional Github readme file
+```
+
 <br />
 
 ### pkg
