@@ -162,6 +162,6 @@ JCenter와 Bintray에 배포되는 내용이 달라서 처음엔 `.jar`는 당�
 감사합니다.
 
 
-[result-01]:  /images/2016/2016-09-02-Android-Bintray(JCenter)-Publish-02/result_01.png
+[result-01]:  /images/2016/2016-09-03-Android-Bintray(JCenter)-Publish-02/result_01.png
 
 [jcenter-sync-03]:  /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/jcenter-sync-03.png
