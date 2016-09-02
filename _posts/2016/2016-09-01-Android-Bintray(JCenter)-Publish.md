@@ -124,6 +124,7 @@ Bintray를 통해 upload 하려면 몇 가지 과정이 필요한데 다음과 �
 - Android Studio에서 Module(library) 생성하기
 - Bintray에 업로드를 위한 build.gradle 셋팅
 - Bintray 사용을 위한 API 키 확인([Profile](https://bintray.com/profile/edit)을 통해 확인 가능)
+- JCenter 배포를 위한 jar/docs 포함하기(jar이 없으면 JCenter 배포를 안해주네요...)
 - Bintray에 업로드
 - JCenter에 동기화(JCenter에 직접 올라가는 것이 아니라서 별도로 버튼을 눌러주어야 합니다.)
 - JCenter를 통해 배포되면(**첫 배포시 1일 이상 소요될 수 있음**) dependencies에 추가하여 사용 가능
@@ -821,7 +822,76 @@ developers { // Optional setting
 }
 ```
 
-기본 설정이 모두 끝났습니다. bintrayUpload를 진행하도록 하겠습니다.
+
+<br />
+
+- 2016.09.02 JCenter 배포에 실패하여 추가하였습니다.
+
+## JCenter 배포를 위한 jar/docs 포함하기
+
+부 제목을 쓴다면 JCenter를 배포하기 위해서! 추가하기!
+
+Bintray에 배포하는 것은 문제가 없었지만 다음을 포함하지 않고 배포했더니 Bintray 관리자가 JCenter에 배포를 해주지 않더군요.
+
+제 확인하였더니 jar를 포함해달라고...
+
+그래서 해당 내용을 추가합니다.
+
+```
+// JCenter publish
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+// Optional docs
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+// Optional javadoc
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar // Optional
+    archives sourcesJar
+}
+
+task findConventions << {
+    println project.getConvention()
+}
+```
+
+최소한 `sourcesJar`를 포함해주시면 됩니다. 그러면 아래와 같이 짧아지게 됩니다.
+
+```
+// JCenter publish
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+task findConventions << {
+    println project.getConvention()
+}
+```
+
+최소한 위의 코드는 포함되어야 합니다. 그렇지 않으면 JCenter 배포를 해주지 않겠다고 합니다.
+
+JCenter 배포하는 부분은 별도의 글로 남기겠습니다.
+
+
+<br />
+
+여기까지 진행하였으면, 기본 설정이 모두 끝났습니다. bintrayUpload를 진행하도록 하겠습니다.
 
 
 <br />
@@ -834,11 +904,15 @@ Bintray에 이제 업로드 준비가 끝났으니 업로드를 진행하면 됩
 
 `install`은 `Override`라서 별도로 눌러줄 필요 없이 `bintrayUpload`하는 과정에서 함께 진행되게 됩니다.(정의하지 않았으면 기본 `install`으로 동작하게 됩니다.)
 
-스튜디오 오른쪽에 `Gradle` 버튼이 있습니다. 이를 눌러서 새로 추가한 `module`이름을 찾아줍니다.(하나뿐인 경우 root에서 하셔도 됩니다.)
+- 2016.09.02 - 일부 내용 전달이 잘못되어 수정합니다.
 
-아래와 같이 `bintray-library`에서 `Tasks` > `publishing` > `bintrayUpload` 버튼을 눌러만 주시면 됩니다.
+Android Studio의 오른쪽에 위치한 `Gradle` 버튼을 눌러주세요.
+
+아래 그림과 같이 `(root)`의 `Tasks` > `publishing` > `bintrayUpload` 버튼을 눌러주시면 `install` 포함 bintrayUpload를 진행하게 됩니다.
 
 ![bintrayUpload]
+
+**만약 해당 모듈에서 진행한다면 `install`을 진행하고, `bintrayUpload`를 각각 눌러주셔야 업로드가 정상적으로 진행되게 됩니다.**
 
 진행 중 다음과 같은 오류가 발생하신다면 Bintray 웹사이트에서 `reposioty` 생성을 하지 않으신 경우입니다. 확인하시고, 수정 또는 생성해주시면 됩니다.
 
