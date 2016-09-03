@@ -5,7 +5,7 @@ categories: [AndroidDev, Kotlin]
 tags: [Android Kotlin, Android, Kotlin]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 Kotlin을 공부하면서 Android base 작업을 해보았습니다.
