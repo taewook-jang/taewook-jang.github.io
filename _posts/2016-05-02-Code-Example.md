@@ -1,7 +1,7 @@
 ---
 layout: post
 title: example
-published: false
+published: true
 ---
 
 Chrome 31 버전부터 웹앱을 만들 수 있는 Shortcut을 제공하고 있었다고 합니다.
