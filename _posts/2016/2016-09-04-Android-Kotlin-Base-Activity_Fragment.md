@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android Kotlin으로 Base 코드 작성하기
+title: Android Kotlin으로 작성한 Activity/Fragment 살펴보기
 categories: [AndroidDev, Kotlin]
 tags: [Android Kotlin, Android, Kotlin]
 fullview: false
