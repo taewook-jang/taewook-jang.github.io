@@ -14,7 +14,7 @@ Chrome 31 버전부터 웹앱을 만들 수 있는 Shortcut을 제공하고 있�
 
 오늘은 Add to Homescreen을 적용하는 방법을 간단하게 살펴보겠습니다.
 
-[link test](#단축-아이콘을-지원하기)
+[link test](#test)
 
 <br />
 
@@ -162,7 +162,7 @@ json에는 화면의 회전 상태를 강제로 지정할 수 있고, 단축아�
 
 ## Example
 
-### 단축 아이콘을 지원하기
+### <a name="test"></a>단축 아이콘을 지원하기
 
 제 Github 블로그에 적용해본 결과물입니다.
 
