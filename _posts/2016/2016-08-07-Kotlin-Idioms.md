@@ -34,7 +34,7 @@ Kotlin 문서 중 Idioms를 참조하여 정리하였습니다.
 
 <br />
 
-## DTOs(Data Transfer Object)(POJOs/POCOs) 생성하기
+## <a name="dto"></a>DTOs(Data Transfer Object)(POJOs/POCOs) 생성하기
 
 - 참고자료 : [DTO, POJO에 대한 설명 - okky](http://okky.kr/article/115632)
 - DTO : [Data Transfer Object](https://en.wikipedia.org/wiki/Data_transfer_object)
@@ -257,7 +257,7 @@ Java에서 Kotlin에서 default로 정의한 함수를 접근하여도 default �
 
 <br />
 
-## Kotlin Lambdas
+## <a name="lambdas"></a>Kotlin Lambdas
 
 Kotlin은 Lambdas를 기본적으로 제공합니다. Java에서와 다르게 Java8을 이용하거나, 레트로람다 같은 별도의 라이브러리 없이 바로 사용이 가능합니다.
 
@@ -300,7 +300,7 @@ button.setOnClickListener {
 
 <br />
 
-##for 문에 필터 걸기
+## <a name="for"></a>for 문에 필터 걸기
 
 for 문에 필터를 걸 수 있습니다.
 
@@ -351,7 +351,7 @@ public inline fun <T, R> Iterable<T>.map(transform: (T) -> R): List<R> {
 
 <br />
 
-##코틀린 null 처리
+## <a name="null"></a>코틀린 null 처리
 
 List에서는 null이 포함될 수 있습니다.
 
@@ -405,7 +405,7 @@ java의 `if 문`을 대체하여 사용할 수 있는 키워드를 사용하면 
 
 <br />
 
-## String Interpolation
+## <a name="string-interpolation"></a>String Interpolation
 
 String Interpolation은 String 처리를 쉽게 할 수 있습니다.
 
@@ -441,7 +441,7 @@ fun updateKeyword(val: String?) = "Keyword : $val"
 
 <br />
 
-##Map의 Key/Value를 출력하기
+## <a name="map-key-value"></a>Map의 Key/Value를 출력하기
 
 map에서 Key, value를 간단하게 출력할 수 있습니다.
 
@@ -455,7 +455,7 @@ for ((k, v) in map) {
 
 <br />
 
-##읽기 전용 list/map 생성하기
+## <a name="read-only"></a>읽기 전용 list/map 생성하기
 
 kotlin에서는 읽기만 가능한 list와 map을 만들 수 있습니다.
 
