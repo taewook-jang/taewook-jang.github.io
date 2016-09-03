@@ -15,8 +15,8 @@ Bintray에 올리고 JCenter에 배포하기 위해서 삽질기를 추가로 �
 
 ## 관련 글
 
-- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
-- <a href="androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
+- <a href="http://thdev.tech/androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
+- <a href="http://thdev.tech/androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
 
 `.jar`을 포함하지 않고 Bintray에 올리고, JCenter에 동기화 요청을 하였었는데 실패하였습니다.
 
@@ -175,8 +175,8 @@ JCenter와 Bintray에서 배포되는 최소한의 내용이 달라서 추가로
 
 ## 관련 글
 
-- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
-- <a href="androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
+- <a href="http://thdev.tech/androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
+- <a href="http://thdev.tech/androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
 
 
 [result-01]:  /images/2016/2016-09-03-Android-Bintray(JCenter)-Publish-02/result_01.png

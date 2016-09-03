@@ -25,8 +25,8 @@ TODO - 정리하기 전에
 
 ## 관련 글
 
-- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
-- <a href="androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
+- <a href="http://thdev.tech/androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
+- <a href="http://thdev.tech/androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
 
 
 <br />
@@ -1043,8 +1043,8 @@ Bintray의 API key는 노출이 되었다고 생각되시면 언제든 새로운
 
 ## 관련 글
 
-- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
-- <a href="androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
+- <a href="http://thdev.tech/androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
+- <a href="http://thdev.tech/androiddev/2016/09/03/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
 
 
 [bintray-distribution]:   /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/bintray-distribution.png
