@@ -20,6 +20,15 @@ TODO - 정리하기 전에
 - Sample을 테스트하였고, 정리하였습니다.
 - Module을 배포/관리해보고 싶으시다면 참고 해주세요!
 
+
+<br />
+
+## 관련 글
+
+- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
+- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
+
+
 <br />
 
 ## AAR 배포
@@ -1028,6 +1037,14 @@ Bintray의 API key는 노출이 되었다고 생각되시면 언제든 새로운
 어렵긴 하지만 배포하는데 도움이 되셨으면 합니다. 감사합니다.
 
 - [Sample을 작성한 예제](https://github.com/taehwandev/BintraySample)
+
+
+<br />
+
+## 관련 글
+
+- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
+- <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish-02.html">Android Module을 Bintray(JCenter)에 배포하기 삽질!...</a>
 
 
 [bintray-distribution]:   /images/2016/2016-09-01-Android-Bintray(JCenter)-Publish/bintray-distribution.png
