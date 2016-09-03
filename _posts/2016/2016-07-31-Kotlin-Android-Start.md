@@ -32,7 +32,9 @@ Try kotlin 사이트를 통해서 간단하게 Kotlin을 연습 해볼 수 있�
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
-
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기
 
 <br />
 
@@ -316,7 +318,12 @@ fab.setOnClickListener {
 
 ## 코틀린 관련 포스트 목록
 
+## 코틀린 관련 포스트 목록
+
 - [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기
