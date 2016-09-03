@@ -31,6 +31,10 @@ published: true
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기
+
 
 <br />
 
@@ -206,7 +210,7 @@ java에서 보다 코드가 간결해졌을 뿐 내용은 같습니다.
 
 <br />
 
-## NULL을 완전히 배제하려면?
+## <a name="safe-null-call"></a>NULL을 완전히 배제하려면?
 
 null을 완전히 배제해야 하는 경우도 있습니다.
 
@@ -410,3 +414,6 @@ java에서는 @Nullable이 올 경우 개발자가 `if ()` 등을 활용하여 n
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기

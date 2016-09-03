@@ -23,6 +23,9 @@ Android를 Kotlin으로 연습하면서 코틀린 플러그인을 통해 제공�
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기
 
 
 <br />
@@ -360,3 +363,6 @@ if (x !in 0..array.size - 1)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기
