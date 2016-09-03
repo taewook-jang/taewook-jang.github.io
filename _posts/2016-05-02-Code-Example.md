@@ -14,6 +14,8 @@ Chrome 31 버전부터 웹앱을 만들 수 있는 Shortcut을 제공하고 있�
 
 오늘은 Add to Homescreen을 적용하는 방법을 간단하게 살펴보겠습니다.
 
+[link test](#test)
+
 <br />
 
 ## 홈스크린 앱 만들기
@@ -28,7 +30,7 @@ Robert Nyman이 소개한 페이지를 안드로이드 크롬에서 접속하시
 
 <br />
 
-## 단축 아이콘을 지원하기
+## <a href="test"></a>단축 아이콘을 지원하기
 
 네이티브 앱처럼 동작하는 단축 아이콘을 만들기 위해서는 몇가지 meta tag와 json 관련된 부분을 추가해주면 됩니다.
 
@@ -165,4 +167,3 @@ json에는 화면의 회전 상태를 강제로 지정할 수 있고, 단축아�
 [manifest.json](manifest.json)에 background_color 검정색으로 정의하였습니다.
 
 ![chrome-web-app-example](/images/2016/2016-05-02-Chrome-Add-To-Homescreen-Example/chrome-web-app-example.gif)
-
