@@ -27,6 +27,9 @@ Kotlin 문서 중 Idioms를 참조하여 정리하였습니다.
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기
 
 
 <br />
@@ -483,7 +486,7 @@ for ((K, V) in map) {
 
 <br />
 
-## 함수 - Infix notation(중위 표기법)
+## <a name="infix-notation"></a>함수 - Infix notation(중위 표기법)
 
 한국어로는 중위 표기법이라고 하는데 Kotlin은 이 중위 표기법(Infix notation)을 지원합니다.
 
@@ -565,3 +568,6 @@ Kotlin에서 자주 사용하는 표현들을 정리하였습니다.
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- Android Kotlin으로 작성한 Adapter 살펴보기
