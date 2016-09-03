@@ -168,6 +168,8 @@ JCenter와 Bintray에서 배포되는 최소한의 내용이 달라서 추가로
 
 - <a href="androiddev/2016/09/01/Android-Bintray(JCenter)-Publish.html">Android Module을 Bintray(JCenter)에 배포하는 방법</a>
 
+그리고 한번 배포되면 이후에는 **자동으로 배포가** 진행된다고 합니다.
+
 감사합니다.
 
 
