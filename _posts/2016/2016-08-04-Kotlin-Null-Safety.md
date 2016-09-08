@@ -25,15 +25,18 @@ published: true
 
 <br />
 
+<br />
+
 ## 코틀린 관련 포스트 목록
 
-- [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - Android Kotlin으로 작성한 Presenter/View 살펴보기
 - Android Kotlin으로 작성한 Adapter 살펴보기
+- [Kotlin Generics 사용하기](/kotlin/2016/09/08/Kotlin-Generics.html)
 
 
 <br />
@@ -406,14 +409,16 @@ java에서는 @Nullable이 올 경우 개발자가 `if ()` 등을 활용하여 n
 
 기본 문법에 이어 Kotlin의 null 예외 처리를 정리해보았습니다.
 
+
 <br />
 
 ## 코틀린 관련 포스트 목록
 
-- [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - Android Kotlin으로 작성한 Presenter/View 살펴보기
 - Android Kotlin으로 작성한 Adapter 살펴보기
+- [Kotlin Generics 사용하기](/kotlin/2016/09/08/Kotlin-Generics.html)

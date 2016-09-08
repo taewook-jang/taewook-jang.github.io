@@ -33,13 +33,14 @@ Base 관련 글은 아래와 같이 정리하려고 합니다.
 
 ## 코틀린 관련 포스트 목록
 
-- [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - Android Kotlin으로 작성한 Presenter/View 살펴보기
 - Android Kotlin으로 작성한 Adapter 살펴보기
+- [Kotlin Generics 사용하기](/kotlin/2016/09/08/Kotlin-Generics.html)
 
 
 <br />
@@ -327,13 +328,14 @@ Base는 자기가 편한 대로 쓰게 되어 있다 보니... 표준적인 것�
 
 ## 코틀린 관련 포스트 목록
 
-- [Android Kotlin  시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - Android Kotlin으로 작성한 Presenter/View 살펴보기
 - Android Kotlin으로 작성한 Adapter 살펴보기
+- [Kotlin Generics 사용하기](/kotlin/2016/09/08/Kotlin-Generics.html)
 
 
 
