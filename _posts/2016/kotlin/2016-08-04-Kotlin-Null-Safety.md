@@ -34,9 +34,9 @@ published: true
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - Android Kotlin으로 작성한 Presenter/View 살펴보기
 - Android Kotlin으로 작성한 Adapter 살펴보기
-- [Kotlin Generics 사용하기](/kotlin/2016/09/08/Kotlin-Generics.html)
 
 
 <br />
@@ -419,6 +419,6 @@ java에서는 @Nullable이 올 경우 개발자가 `if ()` 등을 활용하여 n
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
+- [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - Android Kotlin으로 작성한 Presenter/View 살펴보기
 - Android Kotlin으로 작성한 Adapter 살펴보기
-- [Kotlin Generics 사용하기](/kotlin/2016/09/08/Kotlin-Generics.html)
