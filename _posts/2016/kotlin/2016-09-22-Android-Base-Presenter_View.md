@@ -32,7 +32,7 @@ fun attachView(view: VIEW)
 fun detachView()
 ```
 
-위의 함수들은 모두 `[BasePresenterActivity](https://github.com/taehwandev/AndroidBase/blob/master/base/src/main/java/tech/thdev/base/view/BasePresenterActivity.kt)`와 `[BasePresenterFragment](https://github.com/taehwandev/AndroidBase/blob/master/base/src/main/java/tech/thdev/base/view/BasePresenterFragment.kt)`에서 각각 호출하고 있습니다.
+위의 함수들은 모두 [`BasePresenterActivity`](https://github.com/taehwandev/AndroidBase/blob/master/base/src/main/java/tech/thdev/base/view/BasePresenterActivity.kt)와 [`BasePresenterFragment`](https://github.com/taehwandev/AndroidBase/blob/master/base/src/main/java/tech/thdev/base/view/BasePresenterFragment.kt)에서 각각 호출하고 있습니다.
 
 그래서 실제 사용할 때는 별다른 작업을 하지 않아도 되도록 작업해두었습니다.
 
