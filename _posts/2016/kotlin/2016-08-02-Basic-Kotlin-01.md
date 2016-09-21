@@ -25,7 +25,7 @@ Android를 Kotlin으로 연습하면서 코틀린 플러그인을 통해 제공�
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
-- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- [Android Kotlin으로 작성한 Presenter/View 살펴보기](/androiddev/kotlin/2016/09/22/Android-Base-Presenter_View.html)
 - Android Kotlin으로 작성한 Adapter 살펴보기
 
 
@@ -366,5 +366,5 @@ if (x !in 0..array.size - 1)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
-- Android Kotlin으로 작성한 Presenter/View 살펴보기
+- [Android Kotlin으로 작성한 Presenter/View 살펴보기](/androiddev/kotlin/2016/09/22/Android-Base-Presenter_View.html)
 - Android Kotlin으로 작성한 Adapter 살펴보기
