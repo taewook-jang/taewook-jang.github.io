@@ -37,7 +37,7 @@ Android Studio의 한글 깨짐 문제가 발생하였습니다.
 맥에서 다음의 명령어를 이용하시면 패치가 가능합니다.
 
 ```
-curl https://gist.githubusercontent.com/skyisle/4d98cbcdc259601fba0f07602667b1b9/raw/0da59a462366f2d5165e112648a549cb705e9e15/korean_font.diff | patch -p1 -d /Applications/Android\ Studio.app/Content/plugins/android/lib/layoutlib/data/fonts/
+curl https://gist.githubusercontent.com/skyisle/4d98cbcdc259601fba0f07602667b1b9/raw/0da59a462366f2d5165e112648a549cb705e9e15/korean_font.diff | patch -p1 -d /Applications/Android\ Studio.app/Contents/plugins/android/lib/layoutlib/data/fonts/
 ```
 
 뒤쪽의 `-d` 이후 경로는 자신의 설치 경로에 따라 조금씩 다릅니다. 확인하셔서 적용하시면 되겠습니다.
