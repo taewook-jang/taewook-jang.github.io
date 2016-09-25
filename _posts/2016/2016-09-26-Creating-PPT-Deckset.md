@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-Markdown을 이용하여 PPT를 만드는 [Deckset](http://www.decksetapp.com/)을 소개합니다.
+`Mac OS`에서 `Markdown`을 이용하여 `PPT`를 만들 수 있는 [Deckset](http://www.decksetapp.com/)을 소개합니다.
 
 개발과 관련된 `PPT`를 제작할 때는 소스코드가 항상 고민이었습니다.
 
