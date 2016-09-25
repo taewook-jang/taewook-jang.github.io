@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown으로 PPT를 만들 수 있는 Deckset
+title: 맥에서 Markdown으로 PPT를 만들 수 있는 Deckset
 categories: [Tools]
 tags: [Tools, Markdown]
 fullview: false
