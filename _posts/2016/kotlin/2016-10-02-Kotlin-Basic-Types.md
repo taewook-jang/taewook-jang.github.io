@@ -43,6 +43,9 @@ Kotlin의 기본 타입을 간단하게 정리해보겠습니다.
 | short     | Sort        | 16                      |
 | byte      | Byte        | 8                       |
 
+
+<br />
+
 - `Int` : `123`으로 표현
 - `Long` : `123L`으로 표현
 - `Double` : `123.5`로 표현
@@ -71,7 +74,7 @@ val b: Int = a // ERROR 발생
 
 Type이 맞지 않다는 의미입니다. 그래서 아래와 같은 방법으로 형 변환을 해주어야 합니다.
 
-```kotiln
+```java
 val a: Long = 123
 val b: Int = a.toInt()
 
