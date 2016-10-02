@@ -54,6 +54,7 @@ fun detachView()
 ## 코틀린 관련 포스트 목록
 
 - [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 타입 알아보기](/kotlin/2016/10/02/Kotlin-Basic-Types.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
@@ -299,6 +300,7 @@ class MainFragment : BasePresenterFragment<MainContract.View, MainContract.Prese
 ## 코틀린 관련 포스트 목록
 
 - [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 타입 알아보기](/kotlin/2016/10/02/Kotlin-Basic-Types.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
 - [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
