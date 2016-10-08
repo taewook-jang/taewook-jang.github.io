@@ -12,7 +12,7 @@ Android에서 사용하기 위한 Base 코드 2번째 글입니다.
 
 읽기 전에 미리 읽어주심을 추천합니다.
 
-- [Android TODO MVP 어떻게 적용할까?](androiddev/2016/06/14/Android-TODO-MVP-Example.html)
+- [Android TODO MVP 어떻게 적용할까?](http://thdev.tech/androiddev/2016/06/14/Android-TODO-MVP-Example.html)
 - [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
 
 
@@ -57,11 +57,12 @@ fun detachView()
 - [Kotlin 기본 타입 알아보기](/kotlin/2016/10/02/Kotlin-Basic-Types.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
-- [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Kotlin 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - [Android Kotlin으로 작성한 Presenter/View 살펴보기](/androiddev/kotlin/2016/09/22/Android-Base-Presenter_View.html)
 - Android Kotlin으로 작성한 Adapter 살펴보기
+- [kotlin Class 살펴보기](/kotlin/2016/10/09/Kotlin-Class.html)
 
 
 <br />
@@ -303,11 +304,12 @@ class MainFragment : BasePresenterFragment<MainContract.View, MainContract.Prese
 - [Kotlin 기본 타입 알아보기](/kotlin/2016/10/02/Kotlin-Basic-Types.html)
 - [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
 - [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
-- [Kotlin 코틀린의 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Kotlin 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
 - [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - [Android Kotlin으로 작성한 Presenter/View 살펴보기](/androiddev/kotlin/2016/09/22/Android-Base-Presenter_View.html)
 - Android Kotlin으로 작성한 Adapter 살펴보기
+- [kotlin Class 살펴보기](/kotlin/2016/10/09/Kotlin-Class.html)
 
 
 [er-diagram]: /images/2016/2016-09-22-Android-Base-Presenter_View/er-diagram.png
