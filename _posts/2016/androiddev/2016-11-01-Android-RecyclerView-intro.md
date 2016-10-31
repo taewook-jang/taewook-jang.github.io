@@ -456,7 +456,7 @@ kotlin으로 작성한 `BaseAdapter`입니다. `itemList`에 대해서 정의를
 
 - [AbstractRecyclerAdapter](https://github.com/taehwandev/AndroidRecyclerView/blob/master/recyclerview/src/main/java/tech/thdev/support/widget/adapter/AbstractRecyclerAdapter.kt)
 
-```kotliin
+```kotlin
 abstract class AbstractRecyclerAdapter<ITEM, VIEW_TYPE : RecyclerView.ViewHolder?>(open val context: Context) :
         RecyclerView.Adapter<VIEW_TYPE>(), BaseRecyclerModel<ITEM> {
 
