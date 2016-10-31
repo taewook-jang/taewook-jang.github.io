@@ -90,15 +90,26 @@ Base는 Kotlin을 기준으로 작성하였고, 샘플은 Java/Kotlin 모두가 
 
 <br />
 
-## ListView와 다른 점
+## ListView의 장점
 
 - `ListView`는 간단하게 리스트를 만드는 부분에 있어서는 장점입니다.
 - 간단한 아이템 형태를 만드는 경우는 빠르게 적용이 가능한 `ArrayAdapter`을 제공합니다.
-- ViewHolder 패턴을 강제적으로 사용하지는 않으므로 고비용의 `findViewById`을 사용해야 합니다.
 
-하지만 이를 지키지는 않아도 되고, 굳이 하기 싫으면 하지 않아도 되었습니다.
+<br />
 
-대략 아래와 같은 형태입니다. 매번 ViewHolder를 생성하거나 또는 `inflater.inflate`을 통해서 Layout을 가져와 이를 `findViewById`을 진행하는 형태로 가능합니다.
+## ListView의 단점
+
+- 아이템의 애니메이션 처리가 쉽지 않습니다.
+- 리스트에는 한 개 이상의 View가 필요한 경우가 있지만 커스텀으로 작업하기 쉽지 않습니다.
+
+  - 다음은 한 개 이상의 `ViewHolder`를 가진 샘플입니다. 위쪽에는 사진이 표시되고, 아래에는 Footer이라는 새로운 `ViewHolder`가 노출된 상태입니다.
+
+  ![ViewHolderSample]
+
+- `RecyclerView`에는 `Header/Footer` 추가를 직접 구현해야 하지만, `ListView`는 기본으로 제공합니다.
+- `ViewHolder 패턴`을 강제적으로 사용하지는 않으므로 고비용의 `findViewById`가 매번 호출될 수 있다.
+
+구글에서 추천하는 `ViewHolder 패턴`을 사용하지 않게되면 다음과 같은 코드를 타게 됩니다.
 
 ```java
 @Override
@@ -111,9 +122,11 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 }
 ```
 
-하지만 고비용의 `findViewById`를 매번 하는 것은 성능상 좋지 않습니다. 그래서 `ViewHolder` 패턴을 통해서 이를 해결하도록 가이드 한대로 하면 다음과 같습니다.
+`ItemCount`에 따라서 매번 `getView`을 호출하게 됩니다. 이때 위와 같은 코드는 holder부터 `inflater.inflate`을 초기화하고, `findViewById`역시 매번 생성하게 됩니다.
 
-코드 양이 많죠.
+고비용의 `findViewById`을 매번 하는 것은 성능상 좋지 않고, 메모리의 영향도 받을 수 있습니다.
+
+그래서 다음과 같은 `ViewHolder 패턴`을 사용할 수 있습니다.
 
 ```java
 @Override
@@ -133,16 +146,8 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 }
 ```
 
-위와 같은 형태로 제공이 되는데 매번 구현하는 건 귀찮습니다.
+위와 같은 형태로 제공이 되는데 매번 구현하는 건 귀찮고, 서로 다른 ViewHolder을 여러 개 만들어서 사용하기 쉽지 않습니다.(ItemView의 View가 여러 개 생성될 수 있는 형태)
 
-- 아이템의 애니메이션 처리가 쉽지 않습니다.
-- 리스트에는 한 개 이상의 View가 필요한 경우가 있지만 커스텀으로 작업하기 쉽지 않습니다.
-
-  - 다음은 한 개 이상의 `ViewHolder`를 가진 샘플입니다. 위쪽에는 사진이 표시되고, 아래에는 Footer이라는 새로운 `ViewHolder`가 노출된 상태입니다.
-
-  ![ViewHolderSample]
-
-- `RecyclerView`에는 `Header/Footer` 추가를 직접 구현해야 하지만, `ListView`는 기본으로 제공합니다.
 
 <br />
 
