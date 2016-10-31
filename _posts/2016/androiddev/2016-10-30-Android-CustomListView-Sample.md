@@ -17,6 +17,13 @@ published: true
 
 <br />
 
+## RecyclerView
+
+- [Android ListView 사용하기](http://thdev.tech/androiddev/2016/10/30/Android-CustomListView-Sample.html)
+
+
+<br />
+
 ## 그간의 변화?
 
 - 구글 날씨가 종료되었습니다.
@@ -47,7 +54,6 @@ published: true
   - 사람 검색의 사용자 프로필을 상세하게 보기 위해서 추가하였습니다.
 - [Android TODO MVP 어떻게 적용할까?](http://thdev.tech/androiddev/2016/06/14/Android-TODO-MVP-Example.html)
   - MVP 패턴으로 다음의 예제를 작성하였습니다. MVP 부분을 참고해주시면 되겠습니다.
-
 
 <br />
 
@@ -483,6 +489,28 @@ ListView를 많이 쓰지는 않지만... 다시 한번 작성해보았습니다
 - [Android 구글 날씨 파싱(XmlPullParser 사용)](http://thdev.net/28)
 
 다음에는 `RecyclerView`을 작성해보려고 합니다.
+
+
+<br />
+
+## RecyclerView
+
+- [Android ListView 사용하기](http://thdev.tech/androiddev/2016/10/30/Android-CustomListView-Sample.html)
+
+
+<br />
+
+## ListView 샘플 코드는
+
+리스트 뷰로 작성한 샘플은 아래의 링크를 통해 확인이 가능합니다.
+
+Java/Kotlin으로 각각 분리되어 있고, 편하신 코드로 보시면 되겠습니다.
+
+- [Custom ListView Sample](https://github.com/taehwandev/Android-BlogExample/tree/master/2016-10-30-CustomListViewSample)
+
+과거에 작성하였던 구글 날씨 ListView는 아래의 링크를 참고하시면 다운 받을 수 있습니다.
+
+- [Android 구글 날씨 파싱(XmlPullParser 사용)](http://thdev.net/28)
 
 
 [sample_01]: /images/2016/2016-10-30-Android-CustomListView-Sample/sample_01.png
