@@ -192,13 +192,34 @@ View의 형태를 정의하기 위해 `LayoutManager`을 정의해야 합니다.
 
 ### xml에서 정의하기
 
-- `app:layoutManager=""` : xml에서 `layoutManager`을 정의할 수 있습니다.
-- `app:spanCount=""` : xml에서 `layoutManager`에서 사용할 `spanCount`을 정의할 수 있습니다.
+다음의 `app` 정의를 사용하기 위해서는 아래의 코드가 추가되어야 합니다.
+
+`xmlns:app="http://schemas.android.com/apk/res-auto"`
+
+- `app:layoutManager` : xml에서 `layoutManager`을 정의할 수 있습니다.
+- `app:spanCount` : xml에서 `layoutManager`에서 사용할 `spanCount`을 정의할 수 있습니다.
+
+**LinearLayoutManager**
 
 ```xml
 <android.support.v7.widget.RecyclerView
-    app:layoutManager="LinearLayoutManager"
-    app:spanCount="1" />
+    app:layoutManager="LinearLayoutManager" />
+```
+
+**GirdLayoutManager**
+
+```xml
+<android.support.v7.widget.RecyclerView
+    app:layoutManager="GirdLayoutManager"
+    app:spanCount="2" />
+```
+
+**LinearLayoutManager**
+
+```xml
+<android.support.v7.widget.RecyclerView
+    app:layoutManager="StaggeredGridLayoutManager"
+    app:spanCount="3" />
 ```
 
 ### LayoutManager 코드를 통한 정의
