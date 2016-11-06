@@ -75,9 +75,9 @@ Base는 Kotlin을 기준으로 작성하였고, 샘플은 Java/Kotlin 모두가 
   - [LinearLayoutManager](https://developer.android.com/reference/android/support/v7/widget/LinearLayoutManager.html) : 가로/세로 형태로 아이템을 배치한다.
 
     ![LinearLayoutManager]
-  - [GirdLayoutManager](https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html) : 한 줄에 1개 이상의 이미지를 표시할 수 있지만, 아이템의 크기는 줄의 첫 번째 아이템의 크기에 따라서 달라질 수 있다.(고정시에는 모두 고정)
+  - [GridLayoutManager](https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html) : 한 줄에 1개 이상의 이미지를 표시할 수 있지만, 아이템의 크기는 줄의 첫 번째 아이템의 크기에 따라서 달라질 수 있다.(고정시에는 모두 고정)
 
-    ![GirdLayoutManager]
+    ![GridLayoutManager]
   - [StaggeredGridLayoutManager](https://developer.android.com/reference/android/support/v7/widget/StaggeredGridLayoutManager.html) : 그리드 형태에 아이템의 크기를 다양하게 적용할 수 있다.
 
     ![StaggeredGridLayoutManager]
@@ -206,11 +206,11 @@ View의 형태를 정의하기 위해 `LayoutManager`을 정의해야 합니다.
     app:layoutManager="LinearLayoutManager" />
 ```
 
-**GirdLayoutManager**
+**GridLayoutManager**
 
 ```xml
 <android.support.v7.widget.RecyclerView
-    app:layoutManager="GirdLayoutManager"
+    app:layoutManager="GridLayoutManager"
     app:spanCount="2" />
 ```
 
@@ -232,7 +232,7 @@ mLayoutManager = new LinearLayoutManager(this);
 mRecyclerView.setLayoutManager(mLayoutManager);
 ```
 
-- [GirdLayoutManager](https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html)
+- [GridLayoutManager](https://developer.android.com/reference/android/support/v7/widget/GridLayoutManager.html)
 
 ```java
 // use a staggered grid layout manager
@@ -560,7 +560,7 @@ Base는 Kotlin을 기준으로 작성하였고, 샘플은 Java/Kotlin 모두가 
 [RecyclerView]: /images/2016/2016-11-01-Android-RecyclerView-intro/RecyclerView.png
 
 [LinearLayoutManager]: /images/2016/2016-11-01-Android-RecyclerView-intro/LinearLayoutManager.png
-[GirdLayoutManager]: /images/2016/2016-11-01-Android-RecyclerView-intro/GirdLayoutManager.png
+[GridLayoutManager]: /images/2016/2016-11-01-Android-RecyclerView-intro/GridLayoutManager.png
 [StaggeredGridLayoutManager]: /images/2016/2016-11-01-Android-RecyclerView-intro/StaggeredGridLayoutManager.png
 
 [ViewHolderSample]: /images/2016/2016-11-01-Android-RecyclerView-intro/ViewHolderSample.png
