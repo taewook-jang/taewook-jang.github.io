@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android Retrofit을 소개합니다.
+title: Android HTTP 통신을 위한 Retrofit 사용하기
 categories: [AndroidDev]
 tags: [Android, AndroidDev]
 fullview: false
