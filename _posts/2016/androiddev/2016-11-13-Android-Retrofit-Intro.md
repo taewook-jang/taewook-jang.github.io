@@ -5,7 +5,7 @@ categories: [AndroidDev]
 tags: [Android, AndroidDev]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 Android Retrofit을 소개합니다.
