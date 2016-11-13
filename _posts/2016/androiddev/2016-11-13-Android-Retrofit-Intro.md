@@ -128,12 +128,51 @@ Repo 객체도 당연히 구현되어 있어야 합니다.
 data class Repo(val name: String)
 ```
 
+### Retrofit에서 응답받은 데이터 처리하기
+
+Retrofit과 생성한 interface을 연결하였습니다.
+
+응답받는 곳에서는 다음과 같이 처리할 수 있습니다.
+
+다음과 같이 `searchGitHubUser`을 호출하였습니다.
+
+이때 Retrofit은 알아서 `Thread`을 처리하고, 동기화로 데이터를 넘겨줍니다.
+
+받아온 데이터를 `enqueue`을 통해서 `onResponse`와 `onFailure`을 사용합니다.
+
+`onResponse`의 경우 서버에서 정의하는 success가 아닌 경우에 대한 예외 처리를 포함한 코드 작성을 해주시면 되겠습니다.
+
+`GsonConverterFactory`을 설정하였기 때문에 `response.body()`는 다음과 같이 처리가 가능합니다.
+
+```java
+final Call<GitHubUserResponse> gitHubUserCall = retrofitGitHub.searchGitHubUser(userKeyword, ++page, DEFAULT_ITEM_COUNT);
+        gitHubUserCall.enqueue(new Callback<GitHubUserResponse>() {
+            @Override
+            public void onResponse(Call<GitHubUserResponse> call, Response<GitHubUserResponse> response) {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+
+								// 정상 응답
+                // Retrofit에서 GSON을 GitHubUserReponse로 변환한 결과를 받아온다
+                GitHubUserResponse gitHubUserResponse = response.body();
+            }
+
+            @Override
+            public void onFailure(Call<GitHubUserResponse> call, Throwable t) {
+                // 응답 실패(네트워크 오류 등)
+            }
+        });
+```
+
 
 <br />
 
 ## RxJava와 함께 사용하기
 
 Retrofit은 [ReactiveX](http://reactivex.io/)을 통한 응답도 가능합니다.
+
+### RxJava 1.x 사용하기
 
 Retrofit에서 RxJava을 사용하기 위해서는 dependencies에 `retrofit2 rxjava`을 추가해주어야 합니다.
 
