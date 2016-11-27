@@ -20,7 +20,6 @@
        {% include udemy-ads.html %}
        {% include adsense.html %}
 	     {{ content }}
-       {% include udemy-ads.html %}
 	  </div>
 
 		{% unless page.categories == empty %}
@@ -71,6 +70,8 @@
 		  {% assign tags_list = nil %}
 		</ul>
 		{% endunless %}
+
+    {% include udemy-ads.html %}
 
 		<hr>
 
