@@ -23,6 +23,19 @@ MVP는 다음과 같이 생겼습니다.
 
 <br />
 
+## MVP 무작정 따라하기
+
+무작정 따라 하기는 MVP 패턴을 이해할 수 있도록 하나씩 차근차근 작성해보는 예제입니다.
+
+그래서 각각의 브런치와 글들을 통해서 조금씩 확장해가려고 합니다.
+
+- [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
+- [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
+- [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
+
+
+<br />
+
 ## MVP를 적용하기 위해선?
 
 저는 `Test 코드` 작성을 위해서 `MVP`를 시작하였습니다.
@@ -123,6 +136,19 @@ MVP를 처음 접하고, 테스트 코드를 작성하지 않는다면 다음과
 여기까지의 단계를 거치게 됩니다.
 
 상황에 따라서 Presenter는 `Model`을 사용할 수도 하지 않을 수도 있지만 기본 형태는 위와 같습니다.
+
+
+<br />
+
+## MVP 무작정 따라하기
+
+무작정 따라 하기는 MVP 패턴을 이해할 수 있도록 하나씩 차근차근 작성해보는 예제입니다.
+
+그래서 각각의 브런치와 글들을 통해서 조금씩 확장해가려고 합니다.
+
+- [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
+- [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
+- [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
 
 
 <br />

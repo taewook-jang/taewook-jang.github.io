@@ -36,6 +36,19 @@ MVC 구조는 아래와 같은 그림으로 나타낼 수 있습니다.
 
 <br />
 
+## MVP 무작정 따라하기
+
+무작정 따라 하기는 MVP 패턴을 이해할 수 있도록 하나씩 차근차근 작성해보는 예제입니다.
+
+그래서 각각의 브런치와 글들을 통해서 조금씩 확장해가려고 합니다.
+
+- [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
+- [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
+- [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
+
+
+<br />
+
 ## MVC는?
 
 `Model`, `View`, `Control`의 약자입니다.
@@ -329,6 +342,19 @@ object ImageData {
 ```
 
 - <a href="https://developer.android.com/reference/android/content/res/Resources.html#getIdentifier(java.lang.String, java.lang.String, java.lang.String)">Android API getIdentifier</a>
+
+
+<br />
+
+## MVP 무작정 따라하기
+
+무작정 따라 하기는 MVP 패턴을 이해할 수 있도록 하나씩 차근차근 작성해보는 예제입니다.
+
+그래서 각각의 브런치와 글들을 통해서 조금씩 확장해가려고 합니다.
+
+- [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
+- [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
+- [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
 
 
 <br />
