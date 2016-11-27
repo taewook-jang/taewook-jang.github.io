@@ -188,4 +188,7 @@ footer {
 ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
-
+.area_ads {
+	font-size: 20px;
+	margin-bottom: 0 20px;
+}
