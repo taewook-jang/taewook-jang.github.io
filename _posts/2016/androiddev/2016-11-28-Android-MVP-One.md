@@ -258,4 +258,4 @@ View/Presenter의 정의 방법이 여러 개가 있다보니 먼저 Google Arch
 
 [mvp-default]: /images/2016/2016-10-12-Android-MVP-Intro/mvp-default.png
 [google_architecture]: /images/2016/2016-11-28-Android-MVP-One/Google_Architecture.png
-[my_architecture]: /images/2016/2016-11-28-Android-MVP-One/my_architecture.png
+[my_architecture]: /images/2016/2016-11-28-Android-MVP-One/My_Architecture.png
