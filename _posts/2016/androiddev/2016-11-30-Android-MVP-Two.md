@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android에 MVP 무작정 따라하기 - Presenter/View 생성하기
+title: Android에 MVP 무작정 따라하기 - Presenter/PresenterImpl 생성하기
 categories: [AndroidDev]
 tags: [Android, AndroidDev, MVP]
 fullview: false
