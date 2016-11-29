@@ -29,6 +29,7 @@ published: true
 - [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
 - [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
 - [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
+- [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/29/Android-MVP-Two.html)
 
 
 <br />
@@ -218,6 +219,22 @@ class SampleActivity extends AppCompatActivity implements SampleContract.View {
 }
 ```
 
+<br />
+
+## 마무리
+
+오늘은 MVP를 나누는 방법에 대해서 정리하였습니다.
+
+View/Presenter의 정의 방법이 여러 개가 있다보니 먼저 Google Architecture에서 정의하였으면 하는 방법을 정리해보았습니다.
+
+다음 글에서는 `Presenter/PresenterImpl`을 정의하는 방법을 살펴본 다음 기존 MVC 패턴으로 작성한 예제 코드를 `View/Presenter`까지 우선 나누어 보도록 하겠습니다.
+
+저는 오늘의 방법을 선호하고, 실제로 모든 예제를 다음의 방법으로 정리하여 사용 중에 있습니다.
+
+가장 기본적이지만 어려운 내용을 먼저 정리해보았습니다.
+
+감사합니다.
+
 
 <br />
 
@@ -237,23 +254,7 @@ class SampleActivity extends AppCompatActivity implements SampleContract.View {
 - [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
 - [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
 - [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
-
-
-<br />
-
-## 마무리
-
-오늘은 MVP를 나누는 방법에 대해서 정리하였습니다.
-
-View/Presenter의 정의 방법이 여러 개가 있다보니 먼저 Google Architecture에서 정의하였으면 하는 방법을 정리해보았습니다.
-
-다음 글에서는 `Presenter/PresenterImpl`을 정의하는 방법을 살펴본 다음 기존 MVC 패턴으로 작성한 예제 코드를 `View/Presenter`까지 우선 나누어 보도록 하겠습니다.
-
-저는 오늘의 방법을 선호하고, 실제로 모든 예제를 다음의 방법으로 정리하여 사용 중에 있습니다.
-
-가장 기본적이지만 어려운 내용을 먼저 정리해보았습니다.
-
-감사합니다.
+- [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/29/Android-MVP-Two.html)
 
 
 [mvp-default]: /images/2016/2016-10-12-Android-MVP-Intro/mvp-default.png

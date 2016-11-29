@@ -45,6 +45,7 @@ MVC 구조는 아래와 같은 그림으로 나타낼 수 있습니다.
 - [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
 - [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
 - [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
+- [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/29/Android-MVP-Two.html)
 
 
 <br />
@@ -346,6 +347,15 @@ object ImageData {
 
 <br />
 
+## 마무리
+
+다음 글에서 오늘 작성한 MVC 코드를 MVP로 변환하는 과정을 설명하도록 하겠습니다.
+
+우선 첫 번째 작성한 MVC에서 어떤게 View이고 어떤 부분이 Presenter로 분리되어야 하는지를 먼저 살펴보겠습니다.
+
+
+<br />
+
 ## MVP 무작정 따라하기
 
 무작정 따라 하기는 MVP 패턴을 이해할 수 있도록 하나씩 차근차근 작성해보는 예제입니다.
@@ -355,15 +365,7 @@ object ImageData {
 - [Android에 MVP 무작정 따라하기 - Intro](http://thdev.tech/androiddev/2016/10/12/Android-MVP-Intro.html)
 - [Android에 MVP 무작정 따라하기 - MVC 구조 이해하기](http://thdev.tech/androiddev/2016/10/23/Android-MVC-Architecture.html)
 - [Android에 MVP 무작정 따라하기 - Presenter/View 생성하기](http://thdev.tech/androiddev/2016/11/28/Android-MVP-One.html)
-
-
-<br />
-
-## 마무리
-
-다음 글에서 오늘 작성한 MVC 코드를 MVP로 변환하는 과정을 설명하도록 하겠습니다.
-
-우선 첫 번째 작성한 MVC에서 어떤게 View이고 어떤 부분이 Presenter로 분리되어야 하는지를 먼저 살펴보겠습니다.
+- [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/29/Android-MVP-Two.html)
 
 
 [mvc]: /images/2016/2016-05-03-MediaProjection-MVP-Pattern/MVC.png
