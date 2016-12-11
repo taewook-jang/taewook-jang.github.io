@@ -164,6 +164,10 @@ State는 다음과 같습니다.
 bottomSheetBehavior.setState(STATE);
 ```
 
+setState에서 `EXPANDED`을 정의하면 다음과 같습니다.
+
+![bottom_sheet_03]
+
 <br />
 
 #### setPeekHeight 변경
