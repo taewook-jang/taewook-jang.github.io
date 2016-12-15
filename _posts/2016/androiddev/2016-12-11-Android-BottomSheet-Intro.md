@@ -87,7 +87,8 @@ compile "com.android.support:design:23.2.0"
         app:behavior_hideable="true"
         app:behavior_peekHeight="200dp"
         app:layout_behavior="@string/bottom_sheet_behavior">
-    </RelativeLayout>
+        <!-- 생략 -->
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
 ```
