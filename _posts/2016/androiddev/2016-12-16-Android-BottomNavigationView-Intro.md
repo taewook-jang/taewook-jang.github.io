@@ -84,6 +84,8 @@ BottomNavigationView에서 사용할 메뉴를 정의합니다.
 
 2개만 추가한다면 다음과 같은 화면을 볼 수 있게 됩니다.
 
+- 가이드상 3개 이상에서 사용하여야 합니다.
+
 ![bottom_sample_02]
 
 
@@ -186,6 +188,8 @@ bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationVie
 - 1줄을 넘어가는 텍스트 사용하지 말 것
 - 바텀 메뉴 누를 경우 ViewPager 상에 swipe 에니메이션 처리하지 말 것
 - 스크롤이 발생할 경우 바텀 메뉴는 숨김 처리하며 다시 위로 올라오면 노출할 것
+- 가이드상 3개 이상에서 사용하여야 합니다.
+- 4~5개일 경우는 이미지로만 노출할 것
 
 등의 조건이 달립니다.
 
