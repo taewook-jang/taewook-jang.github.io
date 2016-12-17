@@ -44,7 +44,7 @@ BottomSheet는 Design Support 라이브러리의 `CoordinatorLayout`에 포함�
 
 두 예제 모두 `RelativeLayout`에 `Behavior` 정의를 사용하였습니다.
 
-- [BottomSheet API 예제 - GitHub](https://github.com/taehwandev/Android-BlogExample/tree/BottomSheetExample)
+- [BottomSheet API 예제 - GitHub](https://github.com/taehwandev/Android-BlogExample/tree/01-BottomSheetExample)
 
 
 <br />
@@ -208,7 +208,7 @@ FloatingActionButton을 BottomSheet 위에 올리고, 따라다니게 할 수 �
 
 BottomSheet에 대해서 간단하게 정리하였습니다.
 
-샘플 코드는 [BottomSheet - GitHub 블로그 예제](https://github.com/taehwandev/Android-BlogExample/tree/BottomSheetExample)에서 확인이 가능합니다.
+샘플 코드는 [BottomSheet - GitHub 블로그 예제](https://github.com/taehwandev/Android-BlogExample/tree/01-BottomSheetExample)에서 확인이 가능합니다.
 
 
 [bottom_sheet_01]: /images/2016/2016-12-11-Android-BottomSheet-Intro/bottom_sheet_01.png

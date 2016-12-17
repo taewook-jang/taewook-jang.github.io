@@ -14,7 +14,7 @@ BottomNavigationView는 다음과 같이 하단에 포함되는 View를 말합�
 
 ![bottom_sample_01]
 
-- 해당 예제 코드는 [GitHub의 블로그 예제](https://github.com/taehwandev/Android-BlogExample/tree/BottomNavigation-Sample)에 포함되어 있으며, `Kotlin`과 `Java`로 구성되어 있으며, MVP 구조로 작성하였습니다.
+- 해당 예제 코드는 [GitHub의 블로그 예제](https://github.com/taehwandev/Android-BlogExample/tree/02-BottomNavigationExample)에 포함되어 있으며, `Kotlin`과 `Java`로 구성되어 있으며, MVP 구조로 작성하였습니다.
 
 
 <br />
@@ -24,7 +24,7 @@ BottomNavigationView는 다음과 같이 하단에 포함되는 View를 말합�
 - [Material design - BottomNavigation](https://material.google.com/components/bottom-navigation.html)
 - [BottomNavigationView API](https://developer.android.com/reference/android/support/design/widget/BottomNavigationView.html)
 - [Medium: Joe Birch - Exploring the Android Design Support Library: Bottom Navigation View](https://medium.com/@hitherejoe/exploring-the-android-design-support-library-bottom-navigation-drawer-548de699e8e0#.5fmqss50n)
-- [GitHub: 작성한 샘플 자료 - Blog Sample](https://github.com/taehwandev/Android-BlogExample/tree/BottomNavigation-Sample)
+- [GitHub: 작성한 샘플 자료 - Blog Sample](https://github.com/taehwandev/Android-BlogExample/tree/02-BottomNavigationExample)
 	- 제가 작성한 샘플 예제를 포함합니다.
 - [GitHub: roughike](https://github.com/roughike/BottomBar)
 	- BottomNavigationView의 예제들입니다.
