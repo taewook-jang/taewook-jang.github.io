@@ -16,6 +16,8 @@ published: true
 
 ![branch-01]
 
+**참고자료** - [gist - lttlrck](https://gist.github.com/lttlrck/9628955)
+
  이미 생성한 Branch의 이름은 다음의 명령을 통해서 변경이 가능합니다.
 
  - [Android Studio GitHub 공유하기 및 사용하기](http://thdev.tech/androiddev/2016/09/13/Android-Studio-GitHub-Share.html)
