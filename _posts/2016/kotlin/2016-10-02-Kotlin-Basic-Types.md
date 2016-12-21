@@ -41,7 +41,7 @@ Kotlin의 기본 타입을 간단하게 정리해보겠습니다.
 | float     | Float       | 32                      |
 | long      | Long        | 64                      |
 | int       | Int         | 32                      |
-| short     | Sort        | 16                      |
+| short     | Short       | 16                      |
 | byte      | Byte        | 8                       |
 
 
