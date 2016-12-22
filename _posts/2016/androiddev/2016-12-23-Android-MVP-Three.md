@@ -82,7 +82,7 @@ if (id == R.id.action_reload) {
 
 ## 영상
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rFLykveIFpg?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/rFLykveIFpg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 <br />
