@@ -246,7 +246,7 @@ public abstract class Base {
 }
 
 // 추상 클래스의 상속을 다음과 같이 사용
-public class UseBase {
+public class UseBase extends Base {
   public UseBase(int age) {
     super(age);
   }
