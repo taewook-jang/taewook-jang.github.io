@@ -18,8 +18,9 @@
 	 </span>
 	  <div class="article_body">
        {% include udemy-ads.html %}
-       {% include adsense.html %}
+       {% include adsense_top.html %}
 	     {{ content }}
+       {% include adsense_bottom.html %}
 	  </div>
 
 		{% unless page.categories == empty %}
