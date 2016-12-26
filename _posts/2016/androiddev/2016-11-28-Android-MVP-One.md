@@ -57,14 +57,19 @@ published: true
 이번 글에서는 Google Architecture을 따르고, 다음 2번째 글에서는 PresenterImpl을 추가하는 방법을 추가로 다루어보려고 합니다.
 
 - View에 대한 interface만 정의하는 방법
+
  	- interface View : View에 대한 interface만 정의
  	- Presenter : interface 정의 없이 함수를 생성하여 사용
  	- View : interface View을 상속받아서 정의
-- [Google architecture](github.com/googlesamples/android-architecture)를 따른다.
+	
+- [Google architecture](https://github.com/googlesamples/android-architecture)를 따른다.
+
 	- Contract : View와 Presenter에 대한 interface을 작성
 	- Presenter : Contract.Presenter을 상속받아서 구현
 	- View : Contract.View을 상속받아서 구현
+	
 - PresenterImpl을 구현
+
  	- Presenter : Presenter와 View에 대한 interface을 구현
  	- PresenterImpl : Presenter을 상속받아서 구현
  	- View : Presenter.View을 상속받아서 구현
