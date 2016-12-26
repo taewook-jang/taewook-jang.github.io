@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android에 MVP 무작정 따라하기 - MVC 구조 이해하기
+title: Android MVP 무작정 따라하기 - MVC 구조 이해하기
 categories: [AndroidDev]
 tags: [Android, AndroidDev, MVP]
 fullview: false
@@ -48,6 +48,7 @@ MVC 구조는 아래와 같은 그림으로 나타낼 수 있습니다.
 - [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/30/Android-MVP-Two.html)
 - [Android MVP 무작정 따라하기 - Presenter 분리하기](http://thdev.tech/androiddev/2016/12/23/Android-MVP-Three.html)
 - [Android MVP 무작정 따라하기 - Adapter Contract 정의하기](http://thdev.tech/androiddev/2016/12/26/Android-MVP-Four.html)
+- [Android MVP 무작정 따라하기 - Adapter Contract 정의하기 2번째(동영상)](http://thdev.tech/androiddev/2016/12/27/Android-MVP-Four-Two.html)
 
 
 <br />
@@ -370,6 +371,7 @@ object ImageData {
 - [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/30/Android-MVP-Two.html)
 - [Android MVP 무작정 따라하기 - Presenter 분리하기](http://thdev.tech/androiddev/2016/12/23/Android-MVP-Three.html)
 - [Android MVP 무작정 따라하기 - Adapter Contract 정의하기](http://thdev.tech/androiddev/2016/12/26/Android-MVP-Four.html)
+- [Android MVP 무작정 따라하기 - Adapter Contract 정의하기 2번째(동영상)](http://thdev.tech/androiddev/2016/12/27/Android-MVP-Four-Two.html)
 
 
 [mvc]: /images/2016/2016-05-03-MediaProjection-MVP-Pattern/MVC.png

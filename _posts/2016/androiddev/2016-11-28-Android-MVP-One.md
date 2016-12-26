@@ -32,6 +32,7 @@ published: true
 - [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/30/Android-MVP-Two.html)
 - [Android MVP 무작정 따라하기 - Presenter 분리하기](http://thdev.tech/androiddev/2016/12/23/Android-MVP-Three.html)
 - [Android MVP 무작정 따라하기 - Adapter Contract 정의하기](http://thdev.tech/androiddev/2016/12/26/Android-MVP-Four.html)
+- [Android MVP 무작정 따라하기 - Adapter Contract 정의하기 2번째(동영상)](http://thdev.tech/androiddev/2016/12/27/Android-MVP-Four-Two.html)
 
 
 <br />
@@ -59,7 +60,7 @@ published: true
 - View에 대한 interface만 정의하는 방법
 	- interface View : View에 대한 interface만 정의
 	- Presenter : interface 정의 없이 함수를 생성하여 사용
-	- View : interface View을 상속받아서 정의	
+	- View : interface View을 상속받아서 정의
 - [Google architecture](https://github.com/googlesamples/android-architecture)를 따른다.
 	- Contract : View와 Presenter에 대한 interface을 작성
 	- Presenter : Contract.Presenter을 상속받아서 구현
@@ -259,6 +260,7 @@ View/Presenter의 정의 방법이 여러 개가 있다보니 먼저 Google Arch
 - [Android MVP 무작정 따라하기 - Presenter/View 생성하기 Other](http://thdev.tech/androiddev/2016/11/30/Android-MVP-Two.html)
 - [Android MVP 무작정 따라하기 - Presenter 분리하기](http://thdev.tech/androiddev/2016/12/23/Android-MVP-Three.html)
 - [Android MVP 무작정 따라하기 - Adapter Contract 정의하기](http://thdev.tech/androiddev/2016/12/26/Android-MVP-Four.html)
+- [Android MVP 무작정 따라하기 - Adapter Contract 정의하기 2번째(동영상)](http://thdev.tech/androiddev/2016/12/27/Android-MVP-Four-Two.html)
 
 
 [mvp-default]: /images/2016/2016-10-12-Android-MVP-Intro/mvp-default.png
