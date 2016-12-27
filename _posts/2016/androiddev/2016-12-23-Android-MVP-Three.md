@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android MVP 무작정 따라하기 - Presenter 분리하기
+title: Android MVP 무작정 따라하기 - Presenter 분리하기(동영상)
 categories: [AndroidDev]
 tags: [Android, AndroidDev, MVP]
 fullview: false
