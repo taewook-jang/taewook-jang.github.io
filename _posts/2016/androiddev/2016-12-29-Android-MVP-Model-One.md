@@ -35,7 +35,7 @@ Model은 Data를 말합니다.
 
 ![mvp_model_01]
 
-위에서 사용한 예제는 [Android Architecture - TODO MVP ContentProviders](https://github.com/googlesamples/android-architecture/tree/todo-mvp-contentproviders/)입니다.
+위에서 사용한 예제는 [Android Architecture - TODO MVP](https://github.com/googlesamples/android-architecture/tree/todo-mvp/)입니다.
 
 각각의 역할은 다음과 같습니다.
 
