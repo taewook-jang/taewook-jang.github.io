@@ -139,7 +139,7 @@ ZSH_THEME="robbyrussell"
 .zshrc에 추가하려면 다음과 같이 추가해주시면 됩니다.
 
 ```
-DEFAULT_USER="$USER"
+DEFAULT_USER="$(USER)"
 ```
 
 저는 **agnoster** 을 사용하였습니다.
