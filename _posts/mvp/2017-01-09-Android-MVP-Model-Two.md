@@ -33,12 +33,11 @@ MVP 무작정 따라하기 9 번째 글입니다.
 
 Interactor에서 `Google Repository` 역할을 처리하게 됩니다.
 
+- 출처 : [ios viper](https://www.ckl.io/blog/ios-project-architecture-using-viper/)
+
 ![ios_viper]
 
 비슷하지만 용어도 다르고, 실제 구성이 다르므로 여기까지만...
-
-[ios viper](https://www.ckl.io/blog/ios-project-architecture-using-viper/)
-
 
 
 <br />
