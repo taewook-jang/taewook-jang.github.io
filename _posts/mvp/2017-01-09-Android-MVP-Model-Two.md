@@ -79,6 +79,10 @@ Presenter와 Repository 사이의 데이터를 가공할 수 있는 Loader가 �
 - Model(Repository)는 Remote/Local의 데이터를 선택하고, 이를 캐쉬
 - 데이터 호출이 완료되면 Loader 또는 Presenter에서 세팅한 Listener에 값을 전달
 
+추가로 Loader의 정의는 아래와 같습니다.
+
+![todo-mvp-loader]
+
 
 <br />
 
@@ -215,3 +219,4 @@ public class ImageRemoteDataSource implements ImageSource {
 
 [ios_viper]: /images/mvp/2017-01-09-Android-MVP-Model-Two/ios_viper.png
 [todo-mvp]: /images/mvp/2017-01-09-Android-MVP-Model-Two/todo-mvp.png
+[todo-mvp-loader]: /images/mvp/2017-01-09-Android-MVP-Model-Two/todo-mvp-loader.png
