@@ -5,7 +5,7 @@ categories: [AndroidDev]
 tags: [Android, AndroidDev, MVP]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 MVP 무작정 따라하기 9 번째 글입니다.
