@@ -5,6 +5,11 @@ thdev tech blog
 
 개발과 관련된 내용을 정리하는 블로그입니다.
 
+## forked from
+
+- [jekyll-now](https://github.com/barryclark/jekyll-now)
+- [dbyll](https://github.com/dbtek/dbyll)
+
 ## Domain
 
 - [http://thdev.tech](http://thdev.tech)
