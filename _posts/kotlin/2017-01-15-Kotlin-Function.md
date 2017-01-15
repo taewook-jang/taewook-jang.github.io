@@ -5,7 +5,7 @@ categories: [Kotlin]
 tags: [Kotlin, Android]
 fullview: false
 comments: true
-published: false
+published: true
 ---
 
 코틀린 함수에 대해서 정리합니다.
