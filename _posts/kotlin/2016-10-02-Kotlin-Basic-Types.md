@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kotlin 기본 타입 알아보기
+title: Kotlin 기본 타입
 categories: [Kotlin]
 tags: [Kotlin, Android]
 fullview: false
@@ -11,22 +11,6 @@ published: true
 코틀린을 시작하기 전에 정리했어야 할 부분인데 지금 정리해보려고 합니다.
 
 Kotlin의 기본 타입을 간단하게 정리해보겠습니다.
-
-
-<br />
-
-## 코틀린 관련 포스트 목록
-
-- [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
-- [Kotlin 기본 타입 알아보기](/kotlin/2016/10/02/Kotlin-Basic-Types.html)
-- [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
-- [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
-- [Kotlin 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
-- [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
-- [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
-- [Android Kotlin으로 작성한 Presenter/View 살펴보기](/androiddev/kotlin/2016/09/22/Android-Base-Presenter_View.html)
-- Android Kotlin으로 작성한 Adapter 살펴보기
-- [kotlin Class 살펴보기](/kotlin/2016/10/09/Kotlin-Class.html)
 
 
 <br />
@@ -176,13 +160,17 @@ String을 좀 더 재미있게? 사용할 수 있습니다. `{}`으로 묶을 �
 
 ## 코틀린 관련 포스트 목록
 
-- [Android Kotlin 시작하기](/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
-- [Kotlin 기본 타입 알아보기](/kotlin/2016/10/02/Kotlin-Basic-Types.html)
-- [Kotlin 기본 문법 정리](/kotlin/2016/08/02/Basic-Kotlin-01.html)
-- [Kotlin 안전한 null 처리](/kotlin/2016/08/04/Kotlin-Null-Safety.html)
-- [Kotlin 주요 문법들](/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Android Kotlin 시작하기](http://thdev.tech/androiddev/kotlin/2016/07/31/Kotlin-Android-Start.html)
+- [Kotlin 기본 타입](http://thdev.tech/kotlin/2016/10/02/Kotlin-Basic-Types.html)
+- [Kotlin 기본 문법 - 1](http://thdev.tech/kotlin/2016/08/02/Basic-Kotlin-01.html)
+- [Kotlin 안전한 null 처리](http://thdev.tech/kotlin/2016/08/04/Kotlin-Null-Safety.html)
+- [Kotlin 기본 문법 - 2](http://thdev.tech/kotlin/2016/08/07/Kotlin-Idioms.html)
+- [Kotlin Generics 사용](http://thdev.tech/kotlin/android/2016/09/08/Kotlin-Generics.html)
+- [kotlin 주요 class](http://thdev.tech/kotlin/2016/10/09/Kotlin-Class.html)
+- [Kotlin Function - default, 변수 순서 변경](http://thdev.tech/kotlin/2017/01/15/Kotlin-Function.html)
+
+### 추가 내용
+
 - [Android Kotlin으로 작성한 Activity/Fragment 살펴보기](/androiddev/kotlin/2016/09/04/Android-Kotlin-Base-Activity_Fragment.html)
-- [Kotlin Generics 사용하기](/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - [Android Kotlin으로 작성한 Presenter/View 살펴보기](/androiddev/kotlin/2016/09/22/Android-Base-Presenter_View.html)
 - Android Kotlin으로 작성한 Adapter 살펴보기
-- [kotlin Class 살펴보기](/kotlin/2016/10/09/Kotlin-Class.html)
