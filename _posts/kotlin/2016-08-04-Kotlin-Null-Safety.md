@@ -407,6 +407,7 @@ java에서는 @Nullable이 올 경우 개발자가 `if ()` 등을 활용하여 n
 - [Kotlin Generics 사용](http://thdev.tech/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - [kotlin 주요 class](http://thdev.tech/kotlin/2016/10/09/Kotlin-Class.html)
 - [Kotlin Function - default, 변수 순서 변경](http://thdev.tech/kotlin/2017/01/15/Kotlin-Function.html)
+- [Kotlin constructor init 이란?](http://thdev.tech/kotlin/2017/01/17/Kotlin-Constructor-Init.html)
 
 ### 추가 내용
 

@@ -322,6 +322,7 @@ Base는 자기가 편한 대로 쓰게 되어 있다 보니... 표준적인 것�
 - [Kotlin Generics 사용](http://thdev.tech/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - [kotlin 주요 class](http://thdev.tech/kotlin/2016/10/09/Kotlin-Class.html)
 - [Kotlin Function - default, 변수 순서 변경](http://thdev.tech/kotlin/2017/01/15/Kotlin-Function.html)
+- [Kotlin constructor init 이란?](http://thdev.tech/kotlin/2017/01/17/Kotlin-Constructor-Init.html)
 
 ### 추가 내용
 

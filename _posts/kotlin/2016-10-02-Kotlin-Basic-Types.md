@@ -168,6 +168,7 @@ String을 좀 더 재미있게? 사용할 수 있습니다. `{}`으로 묶을 �
 - [Kotlin Generics 사용](http://thdev.tech/kotlin/android/2016/09/08/Kotlin-Generics.html)
 - [kotlin 주요 class](http://thdev.tech/kotlin/2016/10/09/Kotlin-Class.html)
 - [Kotlin Function - default, 변수 순서 변경](http://thdev.tech/kotlin/2017/01/15/Kotlin-Function.html)
+- [Kotlin constructor init 이란?](http://thdev.tech/kotlin/2017/01/17/Kotlin-Constructor-Init.html)
 
 ### 추가 내용
 
