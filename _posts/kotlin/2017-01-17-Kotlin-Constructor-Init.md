@@ -8,7 +8,7 @@ comments: true
 published: true
 ---
 
-코틀린에서 `constructor`는 생성자를 뜻합니다.
+코틀린에서 `constructor`생성자를 뜻합니다.
 
 우선 Java에서의 생성자는 아래와 같이 `className(매개 변수)` 형태로 초기화합니다.
 
@@ -42,8 +42,8 @@ public class Sample {
 
 [코틀린 클래스](http://thdev.tech/kotlin/2016/10/09/Kotlin-Class.html)에서 언급하였던 `constructor`에 대해서 정리하면 아래와 같습니다.
 
-- constructor는 생성자를 대신할 수 있음
-- 하지만 생서자는 아님
+- constructor(생성자) 대신할 수 있음
+- 하지만 생성자는 아님
 
 ```kotlin
 class Sample constructor(val name: String) {
@@ -80,7 +80,7 @@ kotlin을 통해서는 간단하게 `default` 사용으로 모든 것을 해결�
 
 그러므로 먼저 kotlin constructor가 어떤 것인지를 파악해야 합니다.
 
-- `constructor`는 생서자처럼 사용이 가능하지만, 실제 생성자가 아님
+- `constructor`(생성자)처럼 사용이 가능하지만, 자바에서처럼 사용하는 생성자는 아님
 - `init` block을 사용하여 초기화가 가능하지만, 생성자의 조건과는 다름
 
 이러한 부분은 모두 생성자와는 거리가 멉니다. 중요한 것은 생성자처럼 사용은 가능하지만, 모두 생성자가 아님을 알아야 합니다.
