@@ -2,7 +2,7 @@
 layout: post
 title: Android BottomNavigationView 사용하기
 categories: [AndroidDev]
-tags: [Android, AndroidDev]
+tags: [Android, Android Design]
 fullview: false
 comments: true
 published: true
