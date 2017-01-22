@@ -2,7 +2,7 @@
 layout: post
 title: MediaProjection 예제에 MVP 패턴을 적용해보았다.
 categories: [AndroidDev]
-tags: [Android MediaProjection, Android, MVP]
+tags: [MediaProjection, Android, MVP]
 fullview: false
 comments: true
 published: true
