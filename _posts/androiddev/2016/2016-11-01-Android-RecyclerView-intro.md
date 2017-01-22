@@ -2,7 +2,7 @@
 layout: post
 title: Android RecyclerView 사용하기
 categories: [AndroidDev]
-tags: [Android, AndroidDev]
+tags: [Android, SupportLibrary]
 fullview: false
 comments: true
 published: true
