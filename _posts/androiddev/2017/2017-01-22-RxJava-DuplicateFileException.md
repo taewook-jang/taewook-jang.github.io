@@ -18,12 +18,10 @@ Gradle 동기화 중에는 오류가 발생하지 않지만, `run`을 진행하�
 
 이 오류를 해결하는 방법을 간단하게 정리합니다.
 
-```
-Error:Execution failed for task ':app:transformResourcesWithMergeJavaResForDebug'.
+> Error:Execution failed for task ':app:transformResourcesWithMergeJavaResForDebug'.
         > com.android.build.api.transform.TransformException: com.android.builder.packaging.DuplicateFileException: Duplicate files copied in APK META-INF/rxjava.properties
 File1: /Users/tae-hwan/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.2.3/7fe1a94c1aeb958acc876fe616922cc191f3222c/rxjava-1.2.3.jar
 File2: /Users/tae-hwan/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.1/57f850a6b317e5582f1dbaff10a9e7d7e1fcdcfb/rxjava-2.0.1.jar
-```
 
 
 <br />
