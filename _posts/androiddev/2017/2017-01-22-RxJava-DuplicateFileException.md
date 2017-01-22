@@ -52,7 +52,7 @@ dependencies {
 
 위를 Gradle 싱크 상에는 문제가 없지만 `Run`을 통해 packaging 진행을 하면 오류가 발생합니다.
 
-`com.android.build.api.transform.TransformException: com.android.builder.packaging.DuplicateFileException: Duplicate files copied in APK META-INF/rxjava.properties`
+> com.android.build.api.transform.TransformException: com.android.builder.packaging.DuplicateFileException: Duplicate files copied in APK META-INF/rxjava.properties
 
 
 <br />
