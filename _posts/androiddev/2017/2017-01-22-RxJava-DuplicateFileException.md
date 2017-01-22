@@ -1,8 +1,8 @@
 ---
 layout: post
 title: RxJava 1.x/2.x DuplicateFileException 예외처리
-categories: [Git]
-tags: [Git, Git Branch]
+categories: [AndroidDev]
+tags: [Android, RxJava]
 fullview: false
 comments: true
 published: true
