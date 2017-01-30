@@ -44,7 +44,7 @@ View/Model/Presenter를 각각 정리하면 다음과 같습니다.
 
 MVP는 구조 자체를 변경하는 것입니다.
 
-전체 코드를 일괄성 있게 유지하며, 
+전체 코드를 일괄성 있게 유지하며,
 
 
 공부양에 따라서 달라지는 부분이며, 이 부분은 개인적인 생각을 주입하여 정리합니다.
@@ -189,7 +189,7 @@ Android MVP 무작정 따라하기는 이번글을 마지막으로 기본적인 
 - [Android MVP 무작정 따라하기 - Adapter OnClick 정의하기(동영상)](http://thdev.tech/androiddev/2016/12/29/Android-MVP-Four-Three.html)
 - [Android MVP 무작정 따라하기 - Model 정의하기](http://thdev.tech/androiddev/2016/12/29/Android-MVP-Model-One.html)
 - [Android MVP 무작정 따라하기 - Google Architecture의 Model](http://thdev.tech/androiddev/2017/01/09/Android-MVP-Model-Two.html)
-- [Android MVP 무작정 따라하기 - Google Architecture Model(영상 포함)]()
+- [Android MVP 무작정 따라하기 - Google Architecture Model(영상 포함)](http://thdev.tech/androiddev/2017/01/29/Android-MVP-Google-Architecture-Model.html)
 
 
 [model]: /images/androiddev/2017/2017-01-24-Android-MVP-Google-Architecture-Model/model.png
