@@ -3,6 +3,7 @@ layout: post
 title: Android 윈도우(Overlay) 권한 획득하기
 categories: [AndroidDev]
 tags: [Android Overlay, Android]
+date: 2017-01-29
 fullview: false
 comments: true
 published: true
