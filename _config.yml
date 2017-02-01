@@ -11,14 +11,14 @@ google_analytics: UA-75649351-1
 facebook_user_id: taehwan.dev
 facebook_app_id: 1793677387533254
 
-title: 차가운 지성과 뜨거운 열정으로...
+title: manasobi blog
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: manasobi blog
+      title: 차가운 지성과 뜨거운 열정으로...
 
 description: manasobi
 author:
