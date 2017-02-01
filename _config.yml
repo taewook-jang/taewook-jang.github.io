@@ -18,7 +18,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: 차가운 지성과 뜨거운 열정으로...
+      title: manasobi blog
 
 description: manasobi
 author:
