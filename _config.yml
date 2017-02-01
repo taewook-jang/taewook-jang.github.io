@@ -11,23 +11,23 @@ google_analytics: UA-75649351-1
 facebook_user_id: taehwan.dev
 facebook_app_id: 1793677387533254
 
-title: 꿈 많은 개발자가 되자
+title: 차가운 지성과 뜨거운 열정으로...
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: 꿈 많은 개발자가 되자
+      title: 차가운 지성과 뜨거운 열정으로...
 
-description: THdev
+description: manasobi
 author:
-  name: Tae-hwan
-  email: taehwan@thdev.tech
-  github: taehwandev
-  twitter: cafe_k
-  linkedin: taehwankwon
-  bio: Android, Kotlin .. Create a content development.
+  name: taewook-jang
+  email: zaru1113@gmail.com
+  github: taewook-jang
+  twitter: 
+  linkedin: 
+  bio: Spring, Android, Kotlin .. Create a content development.
   email_md5: 7589a5a8fec022e8af4e46525150a291
 
 rss_path: feed.xml
