@@ -108,7 +108,8 @@ article{
 }
 
 article {
-	padding: 0 5% 0;
+	/*padding: 0 5% 0;*/
+    padding: 0 0% 0;
 }
 
 article.home div a, article.home pre a { color: #2c3e50; }
